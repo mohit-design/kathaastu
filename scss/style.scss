@@ -199,7 +199,7 @@ body {
 .section-stories-heading-home {
   & > h2 {
     @include for-mobile-only {    
-      width: calc(100% - 5rem)
+      width: calc(100% - 10rem)
     }
   }
 }
