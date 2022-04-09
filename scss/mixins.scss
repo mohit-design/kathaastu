@@ -1,0 +1,31 @@
+@mixin border-radius($border-radius-value) {
+  -webkit-border-radius: $border-radius-value;
+  -moz-border-radius: $border-radius-value;
+  -ms-border-radius: $border-radius-value;
+  -o-border-radius: $border-radius-value;
+  border-radius: $border-radius-value;
+}
+@mixin transform($transform-value) {
+  -webkit-transform: $transform-value;
+  -moz-transform: $transform-value;
+  -ms-transform: $transform-value;
+  -o-transform: $transform-value;
+  transform: $transform-value;
+}
+@mixin transition($transition-value) {
+  -webkit-transition: $transition-value;
+  -moz-transition: $transition-value;
+  -ms-transition: $transition-value;
+  -o-transition: $transition-value;
+  transition: $transition-value;
+}
+@mixin filter($filter-value) {
+  -webkit-filter: $filter-value;
+  -moz-filter: $filter-value;
+  -ms-filter: $filter-value;
+  -o-filter: $filter-value;
+  filter: $filter-value;
+}
+@mixin for-mobile-only {
+  @media (max-width: 575px) { @content; }
+}

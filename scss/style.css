@@ -1,0 +1,437 @@
+/*------- Font Family Starts -------*/
+@font-face {
+  font-family: "Gotham-Light";
+  src: url("../fonts/Gotham-Light.ttf");
+}
+
+@font-face {
+  font-family: "Gotham-Book";
+  src: url("../fonts/Gotham-Book.ttf");
+}
+
+@font-face {
+  font-family: "Gotham-Medium";
+  src: url("../fonts/Gotham-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Gotham-Bold";
+  src: url("../fonts/Gotham-Bold.ttf");
+}
+
+/*------- Font Family Ends -------*/
+/*------- Common CSS Starts -------*/
+.container,
+.container-fluid {
+  padding-top: 5rem;
+}
+
+.section-heading > h2 {
+  color: #f7f7f7;
+  font-family: "Gotham-Book";
+  font-size: 24px;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 575px) {
+  .section-heading > h2 {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+p {
+  color: #f7f7f7;
+  font-family: "Gotham-Book";
+  font-size: 20px;
+}
+
+@media (max-width: 575px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.read-more > a {
+  background-color: transparent;
+  border: 1px solid #f7f7f7;
+  border-radius: 24px;
+  color: #f7f7f7;
+  display: inline-block;
+  padding: 10px 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.read-more > a:hover {
+  background-color: #f7f7f7;
+  color: #000000;
+}
+
+/*------- Common CSS Ends -------*/
+/*------- Reset CSS Starts -------*/
+html {
+  letter-spacing: 0.75px;
+}
+
+body {
+  background-color: #000000;
+}
+
+/*------- Reset CSS Ends -------*/
+/*------- Home Page Starts -------*/
+/*------- Desktop Header Section Starts -------*/
+.bg-header-desktop {
+  background-color: #00000070;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+@media (max-width: 575px) {
+  .bg-header-desktop {
+    display: none;
+  }
+}
+
+.header-logo-desktop > a {
+  display: inline-block;
+}
+
+.header-logo-desktop > a > img {
+  width: 145px;
+}
+
+.menu-listing-desktop > li {
+  margin-right: 1.5rem;
+}
+
+.menu-listing-desktop > li:last-child {
+  margin-right: 0;
+}
+
+.menu-listing-desktop > li > a {
+  color: #f7f7f7;
+  font-family: "Gotham-Book";
+  font-size: 16px;
+}
+
+.menu-listing-desktop > li:hover > a {
+  color: #ffc400;
+}
+
+.menu-listing-desktop > li.active > a {
+  color: #ffc400;
+}
+
+.header-social-listing > li {
+  margin-right: 1.5rem;
+}
+
+.header-social-listing > li:last-child {
+  margin-right: 0;
+}
+
+.header-social-listing > li > a {
+  border: 1px solid #f7f7f7;
+  border-radius: 50%;
+  color: #f7f7f7;
+  display: block;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  width: 2.5rem;
+}
+
+.header-social-listing > li > a:hover {
+  background-color: #f7f7f7;
+  border: 1px solid transparent;
+  color: #000000;
+}
+
+/*------- Desktop Header Section Ends -------*/
+/*------- Banner Section Starts -------*/
+.bg-banner-home {
+  background: url("../images/banner.jpg") no-repeat top/cover;
+  height: 100vh;
+  position: relative;
+}
+
+.banner-info-home {
+  left: 3rem;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.banner-info-home > h1 {
+  color: #f7f7f7;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.banner-info-home > h1 > span {
+  color: #ffc400;
+  display: block;
+}
+
+.banner-info-home > p {
+  margin-bottom: 1.5rem;
+}
+
+/*------- Banner Section Ends -------*/
+/*------- Information Section Starts -------*/
+/*------- Information Section Ends -------*/
+/*------- Latest and Trending Stories Section Starts -------*/
+@media (max-width: 575px) {
+  .section-stories-heading-home > h2 {
+    width: calc(100% - 5rem);
+  }
+}
+
+.slick-slider-latest-trending-stories-home .slick-slide, .slick-slider-popular-stories-home .slick-slide, .slick-slider-recommended-stories-home .slick-slide, .slick-slider-new-stories-home .slick-slide {
+  margin: 0 0.5rem;
+}
+
+.slick-slider-latest-trending-stories-home > .slick-prev, .slick-slider-popular-stories-home > .slick-prev, .slick-slider-recommended-stories-home > .slick-prev, .slick-slider-new-stories-home > .slick-prev {
+  border: 2px solid #f7f7f7;
+  border-radius: 50%;
+  height: 3rem;
+  left: auto;
+  right: 4rem;
+  top: -3rem;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  width: 3rem;
+  z-index: 1;
+}
+
+@media (max-width: 575px) {
+  .slick-slider-latest-trending-stories-home > .slick-prev, .slick-slider-popular-stories-home > .slick-prev, .slick-slider-recommended-stories-home > .slick-prev, .slick-slider-new-stories-home > .slick-prev {
+    height: 2.5rem;
+    right: 3.5rem;
+    width: 2.5rem;
+  }
+}
+
+.slick-slider-latest-trending-stories-home > .slick-prev::before, .slick-slider-popular-stories-home > .slick-prev::before, .slick-slider-recommended-stories-home > .slick-prev::before, .slick-slider-new-stories-home > .slick-prev::before {
+  color: #f7f7f7;
+  content: "\f053";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  opacity: 1;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+@media (max-width: 575px) {
+  .slick-slider-latest-trending-stories-home > .slick-prev::before, .slick-slider-popular-stories-home > .slick-prev::before, .slick-slider-recommended-stories-home > .slick-prev::before, .slick-slider-new-stories-home > .slick-prev::before {
+    font-size: 1rem;
+  }
+}
+
+.slick-slider-latest-trending-stories-home > .slick-prev:hover, .slick-slider-popular-stories-home > .slick-prev:hover, .slick-slider-recommended-stories-home > .slick-prev:hover, .slick-slider-new-stories-home > .slick-prev:hover, .slick-slider-latest-trending-stories-home > .slick-prev:focus, .slick-slider-popular-stories-home > .slick-prev:focus, .slick-slider-recommended-stories-home > .slick-prev:focus, .slick-slider-new-stories-home > .slick-prev:focus {
+  background-color: #f7f7f7;
+  border: 2px solid transparent;
+}
+
+.slick-slider-latest-trending-stories-home > .slick-prev:hover::before, .slick-slider-popular-stories-home > .slick-prev:hover::before, .slick-slider-recommended-stories-home > .slick-prev:hover::before, .slick-slider-new-stories-home > .slick-prev:hover::before, .slick-slider-latest-trending-stories-home > .slick-prev:focus::before, .slick-slider-popular-stories-home > .slick-prev:focus::before, .slick-slider-recommended-stories-home > .slick-prev:focus::before, .slick-slider-new-stories-home > .slick-prev:focus::before {
+  color: #000000;
+}
+
+.slick-slider-latest-trending-stories-home > .slick-next, .slick-slider-popular-stories-home > .slick-next, .slick-slider-recommended-stories-home > .slick-next, .slick-slider-new-stories-home > .slick-next {
+  border: 2px solid #f7f7f7;
+  border-radius: 50%;
+  height: 3rem;
+  right: 0;
+  top: -3rem;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  width: 3rem;
+  z-index: 1;
+}
+
+@media (max-width: 575px) {
+  .slick-slider-latest-trending-stories-home > .slick-next, .slick-slider-popular-stories-home > .slick-next, .slick-slider-recommended-stories-home > .slick-next, .slick-slider-new-stories-home > .slick-next {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+}
+
+.slick-slider-latest-trending-stories-home > .slick-next::before, .slick-slider-popular-stories-home > .slick-next::before, .slick-slider-recommended-stories-home > .slick-next::before, .slick-slider-new-stories-home > .slick-next::before {
+  color: #f7f7f7;
+  content: "\f054";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  opacity: 1;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+@media (max-width: 575px) {
+  .slick-slider-latest-trending-stories-home > .slick-next::before, .slick-slider-popular-stories-home > .slick-next::before, .slick-slider-recommended-stories-home > .slick-next::before, .slick-slider-new-stories-home > .slick-next::before {
+    font-size: 1rem;
+  }
+}
+
+.slick-slider-latest-trending-stories-home > .slick-next:hover, .slick-slider-popular-stories-home > .slick-next:hover, .slick-slider-recommended-stories-home > .slick-next:hover, .slick-slider-new-stories-home > .slick-next:hover, .slick-slider-latest-trending-stories-home > .slick-next:focus, .slick-slider-popular-stories-home > .slick-next:focus, .slick-slider-recommended-stories-home > .slick-next:focus, .slick-slider-new-stories-home > .slick-next:focus {
+  background-color: #f7f7f7;
+  border: 2px solid transparent;
+}
+
+.slick-slider-latest-trending-stories-home > .slick-next:hover::before, .slick-slider-popular-stories-home > .slick-next:hover::before, .slick-slider-recommended-stories-home > .slick-next:hover::before, .slick-slider-new-stories-home > .slick-next:hover::before, .slick-slider-latest-trending-stories-home > .slick-next:focus::before, .slick-slider-popular-stories-home > .slick-next:focus::before, .slick-slider-recommended-stories-home > .slick-next:focus::before, .slick-slider-new-stories-home > .slick-next:focus::before {
+  color: #000000;
+}
+
+.kathaastu-stories-img-home {
+  position: relative;
+  z-index: 1;
+}
+
+.kathaastu-stories-img-home > img {
+  border-radius: 14px;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.kathaastu-stories-img-home > img:hover {
+  -webkit-filter: brightness(40%);
+  -moz-filter: brightness(40%);
+  -ms-filter: brightness(40%);
+  -o-filter: brightness(40%);
+  filter: brightness(40%);
+}
+
+/*------- Latest and Trending Stories Section Ends -------*/
+/*------- Popular Stories Section Starts -------*/
+/*------- Popular Stories Section Ends -------*/
+/*------- Recommended Stories Section Starts -------*/
+/*------- Recommended Stories Section Ends -------*/
+/*------- New Stories on Kathaastu Section Starts -------*/
+/*------- New Stories on Kathaastu Section Ends -------*/
+/*------- Extra Information Section Starts -------*/
+.bg-extra-info-home {
+  border-bottom: 1px solid #262626;
+  padding-bottom: 5rem;
+}
+
+.extra-info-home > p {
+  margin-bottom: 1rem;
+}
+
+.extra-info-home > p > span,
+.extra-info-home > p > a {
+  color: #ffc400;
+}
+
+.extra-info-home > p:last-child {
+  margin-bottom: 0;
+}
+
+/*------- Extra Information Section Ends -------*/
+/*------- Footer Section Starts -------*/
+.bg-footer {
+  padding-bottom: 5rem;
+}
+
+.footer-listing > li {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.footer-listing > li:last-child {
+  margin-bottom: 0;
+}
+
+.footer-listing > li > a {
+  color: #f7f7f7;
+  font-family: "Gotham-Book";
+  font-size: 16px;
+}
+
+.footer-social-listing > li {
+  margin-right: 1.5rem;
+}
+
+.footer-social-listing > li:last-child {
+  margin-right: 0;
+}
+
+.footer-social-listing > li > a {
+  background-color: #262626;
+  border-radius: 50%;
+  color: #b7b7b7;
+  display: block;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  width: 2.5rem;
+}
+
+.footer-social-listing > li > a:hover {
+  background-color: #ffc400;
+  color: #000000;
+}
+
+.copyright-info > p {
+  border-top: 1px solid #262626;
+  font-size: 16px;
+  margin: 3rem 0 0;
+  padding: 3rem 0 0;
+}
+
+.copyright-info > p > span {
+  color: #ffc400;
+}
+
+/*------- Footer Section Ends -------*/
+/*------- Scroll To Top Section Starts -------*/
+.scroll-to-top {
+  background-color: #ffc400;
+  border-radius: 50%;
+  bottom: 2rem;
+  height: 3rem;
+  opacity: 0;
+  position: fixed;
+  right: 2rem;
+  visibility: hidden;
+  width: 3rem;
+  z-index: 10;
+}
+
+.scroll-to-top.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-to-top > i {
+  color: #f7f7f7;
+  display: block;
+  font-size: 16px;
+  line-height: 3rem;
+  text-align: center;
+}
+
+/*------- Scroll To Top Section Ends -------*/
+/*------- Home Page Ends -------*/
+/*# sourceMappingURL=style.css.map */
