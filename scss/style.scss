@@ -99,7 +99,7 @@ body {
   /*------- Mobile Header Section Starts -------*/
 
 .bg-header-mobile { display: none; }
-@include for-mobile-only {
+@include for-md-tab-only {
   .bg-header-mobile {
     display: block;
     padding-bottom: 1rem;
@@ -127,7 +127,7 @@ body {
       top: 50%;
       @include transform(translate(-50%,-50%));
       @include transition(0.5s ease);
-      width: 2rem;
+      width: 1.5rem;
       &::before {
         background-color: $tertiaryColor;
         content: "";
@@ -144,7 +144,7 @@ body {
         position: absolute;
         top: -0.75rem;
         @include transition(0.5s ease);
-        width: 2rem;
+        width: 1rem;
       }
     }
     &.active {
@@ -190,7 +190,7 @@ body {
       top: 50%;
       @include transform(translate(-50%,-50%));
       @include transition(0.5s ease);
-      width: 2rem;
+      width: 1.5rem;
       &::before {
         background-color: $tertiaryColor;
         content: "";
@@ -207,7 +207,7 @@ body {
         position: absolute;
         top: -0.75rem;
         @include transition(0.5s ease);
-        width: 2rem;
+        width: 1rem;
       }
     }
     &.active {
@@ -225,7 +225,7 @@ body {
     }
   }
 }
-@include for-md-tab-only {
+@include for-mobile-only {
   .bg-header-mobile {
     display: block;
     padding-bottom: 1rem;
@@ -236,6 +236,19 @@ body {
       display: inline-block;
       & > img {
         width: 145px;
+      }
+    }
+  }
+  .places-characters-listing {
+    & > li {
+      margin-right: 0.5rem;
+      &:last-child {
+        margin-right: 0;
+      }
+      & > a {
+        color: $tertiaryColor;
+        font-family: $gothamBook;
+        font-size: $h5;
       }
     }
   }
@@ -253,13 +266,13 @@ body {
       top: 50%;
       @include transform(translate(-50%,-50%));
       @include transition(0.5s ease);
-      width: 2rem;
+      width: 1.5rem;
       &::before {
         background-color: $tertiaryColor;
         content: "";
         height: 0.1rem;
         position: absolute;
-        top: 0.75rem;
+        top: -0.75rem;
         @include transition(0.5s ease);
         width: 2rem;
       }
@@ -268,9 +281,9 @@ body {
         content: "";
         height: 0.1rem;
         position: absolute;
-        top: -0.75rem;
+        top: 0.75rem;
         @include transition(0.5s ease);
-        width: 2rem;
+        width: 1rem;
       }
     }
     &.active {
@@ -543,6 +556,11 @@ body {
   background: url("../images/banner.jpg") no-repeat top/cover;
   height: 100vh;
   position: relative;
+  @include for-mobile-only {
+    .bg-banner-home {
+      height: 50vh;
+    }
+  }
 }
 .banner-info-home {
   left: 3rem;
@@ -581,8 +599,11 @@ body {
   }
 }
 .slick-slider-latest-trending-stories-home {
+  & .slick-list {
+    margin: 0 -0.75rem;
+  }
   & .slick-slide {
-    margin: 0 0.5rem;
+    margin: 0 0.75rem;
   }
   & > .slick-prev {
     border: 2px solid $tertiaryColor;
@@ -660,6 +681,7 @@ body {
     @include border-radius(14px);
     cursor: pointer;
     @include transition(0.5s ease);
+    width: 100%;
     &:hover {
       @include filter(brightness(40%));
     }
@@ -800,3 +822,9 @@ body {
   /*------- Scroll To Top Section Ends -------*/
 
 /*------- Home Page Ends -------*/
+
+/*------- Stories Page Starts -------*/
+
+  
+
+/*------- Stories Page Ends -------*/

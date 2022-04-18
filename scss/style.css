@@ -106,7 +106,7 @@ body {
   display: none;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 991px) {
   .bg-header-mobile {
     display: block;
     padding-bottom: 1rem;
@@ -135,7 +135,7 @@ body {
     transform: translate(-50%, -50%);
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
-    width: 2rem;
+    width: 1.5rem;
   }
   .burger-menu > span::before {
     background-color: #f7f7f7;
@@ -155,7 +155,7 @@ body {
     top: -0.75rem;
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
-    width: 2rem;
+    width: 1rem;
   }
   .burger-menu.active > span {
     background-color: transparent;
@@ -201,7 +201,7 @@ body {
     transform: translate(-50%, -50%);
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
-    width: 2rem;
+    width: 1.5rem;
   }
   .burger-menu > span::before {
     background-color: #f7f7f7;
@@ -221,7 +221,7 @@ body {
     top: -0.75rem;
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
-    width: 2rem;
+    width: 1rem;
   }
   .burger-menu.active > span {
     background-color: transparent;
@@ -238,7 +238,7 @@ body {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 575px) {
   .bg-header-mobile {
     display: block;
     padding-bottom: 1rem;
@@ -249,6 +249,17 @@ body {
   }
   .header-logo-mobile > a > img {
     width: 145px;
+  }
+  .places-characters-listing > li {
+    margin-right: 0.5rem;
+  }
+  .places-characters-listing > li:last-child {
+    margin-right: 0;
+  }
+  .places-characters-listing > li > a {
+    color: #f7f7f7;
+    font-family: "Gotham-Book";
+    font-size: 14px;
   }
   .burger-menu {
     cursor: pointer;
@@ -267,14 +278,14 @@ body {
     transform: translate(-50%, -50%);
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
-    width: 2rem;
+    width: 1.5rem;
   }
   .burger-menu > span::before {
     background-color: #f7f7f7;
     content: "";
     height: 0.1rem;
     position: absolute;
-    top: 0.75rem;
+    top: -0.75rem;
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
     width: 2rem;
@@ -284,10 +295,10 @@ body {
     content: "";
     height: 0.1rem;
     position: absolute;
-    top: -0.75rem;
+    top: 0.75rem;
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
-    width: 2rem;
+    width: 1rem;
   }
   .burger-menu.active > span {
     background-color: transparent;
@@ -589,6 +600,12 @@ body {
   position: relative;
 }
 
+@media (max-width: 575px) {
+  .bg-banner-home .bg-banner-home {
+    height: 50vh;
+  }
+}
+
 .banner-info-home {
   left: 3rem;
   position: absolute;
@@ -622,8 +639,12 @@ body {
   }
 }
 
+.slick-slider-latest-trending-stories-home .slick-list, .slick-slider-popular-stories-home .slick-list, .slick-slider-recommended-stories-home .slick-list, .slick-slider-new-stories-home .slick-list {
+  margin: 0 -0.75rem;
+}
+
 .slick-slider-latest-trending-stories-home .slick-slide, .slick-slider-popular-stories-home .slick-slide, .slick-slider-recommended-stories-home .slick-slide, .slick-slider-new-stories-home .slick-slide {
-  margin: 0 0.5rem;
+  margin: 0 0.75rem;
 }
 
 .slick-slider-latest-trending-stories-home > .slick-prev, .slick-slider-popular-stories-home > .slick-prev, .slick-slider-recommended-stories-home > .slick-prev, .slick-slider-new-stories-home > .slick-prev {
@@ -726,6 +747,7 @@ body {
   cursor: pointer;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+  width: 100%;
 }
 
 .kathaastu-stories-img-home > img:hover {
@@ -854,4 +876,6 @@ body {
 
 /*------- Scroll To Top Section Ends -------*/
 /*------- Home Page Ends -------*/
+/*------- Stories Page Starts -------*/
+/*------- Stories Page Ends -------*/
 /*# sourceMappingURL=style.css.map */

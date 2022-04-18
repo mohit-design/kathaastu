@@ -26,15 +26,15 @@
   -o-filter: $filter-value;
   filter: $filter-value;
 }
-@mixin for-mobile-only {
-  @media (max-width: 575px) { @content; }
-}
-@mixin for-sm-tab-only {
-  @media (max-width: 767px) { @content; }
+@mixin for-lg-tab-only {
+  @media (max-width: 1199px) { @content; }
 }
 @mixin for-md-tab-only {
   @media (max-width: 991px) { @content; }
 }
-@mixin for-lg-tab-only {
-  @media (max-width: 1199px) { @content; }
+@mixin for-sm-tab-only {
+  @media (max-width: 767px) { @content; }
+}
+@mixin for-mobile-only {
+  @media (max-width: 575px) { @content; }
 }
