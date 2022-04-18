@@ -145,7 +145,7 @@ body {
     top: 0.75rem;
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
-    width: 2rem;
+    width: 1rem;
   }
   .burger-menu > span::after {
     background-color: #f7f7f7;
@@ -165,10 +165,25 @@ body {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
+}
+
+@media (max-width: 991px) and (max-width: 575px) {
+  .burger-menu.active > span::before {
+    width: 2rem;
+  }
+}
+
+@media (max-width: 991px) {
   .burger-menu.active > span::after {
     top: 0;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
+  }
+}
+
+@media (max-width: 991px) and (max-width: 575px) {
+  .burger-menu.active > span::after {
+    width: 2rem;
   }
 }
 
@@ -259,7 +274,7 @@ body {
   .places-characters-listing > li > a {
     color: #f7f7f7;
     font-family: "Gotham-Book";
-    font-size: 14px;
+    font-size: 12px;
   }
   .burger-menu {
     cursor: pointer;

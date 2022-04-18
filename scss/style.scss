@@ -135,7 +135,7 @@ body {
         position: absolute;
         top: 0.75rem;
         @include transition(0.5s ease);
-        width: 2rem;
+        width: 1rem;
       }
       &::after {
         background-color: $tertiaryColor;
@@ -153,10 +153,16 @@ body {
         &::before {
           top: 0;
           @include transform(rotate(-45deg));
+          @include for-mobile-only {
+            width: 2rem;
+          }
         }
         &::after {
           top: 0;
           @include transform(rotate(45deg));
+          @include for-mobile-only {
+            width: 2rem;
+          }
         }
       }
     }
@@ -248,7 +254,7 @@ body {
       & > a {
         color: $tertiaryColor;
         font-family: $gothamBook;
-        font-size: $h5;
+        font-size: $h6;
       }
     }
   }
