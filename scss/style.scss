@@ -599,11 +599,8 @@ body {
   }
 }
 .slick-slider-latest-trending-stories-home {
-  & .slick-list {
-    margin: 0 -0.75rem;
-  }
   & .slick-slide {
-    margin: 0 0.75rem;
+    margin: 0 0.5rem;
   }
   & > .slick-prev {
     border: 2px solid $tertiaryColor;

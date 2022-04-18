@@ -639,12 +639,8 @@ body {
   }
 }
 
-.slick-slider-latest-trending-stories-home .slick-list, .slick-slider-popular-stories-home .slick-list, .slick-slider-recommended-stories-home .slick-list, .slick-slider-new-stories-home .slick-list {
-  margin: 0 -0.75rem;
-}
-
 .slick-slider-latest-trending-stories-home .slick-slide, .slick-slider-popular-stories-home .slick-slide, .slick-slider-recommended-stories-home .slick-slide, .slick-slider-new-stories-home .slick-slide {
-  margin: 0 0.75rem;
+  margin: 0 0.5rem;
 }
 
 .slick-slider-latest-trending-stories-home > .slick-prev, .slick-slider-popular-stories-home > .slick-prev, .slick-slider-recommended-stories-home > .slick-prev, .slick-slider-new-stories-home > .slick-prev {
