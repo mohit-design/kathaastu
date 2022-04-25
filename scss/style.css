@@ -822,15 +822,15 @@ body {
   font-size: 16px;
 }
 
-.footer-social-listing > li {
+.footer-social-listing > li, .story-social-listing > li {
   margin-right: 1.5rem;
 }
 
-.footer-social-listing > li:last-child {
+.footer-social-listing > li:last-child, .story-social-listing > li:last-child {
   margin-right: 0;
 }
 
-.footer-social-listing > li > a {
+.footer-social-listing > li > a, .story-social-listing > li > a {
   background-color: #262626;
   border-radius: 50%;
   color: #b7b7b7;
@@ -841,7 +841,7 @@ body {
   width: 2.5rem;
 }
 
-.footer-social-listing > li > a:hover {
+.footer-social-listing > li > a:hover, .story-social-listing > li > a:hover {
   background-color: #ffc400;
   color: #000000;
 }
@@ -888,5 +888,39 @@ body {
 /*------- Scroll To Top Section Ends -------*/
 /*------- Home Page Ends -------*/
 /*------- Stories Page Starts -------*/
+/*------- Story Information Section Starts -------*/
+.bg-story-info-sp {
+  padding-bottom: 5rem;
+}
+
+.story-info-sp > p:last-of-type {
+  margin-bottom: 4rem;
+}
+
+/*------- Story Information Section Ends -------*/
+/*------- Author Information Section Starts -------*/
+.bg-author-info-sp {
+  border-bottom: 1px solid #262626;
+  border-top: 1px solid #262626;
+  padding-bottom: 5rem;
+}
+
+.author-profile-sp {
+  margin-right: 1.5rem;
+}
+
+.author-profile-sp > img {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+}
+
+.author-info-sp > h5 {
+  color: #b7b7b7;
+  font-family: "Gotham-Book";
+  margin-bottom: 1rem;
+}
+
+/*------- Author Information Section Ends -------*/
 /*------- Stories Page Ends -------*/
 /*# sourceMappingURL=style.css.map */

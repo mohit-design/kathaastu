@@ -828,6 +828,41 @@ body {
 
 /*------- Stories Page Starts -------*/
 
-  
+  /*------- Story Information Section Starts -------*/
+
+.bg-story-info-sp { padding-bottom: 5rem; }
+.story-info-sp {
+  & > p {
+    &:last-of-type {
+      margin-bottom: 4rem;
+    }
+  }
+}
+.story-social-listing {
+  @extend .footer-social-listing;
+}
+
+  /*------- Story Information Section Ends -------*/
+
+  /*------- Author Information Section Starts -------*/
+
+.bg-author-info-sp { border-bottom: 1px solid $darkGray; border-top: 1px solid $darkGray; padding-bottom: 5rem; }
+.author-profile-sp {
+  margin-right: 1.5rem;
+  & > img {
+    @include border-radius(50%);
+    height: 70px;
+    width: 70px;
+  }
+}
+.author-info-sp {
+  & > h5 {
+    color: $lightGray;
+    font-family: $gothamBook;
+    margin-bottom: 1rem;
+  }
+}
+
+  /*------- Author Information Section Ends -------*/
 
 /*------- Stories Page Ends -------*/
