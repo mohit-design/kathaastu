@@ -822,15 +822,15 @@ body {
   font-size: 16px;
 }
 
-.footer-social-listing > li, .story-social-listing-sp > li {
+.footer-social-listing > li, .story-social-listing-sp > li, .author-social-listing-sp > li {
   margin-right: 1.5rem;
 }
 
-.footer-social-listing > li:last-child, .story-social-listing-sp > li:last-child {
+.footer-social-listing > li:last-child, .story-social-listing-sp > li:last-child, .author-social-listing-sp > li:last-child {
   margin-right: 0;
 }
 
-.footer-social-listing > li > a, .story-social-listing-sp > li > a {
+.footer-social-listing > li > a, .story-social-listing-sp > li > a, .author-social-listing-sp > li > a {
   background-color: #262626;
   border-radius: 50%;
   color: #b7b7b7;
@@ -841,7 +841,7 @@ body {
   width: 2.5rem;
 }
 
-.footer-social-listing > li > a:hover, .story-social-listing-sp > li > a:hover {
+.footer-social-listing > li > a:hover, .story-social-listing-sp > li > a:hover, .author-social-listing-sp > li > a:hover {
   background-color: #ffc400;
   color: #000000;
 }
