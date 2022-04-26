@@ -952,8 +952,18 @@ body {
     }
   }
 }
-.story-social-listing {
+.story-social-listing-sp {
   @extend .footer-social-listing;
+  margin-bottom: 1rem;
+}
+.story-tags-info-sp {
+  & > p {
+    margin-bottom: 0;
+    & > a {
+      color: $secondaryColor;
+      padding-right: 1rem;
+    }
+  }
 }
 
   /*------- Story Information Section Ends -------*/
