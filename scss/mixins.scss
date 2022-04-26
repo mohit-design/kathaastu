@@ -12,6 +12,13 @@
   -o-transform: $transform-value;
   transform: $transform-value;
 }
+@mixin transform-origin($transform-origin-value) {
+  -webkit-transform-origin: $transform-origin-value;
+  -moz-transform-origin: $transform-origin-value;
+  -ms-transform-origin: $transform-origin-value;
+  -o-transform-origin: $transform-origin-value;
+  transform-origin: $transform-origin-value;
+}
 @mixin transition($transition-value) {
   -webkit-transition: $transition-value;
   -moz-transition: $transition-value;

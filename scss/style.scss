@@ -831,6 +831,120 @@ body {
   /*------- Story Information Section Starts -------*/
 
 .bg-story-info-sp { padding-bottom: 5rem; }
+.accordion-1 {
+  margin-bottom: 2rem;
+  & > h4 {
+    border: 1px solid $lightGray;
+    border-bottom: 0;
+    color: $lightGray;
+    cursor: pointer;
+    font-family: $gothamBook;
+    font-size: $p;
+    position: relative;
+    &:last-of-type {
+      border-bottom: 1px solid $lightGray;
+    }
+    &::after {
+      content: "\f067";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      @include transform(translateY(-50%));
+      @include transition(0.5s ease);
+    }
+    &.active {
+      border: 1px solid $darkGray;
+      background-color: $darkGray;
+      color: $tertiaryColor;
+      &::after {
+        content: "\f068";
+      }
+    }
+    & > span {
+      display: block;
+      padding: 10px 15px;
+    }
+  }
+  & > div {
+    background-color: $tertiaryColor;
+    border: 1px solid $primaryColor;
+    padding: 10px;
+    & > p {
+      margin-bottom: 0;
+      & > a {
+        color: $primaryColor;
+        font-family: $gothamBook;
+        font-size: $h4;
+        &:hover {
+          color: $darkGray;
+        }
+      }
+    }
+  }
+}
+.audio-story-sp {
+  & > a {
+    color: $tertiaryColor;
+    display: inline-block;
+    margin-bottom: 2rem;
+  }
+}
+.select {
+  margin-bottom: 2rem;
+  margin-left: auto;
+  position: relative;
+  width: 250px;
+  & > .selectBtn {
+    background-color: $secondaryColor;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    &::after {
+      border-right: 2px solid $darkGray;
+      border-bottom: 2px solid $darkGray;
+      content: "";
+      height: 10px;
+      position: absolute;
+      right: 15px;
+      top: 45%;
+      @include transform(translateY(-50%) rotate(45deg));
+      @include transition(0.5s ease);
+      width: 10px;
+    }
+    &.toggle {
+      &::after {
+        @include transform(translateY(-50%) rotate(-135deg));
+      }
+    }
+  }
+  & > .selectDropdown {
+    background-color: $tertiaryColor;
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    @include transform(scale(1,0));
+    @include transition(0.5s ease);
+    @include transform-origin(top center);
+    visibility: hidden;
+    width: 100%;
+    z-index: 1;
+    & > .option {
+      cursor: pointer;
+      padding: 10px;
+      &:hover {
+        background-color: $primaryColor;
+        color: $tertiaryColor;
+      }
+    }
+    &.toggle {
+      @include transform(scale(1,1));
+      visibility: visible;
+    }
+  }
+}
 .story-info-sp {
   & > p {
     &:last-of-type {
