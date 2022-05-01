@@ -31,6 +31,11 @@
   padding-top: 5rem;
 }
 .section-heading {
+  &.yellow {
+    & > h2 {
+      color: $secondaryColor;
+    }
+  }
   & > h2 {
     color: $tertiaryColor;
     font-family: $gothamBook;
@@ -466,7 +471,7 @@ body {
   /*------- Desktop Header Section Starts -------*/
 
 .bg-header-desktop {
-  background-color: #00000070;
+  background-color: transparent;
   padding-bottom: 1rem;
   padding-top: 1rem;
   position: absolute;
@@ -529,7 +534,7 @@ body {
 }
 .header-social-listing {
   & > li {
-    margin-right: 1.5rem;
+    margin-right: 1rem;
     @include for-lg-tab-only {
       margin-right: 1rem;
     }
@@ -762,7 +767,7 @@ body {
 }
 .footer-social-listing {
   & > li {
-    margin-right: 1.5rem;
+    margin-right: 1rem;
     &:last-child {
       margin-right: 0;
     }
@@ -828,6 +833,17 @@ body {
 
 /*------- Stories Page Starts -------*/
 
+  /*------- Banner Section Starts -------*/
+
+.bg-banner-sp {
+  padding-top: 10rem;
+}
+.story-banner-sp {
+  & > img {
+    margin: 0 auto;
+  }
+}
+
   /*------- Story Information Section Starts -------*/
 
 .bg-story-info-sp { padding-bottom: 5rem; }
@@ -839,8 +855,9 @@ body {
     color: $lightGray;
     cursor: pointer;
     font-family: $gothamBook;
-    font-size: $p;
+    font-size: $h3;
     position: relative;
+    width: 65%;
     &:last-of-type {
       border-bottom: 1px solid $lightGray;
     }
@@ -864,13 +881,13 @@ body {
     }
     & > span {
       display: block;
-      padding: 10px 15px;
+      padding: 0.5rem 1rem;
     }
   }
   & > div {
     background-color: $tertiaryColor;
     border: 1px solid $primaryColor;
-    padding: 10px;
+    padding: 0.5rem;
     & > p {
       margin-bottom: 0;
       & > a {
@@ -886,9 +903,13 @@ body {
 }
 .audio-story-sp {
   & > a {
-    color: $tertiaryColor;
+    border: 1px solid $lightGray;
+    color: $lightGray;
     display: inline-block;
+    font-family: $gothamBook;
+    font-size: $h3;
     margin-bottom: 2rem;
+    padding: 0.5rem 1rem;
   }
 }
 .select {
@@ -897,22 +918,24 @@ body {
   position: relative;
   width: 250px;
   & > .selectBtn {
-    background-color: $secondaryColor;
+    border: 1px solid $lightGray;
+    color: $lightGray;
     cursor: pointer;
-    padding: 10px;
+    font-family: $gothamBook;
+    padding: 0.5rem 0.75rem;
     position: relative;
     width: 100%;
     &::after {
-      border-right: 2px solid $darkGray;
-      border-bottom: 2px solid $darkGray;
+      border-right: 1px solid $lightGray;
+      border-bottom: 1px solid $lightGray;
       content: "";
-      height: 10px;
+      height: 0.75rem;
       position: absolute;
       right: 15px;
       top: 45%;
       @include transform(translateY(-50%) rotate(45deg));
       @include transition(0.5s ease);
-      width: 10px;
+      width: 0.75rem;
     }
     &.toggle {
       &::after {
@@ -921,7 +944,8 @@ body {
     }
   }
   & > .selectDropdown {
-    background-color: $tertiaryColor;
+    background-color: $lightGray;
+    font-family: $gothamBook;
     overflow: hidden;
     position: absolute;
     top: 100%;
@@ -933,9 +957,9 @@ body {
     z-index: 1;
     & > .option {
       cursor: pointer;
-      padding: 10px;
+      padding: 0.5rem 0.75rem;
       &:hover {
-        background-color: $primaryColor;
+        background-color: $darkGray;
         color: $tertiaryColor;
       }
     }
@@ -954,7 +978,6 @@ body {
 }
 .story-social-listing-sp {
   @extend .footer-social-listing;
-  margin-bottom: 1rem;
 }
 .story-tags-info-sp {
   & > p {
@@ -962,6 +985,31 @@ body {
     & > a {
       color: $secondaryColor;
       padding-right: 1rem;
+    }
+  }
+}
+.in-this-story-heading-sp {
+  margin-top: 2rem;
+}
+.story-tags-heading-sp {
+  & > p {
+    margin-bottom: 0.5rem;
+  }
+}
+.story-tags-listing-sp {
+  & > li {
+    display: inline-block;
+    margin: 0 1rem 0.5rem 0;
+    &:last-child {
+      margin-right: 0;
+    }
+    & > a {
+      color: $lightGray;
+      font-family: $gothamBook;
+      font-size: $h3;
+      &:hover {
+        color: $secondaryColor;
+      }
     }
   }
 }
@@ -993,3 +1041,116 @@ body {
   /*------- Author Information Section Ends -------*/
 
 /*------- Stories Page Ends -------*/
+
+/*------- Advertise With Us Page Starts -------*/
+
+  /*------- Advertise With Us Section Starts -------*/
+
+.bg-advertise-with-us-ap { padding-top: 7.5rem; }
+.advertise-info-ap,
+.submissions-info-sp {
+  & > p {
+    margin-bottom: 2.5rem;
+    & > a {
+      color: $secondaryColor;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.form-label-kathaastu {
+  color: $tertiaryColor;
+  font-family: $gothamBook;
+  font-size: $h3;
+}
+.form-control-kathaastu {
+  border: 0;
+  @include border-radius(0);
+}
+textarea.form-control-kathaastu {
+  height: 150px;
+}
+.btn-cancel,
+.btn-submit {
+  font-family: $gothamMedium;
+  letter-spacing: 0.05rem;
+  margin-right: 1rem;
+  padding: 0.563rem 0.75rem;
+  text-transform: uppercase;
+}
+.btn-submit {
+  margin-right: 0;
+}
+
+  /*------- Advertise With Us Section Ends -------*/
+
+/*------- Advertise With Us Page Ends -------*/
+
+/*------- Submissions Page Starts -------*/
+
+  /*------- Submissions Section Starts -------*/
+
+.bg-submissions-sp { @extend .bg-advertise-with-us-ap; }
+.submissions-info-sp {
+  & > h3 {
+    color: $white;
+    font-family: $gothamBook;
+    font-size: $h2;
+    margin-bottom: 1rem;
+  }
+}
+
+  /*------- Submissions Section Ends -------*/
+
+/*------- Submissions Page Ends -------*/
+
+/*------- Terms and Conditions Page Starts -------*/
+
+  /*------- Terms and Conditions Section Starts -------*/
+
+.bg-terms-and-conditions-tcp { @extend .bg-advertise-with-us-ap; }
+
+  /*------- Terms and Conditions Section Ends -------*/
+
+/*------- Terms and Conditions Page Ends -------*/
+
+/*------- FAQ Page Starts -------*/
+
+  /*------- FAQ Section Starts -------*/
+
+.bg-faq-fp { @extend .bg-advertise-with-us-ap; }
+.faq-accordion-fp {
+  & .accordion-item {
+    border: 1px solid $darkGray;
+    & .accordion-button {
+      background-color: $lightGray;
+      color: $darkGray;
+      font-family: $gothamMedium;
+      font-size: $h3;
+      line-height: 27px;
+      &:not(.collapsed) {
+        background-color: $secondaryColor;
+        &::after {
+          background-image: url("../images/arrow.png");
+        }
+      }
+    }
+    & .accordion-body {
+      color: $darkGray;
+      font-family: $gothamBook;
+      font-size: $h4;
+      & > a {
+        color: $darkGray;
+        text-transform: uppercase;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+  /*------- FAQ Section Ends -------*/
+
+/*------- FAQ Page Ends -------*/

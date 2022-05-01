@@ -26,6 +26,10 @@
   padding-top: 5rem;
 }
 
+.section-heading.yellow > h2 {
+  color: #ffc400;
+}
+
 .section-heading > h2 {
   color: #f7f7f7;
   font-family: "Gotham-Book";
@@ -492,7 +496,7 @@ body {
 /*------- Mobile Sidebar Section Ends -------*/
 /*------- Desktop Header Section Starts -------*/
 .bg-header-desktop {
-  background-color: #00000070;
+  background-color: transparent;
   padding-bottom: 1rem;
   padding-top: 1rem;
   position: absolute;
@@ -577,7 +581,7 @@ body {
 }
 
 .header-social-listing > li {
-  margin-right: 1.5rem;
+  margin-right: 1rem;
 }
 
 @media (max-width: 1199px) {
@@ -823,7 +827,7 @@ body {
 }
 
 .footer-social-listing > li, .story-social-listing-sp > li, .author-social-listing-sp > li {
-  margin-right: 1.5rem;
+  margin-right: 1rem;
 }
 
 .footer-social-listing > li:last-child, .story-social-listing-sp > li:last-child, .author-social-listing-sp > li:last-child {
@@ -888,6 +892,15 @@ body {
 /*------- Scroll To Top Section Ends -------*/
 /*------- Home Page Ends -------*/
 /*------- Stories Page Starts -------*/
+/*------- Banner Section Starts -------*/
+.bg-banner-sp {
+  padding-top: 10rem;
+}
+
+.story-banner-sp > img {
+  margin: 0 auto;
+}
+
 /*------- Story Information Section Starts -------*/
 .bg-story-info-sp {
   padding-bottom: 5rem;
@@ -903,8 +916,9 @@ body {
   color: #b7b7b7;
   cursor: pointer;
   font-family: "Gotham-Book";
-  font-size: 20px;
+  font-size: 18px;
   position: relative;
+  width: 65%;
 }
 
 .accordion-1 > h4:last-of-type {
@@ -936,13 +950,13 @@ body {
 
 .accordion-1 > h4 > span {
   display: block;
-  padding: 10px 15px;
+  padding: 0.5rem 1rem;
 }
 
 .accordion-1 > div {
   background-color: #f7f7f7;
   border: 1px solid #000000;
-  padding: 10px;
+  padding: 0.5rem;
 }
 
 .accordion-1 > div > p {
@@ -960,9 +974,13 @@ body {
 }
 
 .audio-story-sp > a {
-  color: #f7f7f7;
+  border: 1px solid #b7b7b7;
+  color: #b7b7b7;
   display: inline-block;
+  font-family: "Gotham-Book";
+  font-size: 18px;
   margin-bottom: 2rem;
+  padding: 0.5rem 1rem;
 }
 
 .select {
@@ -973,18 +991,20 @@ body {
 }
 
 .select > .selectBtn {
-  background-color: #ffc400;
+  border: 1px solid #b7b7b7;
+  color: #b7b7b7;
   cursor: pointer;
-  padding: 10px;
+  font-family: "Gotham-Book";
+  padding: 0.5rem 0.75rem;
   position: relative;
   width: 100%;
 }
 
 .select > .selectBtn::after {
-  border-right: 2px solid #262626;
-  border-bottom: 2px solid #262626;
+  border-right: 1px solid #b7b7b7;
+  border-bottom: 1px solid #b7b7b7;
   content: "";
-  height: 10px;
+  height: 0.75rem;
   position: absolute;
   right: 15px;
   top: 45%;
@@ -992,7 +1012,7 @@ body {
   transform: translateY(-50%) rotate(45deg);
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
-  width: 10px;
+  width: 0.75rem;
 }
 
 .select > .selectBtn.toggle::after {
@@ -1001,7 +1021,8 @@ body {
 }
 
 .select > .selectDropdown {
-  background-color: #f7f7f7;
+  background-color: #b7b7b7;
+  font-family: "Gotham-Book";
   overflow: hidden;
   position: absolute;
   top: 100%;
@@ -1018,11 +1039,11 @@ body {
 
 .select > .selectDropdown > .option {
   cursor: pointer;
-  padding: 10px;
+  padding: 0.5rem 0.75rem;
 }
 
 .select > .selectDropdown > .option:hover {
-  background-color: #000000;
+  background-color: #262626;
   color: #f7f7f7;
 }
 
@@ -1036,10 +1057,6 @@ body {
   margin-bottom: 4rem;
 }
 
-.story-social-listing-sp {
-  margin-bottom: 1rem;
-}
-
 .story-tags-info-sp > p {
   margin-bottom: 0;
 }
@@ -1047,6 +1064,33 @@ body {
 .story-tags-info-sp > p > a {
   color: #ffc400;
   padding-right: 1rem;
+}
+
+.in-this-story-heading-sp {
+  margin-top: 2rem;
+}
+
+.story-tags-heading-sp > p {
+  margin-bottom: 0.5rem;
+}
+
+.story-tags-listing-sp > li {
+  display: inline-block;
+  margin: 0 1rem 0.5rem 0;
+}
+
+.story-tags-listing-sp > li:last-child {
+  margin-right: 0;
+}
+
+.story-tags-listing-sp > li > a {
+  color: #b7b7b7;
+  font-family: "Gotham-Book";
+  font-size: 18px;
+}
+
+.story-tags-listing-sp > li > a:hover {
+  color: #ffc400;
 }
 
 /*------- Story Information Section Ends -------*/
@@ -1075,4 +1119,109 @@ body {
 
 /*------- Author Information Section Ends -------*/
 /*------- Stories Page Ends -------*/
+/*------- Advertise With Us Page Starts -------*/
+/*------- Advertise With Us Section Starts -------*/
+.bg-advertise-with-us-ap, .bg-submissions-sp, .bg-terms-and-conditions-tcp, .bg-faq-fp {
+  padding-top: 7.5rem;
+}
+
+.advertise-info-ap > p,
+.submissions-info-sp > p {
+  margin-bottom: 2.5rem;
+}
+
+.advertise-info-ap > p > a,
+.submissions-info-sp > p > a {
+  color: #ffc400;
+}
+
+.advertise-info-ap > p > a:hover,
+.submissions-info-sp > p > a:hover {
+  text-decoration: underline;
+}
+
+.form-label-kathaastu {
+  color: #f7f7f7;
+  font-family: "Gotham-Book";
+  font-size: 18px;
+}
+
+.form-control-kathaastu {
+  border: 0;
+  border-radius: 0;
+}
+
+textarea.form-control-kathaastu {
+  height: 150px;
+}
+
+.btn-cancel,
+.btn-submit {
+  font-family: "Gotham-Medium";
+  letter-spacing: 0.05rem;
+  margin-right: 1rem;
+  padding: 0.563rem 0.75rem;
+  text-transform: uppercase;
+}
+
+.btn-submit {
+  margin-right: 0;
+}
+
+/*------- Advertise With Us Section Ends -------*/
+/*------- Advertise With Us Page Ends -------*/
+/*------- Submissions Page Starts -------*/
+/*------- Submissions Section Starts -------*/
+.submissions-info-sp > h3 {
+  color: #ffffff;
+  font-family: "Gotham-Book";
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+/*------- Submissions Section Ends -------*/
+/*------- Submissions Page Ends -------*/
+/*------- Terms and Conditions Page Starts -------*/
+/*------- Terms and Conditions Section Starts -------*/
+/*------- Terms and Conditions Section Ends -------*/
+/*------- Terms and Conditions Page Ends -------*/
+/*------- FAQ Page Starts -------*/
+/*------- FAQ Section Starts -------*/
+.faq-accordion-fp .accordion-item {
+  border: 1px solid #262626;
+}
+
+.faq-accordion-fp .accordion-item .accordion-button {
+  background-color: #b7b7b7;
+  color: #262626;
+  font-family: "Gotham-Medium";
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.faq-accordion-fp .accordion-item .accordion-button:not(.collapsed) {
+  background-color: #ffc400;
+}
+
+.faq-accordion-fp .accordion-item .accordion-button:not(.collapsed)::after {
+  background-image: url("../images/arrow.png");
+}
+
+.faq-accordion-fp .accordion-item .accordion-body {
+  color: #262626;
+  font-family: "Gotham-Book";
+  font-size: 16px;
+}
+
+.faq-accordion-fp .accordion-item .accordion-body > a {
+  color: #262626;
+  text-transform: uppercase;
+}
+
+.faq-accordion-fp .accordion-item .accordion-body > a:hover {
+  text-decoration: underline;
+}
+
+/*------- FAQ Section Ends -------*/
+/*------- FAQ Page Ends -------*/
 /*# sourceMappingURL=style.css.map */
