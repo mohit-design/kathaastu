@@ -71,7 +71,7 @@ $(function() {
       {
         breakpoint: 575,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1
         }
       }
@@ -103,7 +103,7 @@ $(function() {
       {
         breakpoint: 575,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1
         }
       }
