@@ -33,6 +33,12 @@
   -o-filter: $filter-value;
   filter: $filter-value;
 }
+@mixin display($display-value) {
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 @mixin for-lg-tab-only {
   @media (max-width: 1199px) { @content; }
 }

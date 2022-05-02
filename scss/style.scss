@@ -29,6 +29,10 @@
 .container,
 .container-fluid {
   padding-top: 5rem;
+  @include for-mobile-only {
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+  }
 }
 .section-heading {
   &.yellow {
@@ -44,6 +48,7 @@
     @include for-mobile-only {    
       font-size: $h3;
       line-height: 1.5;
+      margin-bottom: 1rem;
     }
   }
 }
@@ -567,11 +572,6 @@ body {
   background: url("../images/banner.jpg") no-repeat top/cover;
   height: 100vh;
   position: relative;
-  @include for-mobile-only {
-    .bg-banner-home {
-      height: 50vh;
-    }
-  }
 }
 .banner-info-home {
   left: 3rem;
@@ -612,6 +612,9 @@ body {
 .slick-slider-latest-trending-stories-home {
   & .slick-slide {
     margin: 0 0.5rem;
+    @include for-mobile-only {
+      margin: 0 0.25rem;
+    }
   }
   & > .slick-prev {
     border: 2px solid $tertiaryColor;
@@ -727,6 +730,9 @@ body {
 .bg-extra-info-home {
   border-bottom: 1px solid $darkGray;
   padding-bottom: 5rem;
+  @include for-mobile-only {
+    padding-bottom: 1.5rem;
+  }
 }
 .extra-info-home {
   & > p {
@@ -747,6 +753,9 @@ body {
 
 .bg-footer {
   padding-bottom: 5rem;
+  @include for-mobile-only {
+    padding-bottom: 1.5rem;
+  }
 }
 .footer-listing {
   & > li {
@@ -766,6 +775,11 @@ body {
   }
 }
 .footer-social-listing {
+  @include display(flex);
+  justify-content: flex-end;
+  @include for-mobile-only {
+    justify-content: flex-start;
+  }
   & > li {
     margin-right: 1rem;
     &:last-child {
@@ -793,6 +807,10 @@ body {
     font-size: $h4;
     margin: 3rem 0 0;
     padding: 3rem 0 0;
+    @include for-mobile-only {
+      margin: 1.5rem 0 0;
+      padding: 1.5rem 0 0;
+    }
     & > span {
       color: $secondaryColor;
     }
@@ -836,19 +854,35 @@ body {
   /*------- Banner Section Starts -------*/
 
 .bg-banner-sp {
-  padding-top: 10rem;
+  padding-top: 7.5rem;
+  @include for-mobile-only {    
+    padding-top: 1rem;
+  }
 }
 .story-banner-sp {
   & > img {
+    height: 380px;
     margin: 0 auto;
+    @include for-mobile-only {
+      height: auto;
+    }
   }
 }
 
   /*------- Story Information Section Starts -------*/
 
-.bg-story-info-sp { padding-bottom: 5rem; }
+.bg-story-info-sp {
+  padding-bottom: 5rem;
+  @include for-mobile-only {
+    padding-bottom: 1.5rem;
+    padding-top: 0;
+  }
+}
 .accordion-1 {
   margin-bottom: 2rem;
+  @include for-mobile-only {
+    margin-bottom: 1rem;
+  }
   & > h4 {
     border: 1px solid $lightGray;
     border-bottom: 0;
@@ -858,6 +892,9 @@ body {
     font-size: $h3;
     position: relative;
     width: 65%;
+    @include for-mobile-only {
+      width: 100%;
+    }
     &:last-of-type {
       border-bottom: 1px solid $lightGray;
     }
@@ -902,6 +939,10 @@ body {
   }
 }
 .audio-story-sp {
+  text-align: center;
+  @include for-mobile-only {
+    text-align: left;
+  }
   & > a {
     border: 1px solid $lightGray;
     color: $lightGray;
@@ -910,6 +951,10 @@ body {
     font-size: $h3;
     margin-bottom: 2rem;
     padding: 0.5rem 1rem;
+    @include for-mobile-only {
+      display: block;
+      margin-bottom: 1rem;
+    }
   }
 }
 .select {
@@ -917,6 +962,9 @@ body {
   margin-left: auto;
   position: relative;
   width: 250px;
+  @include for-mobile-only {
+    width: 100%;
+  }
   & > .selectBtn {
     border: 1px solid $lightGray;
     color: $lightGray;
@@ -973,11 +1021,17 @@ body {
   & > p {
     &:last-of-type {
       margin-bottom: 4rem;
+      @include for-mobile-only {
+        margin-bottom: 1rem;
+      }
     }
   }
 }
 .story-social-listing-sp {
   @extend .footer-social-listing;
+  @include for-mobile-only {
+    margin-bottom: 1rem;
+  }
 }
 .story-tags-info-sp {
   & > p {
@@ -990,6 +1044,9 @@ body {
 }
 .in-this-story-heading-sp {
   margin-top: 2rem;
+  @include for-mobile-only {
+    margin-top: 0;
+  }
 }
 .story-tags-heading-sp {
   & > p {
@@ -1007,6 +1064,9 @@ body {
       color: $lightGray;
       font-family: $gothamBook;
       font-size: $h3;
+      @include for-mobile-only {
+        font-size: $h4;
+      }
       &:hover {
         color: $secondaryColor;
       }
@@ -1018,7 +1078,14 @@ body {
 
   /*------- Author Information Section Starts -------*/
 
-.bg-author-info-sp { border-bottom: 1px solid $darkGray; border-top: 1px solid $darkGray; padding-bottom: 5rem; }
+.bg-author-info-sp {
+  border-bottom: 1px solid $darkGray;
+  border-top: 1px solid $darkGray;
+  padding-bottom: 5rem;
+  @include for-mobile-only {
+    padding-bottom: 1.5rem;
+  }
+}
 .author-profile-sp {
   margin-right: 1.5rem;
   & > img {
@@ -1028,14 +1095,16 @@ body {
   }
 }
 .author-info-sp {
-  & > h5 {
+  & > h3 {
     color: $lightGray;
     font-family: $gothamBook;
+    font-size: $h3;
     margin-bottom: 1rem;
   }
 }
 .author-social-listing-sp {
   @extend .footer-social-listing;
+  justify-content: flex-start;
 }
 
   /*------- Author Information Section Ends -------*/
@@ -1046,11 +1115,15 @@ body {
 
   /*------- Advertise With Us Section Starts -------*/
 
-.bg-advertise-with-us-ap { padding-top: 7.5rem; }
+.bg-advertise-with-us-ap { @extend .bg-banner-sp; }
 .advertise-info-ap,
-.submissions-info-sp {
+.submissions-info-sp,
+.contact-info-cp {
   & > p {
     margin-bottom: 2.5rem;
+    @include for-mobile-only {
+      margin-bottom: 1rem;
+    }
     & > a {
       color: $secondaryColor;
       &:hover {
@@ -1063,6 +1136,9 @@ body {
   color: $tertiaryColor;
   font-family: $gothamBook;
   font-size: $h3;
+  @include for-mobile-only {
+    font-size: $h4;
+  }
 }
 .form-control-kathaastu {
   border: 0;
@@ -1098,6 +1174,9 @@ textarea.form-control-kathaastu {
     font-family: $gothamBook;
     font-size: $h2;
     margin-bottom: 1rem;
+    @include for-mobile-only {
+      font-size: $h3;
+    }
   }
 }
 
@@ -1154,3 +1233,14 @@ textarea.form-control-kathaastu {
   /*------- FAQ Section Ends -------*/
 
 /*------- FAQ Page Ends -------*/
+
+/*------- Contcat Us Page Starts -------*/
+
+  /*------- Contcat Us Section Starts -------*/
+
+.bg-contact-us-cp { @extend .bg-advertise-with-us-ap; }
+.contact-info-cp { @extend .submissions-info-sp; }
+
+  /*------- Contcat Us Section Ends -------*/
+
+/*------- Contcat Us Page Ends -------*/
