@@ -771,6 +771,26 @@ body {
       color: $tertiaryColor;
       font-family: $gothamBook;
       font-size: $h4;
+      position: relative;
+      &::before {
+        background-color: $secondaryColor;
+        content: "";
+        display: block;
+        height: 1px;
+        left: 0;
+        position: absolute;
+        top: 50%;
+        @include transition(0.5s ease);
+        width: 0;
+      }
+      &:hover {
+        color: $secondaryColor;
+        letter-spacing: 0.1rem;
+        padding-left: 2rem;
+        &::before {
+          width: 1.5rem;
+        }
+      }
     }
   }
 }
@@ -895,7 +915,7 @@ body {
     @include for-mobile-only {
       font-size: $h4;
       margin: 0 auto;
-      width: 65%;
+      width: 100%;
     }
     &:last-of-type {
       border-bottom: 1px solid $lightGray;
@@ -923,6 +943,7 @@ body {
       padding: 0.5rem 1rem;
       @include for-mobile-only {
         padding: 0.5rem;
+        text-align: center;
       }
     }
   }
@@ -957,7 +978,7 @@ body {
       font-size: $h4;
       margin-bottom: 1rem;
       padding: 0.5rem;
-      width: 65%;
+      width: 100%;
     }
   }
 }
@@ -968,7 +989,7 @@ body {
   width: 250px;
   @include for-mobile-only {
     margin: 0 auto 2rem;
-    width: 65%;
+    width: 100%;
   }
   & > .selectBtn {
     border: 1px solid $lightGray;

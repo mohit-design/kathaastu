@@ -845,6 +845,30 @@ body {
   color: #f7f7f7;
   font-family: "Gotham-Book";
   font-size: 16px;
+  position: relative;
+}
+
+.footer-listing > li > a::before {
+  background-color: #ffc400;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  width: 0;
+}
+
+.footer-listing > li > a:hover {
+  color: #ffc400;
+  letter-spacing: 0.1rem;
+  padding-left: 2rem;
+}
+
+.footer-listing > li > a:hover::before {
+  width: 1.5rem;
 }
 
 .footer-social-listing, .story-social-listing-sp, .author-social-listing-sp {
@@ -996,7 +1020,7 @@ body {
   .accordion-1 > h4 {
     font-size: 16px;
     margin: 0 auto;
-    width: 65%;
+    width: 100%;
   }
 }
 
@@ -1035,6 +1059,7 @@ body {
 @media (max-width: 575px) {
   .accordion-1 > h4 > span {
     padding: 0.5rem;
+    text-align: center;
   }
 }
 
@@ -1077,7 +1102,7 @@ body {
     font-size: 16px;
     margin-bottom: 1rem;
     padding: 0.5rem;
-    width: 65%;
+    width: 100%;
   }
 }
 
@@ -1091,7 +1116,7 @@ body {
 @media (max-width: 575px) {
   .select {
     margin: 0 auto 2rem;
-    width: 65%;
+    width: 100%;
   }
 }
 
