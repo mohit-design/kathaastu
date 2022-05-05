@@ -893,7 +893,9 @@ body {
     position: relative;
     width: 65%;
     @include for-mobile-only {
-      width: 100%;
+      font-size: $h4;
+      margin: 0 auto;
+      width: 65%;
     }
     &:last-of-type {
       border-bottom: 1px solid $lightGray;
@@ -919,6 +921,9 @@ body {
     & > span {
       display: block;
       padding: 0.5rem 1rem;
+      @include for-mobile-only {
+        padding: 0.5rem;
+      }
     }
   }
   & > div {
@@ -940,9 +945,6 @@ body {
 }
 .audio-story-sp {
   text-align: center;
-  @include for-mobile-only {
-    text-align: left;
-  }
   & > a {
     border: 1px solid $lightGray;
     color: $lightGray;
@@ -952,8 +954,10 @@ body {
     margin-bottom: 2rem;
     padding: 0.5rem 1rem;
     @include for-mobile-only {
-      display: block;
+      font-size: $h4;
       margin-bottom: 1rem;
+      padding: 0.5rem;
+      width: 65%;
     }
   }
 }
@@ -963,7 +967,8 @@ body {
   position: relative;
   width: 250px;
   @include for-mobile-only {
-    width: 100%;
+    margin: 0 auto 2rem;
+    width: 65%;
   }
   & > .selectBtn {
     border: 1px solid $lightGray;

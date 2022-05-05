@@ -994,7 +994,9 @@ body {
 
 @media (max-width: 575px) {
   .accordion-1 > h4 {
-    width: 100%;
+    font-size: 16px;
+    margin: 0 auto;
+    width: 65%;
   }
 }
 
@@ -1030,6 +1032,12 @@ body {
   padding: 0.5rem 1rem;
 }
 
+@media (max-width: 575px) {
+  .accordion-1 > h4 > span {
+    padding: 0.5rem;
+  }
+}
+
 .accordion-1 > div {
   background-color: #f7f7f7;
   border: 1px solid #000000;
@@ -1054,12 +1062,6 @@ body {
   text-align: center;
 }
 
-@media (max-width: 575px) {
-  .audio-story-sp {
-    text-align: left;
-  }
-}
-
 .audio-story-sp > a {
   border: 1px solid #b7b7b7;
   color: #b7b7b7;
@@ -1072,8 +1074,10 @@ body {
 
 @media (max-width: 575px) {
   .audio-story-sp > a {
-    display: block;
+    font-size: 16px;
     margin-bottom: 1rem;
+    padding: 0.5rem;
+    width: 65%;
   }
 }
 
@@ -1086,7 +1090,8 @@ body {
 
 @media (max-width: 575px) {
   .select {
-    width: 100%;
+    margin: 0 auto 2rem;
+    width: 65%;
   }
 }
 
