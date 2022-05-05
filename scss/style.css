@@ -1331,6 +1331,19 @@ textarea.form-control-kathaastu {
   font-family: "Gotham-Book";
   font-size: 24px;
   margin-bottom: 1rem;
+  padding-left: 3rem;
+  position: relative;
+}
+
+.submissions-info-sp > h3::before, .contact-info-cp > h3::before {
+  background-color: #ffffff;
+  content: "";
+  display: block;
+  height: 0.05rem;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  width: 2rem;
 }
 
 @media (max-width: 575px) {

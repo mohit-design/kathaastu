@@ -1174,6 +1174,18 @@ textarea.form-control-kathaastu {
     font-family: $gothamBook;
     font-size: $h2;
     margin-bottom: 1rem;
+    padding-left: 3rem;
+    position: relative;
+    &::before {
+      background-color: $white;
+      content: "";
+      display: block;
+      height: 0.05rem;
+      left: 0;
+      position: absolute;
+      top: 50%;
+      width: 2rem;
+    }
     @include for-mobile-only {
       font-size: $h3;
     }
