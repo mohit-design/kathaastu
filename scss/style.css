@@ -1183,6 +1183,16 @@ body {
   visibility: visible;
 }
 
+.story-heading-sp {
+  text-align: center;
+}
+
+@media (max-width: 575px) {
+  .story-heading-sp {
+    text-align: left;
+  }
+}
+
 .story-info-sp > p:last-of-type {
   margin-bottom: 4rem;
 }

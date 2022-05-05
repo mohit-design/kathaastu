@@ -1043,6 +1043,12 @@ body {
     }
   }
 }
+.story-heading-sp {
+  text-align: center;
+  @include for-mobile-only {
+    text-align: left;
+  }
+}
 .story-info-sp {
   & > p {
     &:last-of-type {
