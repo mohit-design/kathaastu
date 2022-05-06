@@ -26,6 +26,30 @@
   padding-top: 5rem;
 }
 
+@media (max-width: 1199px) {
+  .container,
+  .container-fluid {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .container,
+  .container-fluid {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .container,
+  .container-fluid {
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+  }
+}
+
 @media (max-width: 575px) {
   .container,
   .container-fluid {
@@ -43,6 +67,26 @@
   font-family: "Gotham-Book";
   font-size: 24px;
   margin-bottom: 2rem;
+}
+
+@media (max-width: 1199px) {
+  .section-heading > h2 {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .section-heading > h2 {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-heading > h2 {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
 }
 
 @media (max-width: 575px) {
@@ -65,7 +109,25 @@ li {
 p {
   color: #f7f7f7;
   font-family: "Gotham-Book";
-  font-size: 20px;
+  font-size: 18px;
+}
+
+@media (max-width: 1199px) {
+  p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 991px) {
+  p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  p {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -130,6 +192,17 @@ body {
   }
   .header-logo-mobile > a > img {
     width: 145px;
+  }
+  .places-characters-listing > li {
+    margin-right: 1.5rem;
+  }
+  .places-characters-listing > li:last-child {
+    margin-right: 0;
+  }
+  .places-characters-listing > li > a {
+    color: #f7f7f7;
+    font-family: "Gotham-Book";
+    font-size: 16px;
   }
   .burger-menu {
     cursor: pointer;
@@ -211,6 +284,17 @@ body {
   }
   .header-logo-mobile > a > img {
     width: 145px;
+  }
+  .places-characters-listing > li {
+    margin-right: 1.5rem;
+  }
+  .places-characters-listing > li:last-child {
+    margin-right: 0;
+  }
+  .places-characters-listing > li > a {
+    color: #f7f7f7;
+    font-family: "Gotham-Book";
+    font-size: 16px;
   }
   .burger-menu {
     cursor: pointer;
@@ -820,6 +904,24 @@ body {
   padding-bottom: 5rem;
 }
 
+@media (max-width: 1199px) {
+  .bg-footer {
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .bg-footer {
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .bg-footer {
+    padding-bottom: 2rem;
+  }
+}
+
 @media (max-width: 575px) {
   .bg-footer {
     padding-bottom: 1.5rem;
@@ -880,6 +982,15 @@ body {
           justify-content: flex-end;
 }
 
+@media (max-width: 767px) {
+  .footer-social-listing, .story-social-listing-sp, .author-social-listing-sp {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 2rem;
+  }
+}
+
 @media (max-width: 575px) {
   .footer-social-listing, .story-social-listing-sp, .author-social-listing-sp {
     -webkit-box-pack: start;
@@ -917,6 +1028,27 @@ body {
   font-size: 16px;
   margin: 3rem 0 0;
   padding: 3rem 0 0;
+}
+
+@media (max-width: 1199px) {
+  .copyright-info > p {
+    margin: 2rem 0 0;
+    padding: 2rem 0 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .copyright-info > p {
+    margin: 2rem 0 0;
+    padding: 2rem 0 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .copyright-info > p {
+    margin: 1.5rem 0 0;
+    padding: 1.5rem 0 0;
+  }
 }
 
 @media (max-width: 575px) {
@@ -967,6 +1099,12 @@ body {
 }
 
 @media (max-width: 575px) {
+  .bg-banner-sp, .bg-advertise-with-us-ap, .bg-submissions-sp, .bg-terms-and-conditions-tcp, .bg-faq-fp, .bg-contact-us-cp {
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 991px) {
   .bg-banner-sp, .bg-advertise-with-us-ap, .bg-submissions-sp, .bg-terms-and-conditions-tcp, .bg-faq-fp, .bg-contact-us-cp {
     padding-top: 1rem;
   }
@@ -1203,6 +1341,12 @@ body {
   }
 }
 
+.story-social-listing-sp {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 @media (max-width: 575px) {
   .story-social-listing-sp {
     margin-bottom: 1rem;
@@ -1298,33 +1442,39 @@ body {
 /*------- Stories Page Ends -------*/
 /*------- Advertise With Us Page Starts -------*/
 /*------- Advertise With Us Section Starts -------*/
-.advertise-info-ap > p,
-.submissions-info-sp > p,
-.contact-info-cp > p,
-.contact-info-cp > p {
+.advertise-info-ap > p, .submissions-info-sp > p, .terms-conditions-info-tcp > p, .contact-info-cp > p {
   margin-bottom: 2.5rem;
 }
 
-@media (max-width: 575px) {
-  .advertise-info-ap > p,
-  .submissions-info-sp > p,
-  .contact-info-cp > p,
-  .contact-info-cp > p {
+@media (max-width: 1199px) {
+  .advertise-info-ap > p, .submissions-info-sp > p, .terms-conditions-info-tcp > p, .contact-info-cp > p {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .advertise-info-ap > p, .submissions-info-sp > p, .terms-conditions-info-tcp > p, .contact-info-cp > p {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .advertise-info-ap > p, .submissions-info-sp > p, .terms-conditions-info-tcp > p, .contact-info-cp > p {
     margin-bottom: 1rem;
   }
 }
 
-.advertise-info-ap > p > a,
-.submissions-info-sp > p > a,
-.contact-info-cp > p > a,
-.contact-info-cp > p > a {
+@media (max-width: 575px) {
+  .advertise-info-ap > p, .submissions-info-sp > p, .terms-conditions-info-tcp > p, .contact-info-cp > p {
+    margin-bottom: 1rem;
+  }
+}
+
+.advertise-info-ap > p > a, .submissions-info-sp > p > a, .terms-conditions-info-tcp > p > a, .contact-info-cp > p > a {
   color: #ffc400;
 }
 
-.advertise-info-ap > p > a:hover,
-.submissions-info-sp > p > a:hover,
-.contact-info-cp > p > a:hover,
-.contact-info-cp > p > a:hover {
+.advertise-info-ap > p > a:hover, .submissions-info-sp > p > a:hover, .terms-conditions-info-tcp > p > a:hover, .contact-info-cp > p > a:hover {
   text-decoration: underline;
 }
 
@@ -1366,7 +1516,7 @@ textarea.form-control-kathaastu {
 /*------- Advertise With Us Page Ends -------*/
 /*------- Submissions Page Starts -------*/
 /*------- Submissions Section Starts -------*/
-.submissions-info-sp > h3, .contact-info-cp > h3 {
+.submissions-info-sp > h3, .terms-conditions-info-tcp > h3, .contact-info-cp > h3 {
   color: #ffffff;
   font-family: "Gotham-Book";
   font-size: 24px;
@@ -1375,7 +1525,7 @@ textarea.form-control-kathaastu {
   position: relative;
 }
 
-.submissions-info-sp > h3::before, .contact-info-cp > h3::before {
+.submissions-info-sp > h3::before, .terms-conditions-info-tcp > h3::before, .contact-info-cp > h3::before {
   background-color: #ffffff;
   content: "";
   display: block;
@@ -1386,8 +1536,26 @@ textarea.form-control-kathaastu {
   width: 2rem;
 }
 
+@media (max-width: 1199px) {
+  .submissions-info-sp > h3, .terms-conditions-info-tcp > h3, .contact-info-cp > h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 991px) {
+  .submissions-info-sp > h3, .terms-conditions-info-tcp > h3, .contact-info-cp > h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .submissions-info-sp > h3, .terms-conditions-info-tcp > h3, .contact-info-cp > h3 {
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 575px) {
-  .submissions-info-sp > h3, .contact-info-cp > h3 {
+  .submissions-info-sp > h3, .terms-conditions-info-tcp > h3, .contact-info-cp > h3 {
     font-size: 18px;
   }
 }
@@ -1396,10 +1564,40 @@ textarea.form-control-kathaastu {
 /*------- Submissions Page Ends -------*/
 /*------- Terms and Conditions Page Starts -------*/
 /*------- Terms and Conditions Section Starts -------*/
+@media (max-width: 1199px) {
+  .terms-conditions-info-tcp {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .terms-conditions-info-tcp {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .terms-conditions-info-tcp {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .terms-conditions-info-tcp {
+    margin-top: 0;
+  }
+}
+
 /*------- Terms and Conditions Section Ends -------*/
 /*------- Terms and Conditions Page Ends -------*/
 /*------- FAQ Page Starts -------*/
 /*------- FAQ Section Starts -------*/
+@media (max-width: 1199px) {
+  .faq-accordion-fp {
+    margin-top: 1rem;
+  }
+}
+
 .faq-accordion-fp .accordion-item {
   border: 1px solid #262626;
 }
@@ -1418,6 +1616,13 @@ textarea.form-control-kathaastu {
 
 .faq-accordion-fp .accordion-item .accordion-button:not(.collapsed)::after {
   background-image: url("../images/arrow.png");
+}
+
+.faq-accordion-fp .accordion-item .accordion-button:focus {
+  -webkit-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
 }
 
 .faq-accordion-fp .accordion-item .accordion-body {

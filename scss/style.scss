@@ -29,6 +29,18 @@
 .container,
 .container-fluid {
   padding-top: 5rem;
+  @include for-lg-tab-only {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+  @include for-md-tab-only {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+  @include for-sm-tab-only {
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+  }
   @include for-mobile-only {
     padding-bottom: 1.5rem;
     padding-top: 1.5rem;
@@ -45,6 +57,17 @@
     font-family: $gothamBook;
     font-size: $h2;
     margin-bottom: 2rem;
+    @include for-lg-tab-only {
+      margin-bottom: 1rem;
+    }
+    @include for-md-tab-only {
+      margin-bottom: 1rem;
+    }
+    @include for-sm-tab-only {    
+      font-size: $h3;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
     @include for-mobile-only {    
       font-size: $h3;
       line-height: 1.5;
@@ -63,6 +86,15 @@ p {
   color: $tertiaryColor;
   font-family: $gothamBook;
   font-size: $p;
+  @include for-lg-tab-only {
+    font-size: $h3;
+  }
+  @include for-md-tab-only {
+    font-size: $h3;
+  }
+  @include for-sm-tab-only {    
+    font-size: $h4;
+  }
   @include for-mobile-only {    
     font-size: $h4;
   }
@@ -120,6 +152,19 @@ body {
       display: inline-block;
       & > img {
         width: 145px;
+      }
+    }
+  }
+  .places-characters-listing {
+    & > li {
+      margin-right: 1.5rem;
+      &:last-child {
+        margin-right: 0;
+      }
+      & > a {
+        color: $tertiaryColor;
+        font-family: $gothamBook;
+        font-size: $h4;
       }
     }
   }
@@ -189,6 +234,19 @@ body {
       display: inline-block;
       & > img {
         width: 145px;
+      }
+    }
+  }
+  .places-characters-listing {
+    & > li {
+      margin-right: 1.5rem;
+      &:last-child {
+        margin-right: 0;
+      }
+      & > a {
+        color: $tertiaryColor;
+        font-family: $gothamBook;
+        font-size: $h4;
       }
     }
   }
@@ -753,6 +811,15 @@ body {
 
 .bg-footer {
   padding-bottom: 5rem;
+  @include for-lg-tab-only {
+    padding-bottom: 2rem;
+  }
+  @include for-md-tab-only {
+    padding-bottom: 2rem;
+  }
+  @include for-sm-tab-only {
+    padding-bottom: 2rem;
+  }
   @include for-mobile-only {
     padding-bottom: 1.5rem;
   }
@@ -797,6 +864,10 @@ body {
 .footer-social-listing {
   @include display(flex);
   justify-content: flex-end;
+  @include for-sm-tab-only {
+    justify-content: center;
+    margin-top: 2rem;
+  }
   @include for-mobile-only {
     justify-content: flex-start;
   }
@@ -827,6 +898,18 @@ body {
     font-size: $h4;
     margin: 3rem 0 0;
     padding: 3rem 0 0;
+    @include for-lg-tab-only {
+      margin: 2rem 0 0;
+      padding: 2rem 0 0;
+    }
+    @include for-md-tab-only {
+      margin: 2rem 0 0;
+      padding: 2rem 0 0;
+    }
+    @include for-sm-tab-only {
+      margin: 1.5rem 0 0;
+      padding: 1.5rem 0 0;
+    }
     @include for-mobile-only {
       margin: 1.5rem 0 0;
       padding: 1.5rem 0 0;
@@ -876,6 +959,9 @@ body {
 .bg-banner-sp {
   padding-top: 7.5rem;
   @include for-mobile-only {    
+    padding-top: 1rem;
+  }
+  @include for-md-tab-only {
     padding-top: 1rem;
   }
 }
@@ -1061,6 +1147,7 @@ body {
 }
 .story-social-listing-sp {
   @extend .footer-social-listing;
+  justify-content: flex-start;
   @include for-mobile-only {
     margin-bottom: 1rem;
   }
@@ -1148,11 +1235,18 @@ body {
   /*------- Advertise With Us Section Starts -------*/
 
 .bg-advertise-with-us-ap { @extend .bg-banner-sp; }
-.advertise-info-ap,
-.submissions-info-sp,
-.contact-info-cp {
+.advertise-info-ap {
   & > p {
     margin-bottom: 2.5rem;
+    @include for-lg-tab-only {
+      margin-bottom: 1.5rem;
+    }
+    @include for-md-tab-only {
+      margin-bottom: 1.5rem;
+    }
+    @include for-sm-tab-only {
+      margin-bottom: 1rem;
+    }
     @include for-mobile-only {
       margin-bottom: 1rem;
     }
@@ -1201,6 +1295,7 @@ textarea.form-control-kathaastu {
 
 .bg-submissions-sp { @extend .bg-advertise-with-us-ap; }
 .submissions-info-sp {
+  @extend .advertise-info-ap;
   & > h3 {
     color: $white;
     font-family: $gothamBook;
@@ -1218,6 +1313,15 @@ textarea.form-control-kathaastu {
       top: 50%;
       width: 2rem;
     }
+    @include for-lg-tab-only {
+      font-size: $h3;
+    }
+    @include for-md-tab-only {
+      font-size: $h3;
+    }
+    @include for-sm-tab-only {
+      font-size: $h3;
+    }
     @include for-mobile-only {
       font-size: $h3;
     }
@@ -1233,6 +1337,21 @@ textarea.form-control-kathaastu {
   /*------- Terms and Conditions Section Starts -------*/
 
 .bg-terms-and-conditions-tcp { @extend .bg-advertise-with-us-ap; }
+.terms-conditions-info-tcp {
+    @extend .submissions-info-sp;
+    @include for-lg-tab-only {
+      margin-top: 1.5rem;
+    }
+    @include for-md-tab-only {
+      margin-top: 1.5rem;
+    }
+    @include for-sm-tab-only {
+      margin-top: 0;
+    }
+    @include for-mobile-only {
+      margin-top: 0;
+    }
+}
 
   /*------- Terms and Conditions Section Ends -------*/
 
@@ -1244,6 +1363,9 @@ textarea.form-control-kathaastu {
 
 .bg-faq-fp { @extend .bg-advertise-with-us-ap; }
 .faq-accordion-fp {
+  @include for-lg-tab-only {
+    margin-top: 1rem;
+  }
   & .accordion-item {
     border: 1px solid $darkGray;
     & .accordion-button {
@@ -1257,6 +1379,9 @@ textarea.form-control-kathaastu {
         &::after {
           background-image: url("../images/arrow.png");
         }
+      }
+      &:focus {
+        @include box-shadow(none);
       }
     }
     & .accordion-body {
@@ -1283,7 +1408,10 @@ textarea.form-control-kathaastu {
   /*------- Contcat Us Section Starts -------*/
 
 .bg-contact-us-cp { @extend .bg-advertise-with-us-ap; }
-.contact-info-cp { @extend .submissions-info-sp; }
+.contact-info-cp {
+  @extend .advertise-info-ap;
+  @extend .submissions-info-sp;
+}
 
   /*------- Contcat Us Section Ends -------*/
 
