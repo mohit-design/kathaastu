@@ -993,6 +993,9 @@ body {
 
 .bg-story-info-sp {
   padding-bottom: 5rem;
+  @include for-md-tab-only {
+    padding-bottom: 1.5rem;
+  }
   @include for-mobile-only {
     padding-bottom: 1.5rem;
     padding-top: 0;
@@ -1013,7 +1016,11 @@ body {
     margin: 0;
     position: relative;
     width: 65%;
+    @include for-lg-tab-only {
+      width: 100%;
+    }
     @include for-md-tab-only {
+      font-size: $h4;
       width: 100%;
     }
     @include for-sm-tab-only {
@@ -1083,6 +1090,9 @@ body {
     font-size: $h3;
     margin-bottom: 2rem;
     padding: 0.5rem 1rem;
+    @include for-md-tab-only {
+      font-size: $h4;
+    }
     @include for-sm-tab-only {
       width: 100%;
     }
@@ -1117,6 +1127,9 @@ body {
     padding: 0.594rem 0.75rem;
     position: relative;
     width: 100%;
+    @include for-md-tab-only {
+      font-size: $h4;
+    }
     &::after {
       border-right: 1px solid $lightGray;
       border-bottom: 1px solid $lightGray;
@@ -1171,10 +1184,18 @@ body {
   & > p {
     &:last-of-type {
       margin-bottom: 4rem;
+      @include for-sm-tab-only {
+        margin-bottom: 2rem;
+      }
       @include for-mobile-only {
         margin-bottom: 1rem;
       }
     }
+  }
+}
+.accordion-story-ahead-sp {
+  & > h4 {
+    width: 100%;
   }
 }
 .story-social-listing-sp {
