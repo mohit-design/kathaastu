@@ -854,6 +854,19 @@ body {
         color: $secondaryColor;
         letter-spacing: 0.1rem;
         padding-left: 2rem;
+        @include for-lg-tab-only {
+          letter-spacing: 0.025rem;
+        }
+        &::before {
+          width: 1.5rem;
+        }
+      }
+    }
+    &.active {
+      & > a {
+        color: $secondaryColor;
+        letter-spacing: 0.1rem;
+        padding-left: 2rem;
         &::before {
           width: 1.5rem;
         }
@@ -870,6 +883,7 @@ body {
   }
   @include for-mobile-only {
     justify-content: flex-start;
+    margin-top: 0;
   }
   & > li {
     margin-right: 1rem;
@@ -996,8 +1010,17 @@ body {
     cursor: pointer;
     font-family: $gothamBook;
     font-size: $h3;
+    margin: 0;
     position: relative;
     width: 65%;
+    @include for-md-tab-only {
+      width: 100%;
+    }
+    @include for-sm-tab-only {
+      font-size: $h4;
+      margin: 0 auto;
+      width: 100%;
+    }
     @include for-mobile-only {
       font-size: $h4;
       margin: 0 auto;
@@ -1026,7 +1049,7 @@ body {
     }
     & > span {
       display: block;
-      padding: 0.5rem 1rem;
+      padding: 0.669rem 1rem;
       @include for-mobile-only {
         padding: 0.5rem;
         text-align: center;
@@ -1060,6 +1083,9 @@ body {
     font-size: $h3;
     margin-bottom: 2rem;
     padding: 0.5rem 1rem;
+    @include for-sm-tab-only {
+      width: 100%;
+    }
     @include for-mobile-only {
       font-size: $h4;
       margin-bottom: 1rem;
@@ -1073,6 +1099,12 @@ body {
   margin-left: auto;
   position: relative;
   width: 250px;
+  @include for-md-tab-only {
+    width: 100%;
+  }
+  @include for-sm-tab-only {
+    width: 100%;
+  }
   @include for-mobile-only {
     margin: 0 auto 2rem;
     width: 100%;
@@ -1082,7 +1114,7 @@ body {
     color: $lightGray;
     cursor: pointer;
     font-family: $gothamBook;
-    padding: 0.5rem 0.75rem;
+    padding: 0.594rem 0.75rem;
     position: relative;
     width: 100%;
     &::after {
@@ -1200,9 +1232,11 @@ body {
 .bg-author-info-sp {
   border-bottom: 1px solid $darkGray;
   border-top: 1px solid $darkGray;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
   @include for-mobile-only {
     padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
   }
 }
 .author-profile-sp {
@@ -1230,11 +1264,61 @@ body {
 
 /*------- Stories Page Ends -------*/
 
+/*------- Blog Page Starts -------*/
+
+  /*------- Blog Section Starts -------*/
+
+.bg-blog-bp {
+  @extend .bg-banner-sp;
+  @include for-lg-tab-only {
+    padding-bottom: 0;
+  }
+  @include for-md-tab-only {
+    padding-bottom: 0;
+  }
+  @include for-sm-tab-only {
+    padding-bottom: 0;
+  }
+  @include for-mobile-only {
+    padding-bottom: 1rem;
+  }
+}
+.blog-banner-bp {
+  & > img {
+    margin-bottom: 2rem;
+    @include for-mobile-only {
+      margin-bottom: 1rem;
+    }
+  }
+}
+.blog-section-heading {
+  text-align: center;
+}
+.blog-social-listing-bp {
+  margin-bottom: 3rem;
+  @include for-sm-tab-only {
+    margin-top: 0;
+  }
+  @include for-mobile-only {
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+  }
+}
+
+  /*------- Blog Section Ends -------*/
+
+/*------- Blog Page Ends -------*/
+
 /*------- Advertise With Us Page Starts -------*/
 
   /*------- Advertise With Us Section Starts -------*/
 
-.bg-advertise-with-us-ap { @extend .bg-banner-sp; }
+.bg-advertise-with-us-ap {
+  @extend .bg-banner-sp;
+  @include for-mobile-only {
+    padding-bottom: 0;
+  }
+}
 .advertise-info-ap {
   & > p {
     margin-bottom: 2.5rem;
@@ -1336,9 +1420,16 @@ textarea.form-control-kathaastu {
 
   /*------- Terms and Conditions Section Starts -------*/
 
-.bg-terms-and-conditions-tcp { @extend .bg-advertise-with-us-ap; }
+.bg-terms-and-conditions-tcp {
+  @extend .bg-advertise-with-us-ap;
+}
 .terms-conditions-info-tcp {
     @extend .submissions-info-sp;
+    & > h3 {
+      @include for-mobile-only {
+        line-height: 1.5;
+      }
+    }
     @include for-lg-tab-only {
       margin-top: 1.5rem;
     }
@@ -1366,8 +1457,17 @@ textarea.form-control-kathaastu {
   @include for-lg-tab-only {
     margin-top: 1rem;
   }
+  @include for-md-tab-only {
+    margin-top: 0;
+  }
+  @include for-sm-tab-only {
+    margin-top: 0;
+  }
+  @include for-mobile-only {
+    margin-top: 0;
+  }
   & .accordion-item {
-    border: 1px solid $darkGray;
+    border: 1px solid $primaryColor;
     & .accordion-button {
       background-color: $lightGray;
       color: $darkGray;
@@ -1407,7 +1507,9 @@ textarea.form-control-kathaastu {
 
   /*------- Contcat Us Section Starts -------*/
 
-.bg-contact-us-cp { @extend .bg-advertise-with-us-ap; }
+.bg-contact-us-cp {
+  @extend .bg-advertise-with-us-ap;
+}
 .contact-info-cp {
   @extend .advertise-info-ap;
   @extend .submissions-info-sp;
