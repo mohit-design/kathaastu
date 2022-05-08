@@ -693,7 +693,7 @@ body {
     z-index: 1;
     @include for-mobile-only {    
       height: 2.5rem;
-      right: 3.5rem;
+      right: 3rem;
       width: 2.5rem;
     }
     &::before {

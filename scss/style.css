@@ -784,7 +784,7 @@ body {
 @media (max-width: 575px) {
   .slick-slider-latest-trending-stories-home > .slick-prev, .slick-slider-popular-stories-home > .slick-prev, .slick-slider-recommended-stories-home > .slick-prev, .slick-slider-new-stories-home > .slick-prev {
     height: 2.5rem;
-    right: 3.5rem;
+    right: 3rem;
     width: 2.5rem;
   }
 }
