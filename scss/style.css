@@ -84,7 +84,7 @@
 @media (max-width: 767px) {
   .section-heading > h2 {
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 1.5rem;
     margin-bottom: 1rem;
   }
 }
@@ -92,7 +92,7 @@
 @media (max-width: 575px) {
   .section-heading > h2 {
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 1.5rem;
     margin-bottom: 1rem;
   }
 }
@@ -712,12 +712,25 @@ body {
   position: relative;
 }
 
+@media (max-width: 575px) {
+  .bg-banner-home {
+    height: 55vh;
+  }
+}
+
 .banner-info-home {
   left: 3rem;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+@media (max-width: 575px) {
+  .banner-info-home {
+    left: 0;
+    padding: 0 1rem;
+  }
 }
 
 .banner-info-home > h1 {

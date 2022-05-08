@@ -65,12 +65,12 @@
     }
     @include for-sm-tab-only {    
       font-size: $h3;
-      line-height: 1.5;
+      line-height: 1.5rem;
       margin-bottom: 1rem;
     }
     @include for-mobile-only {    
       font-size: $h3;
-      line-height: 1.5;
+      line-height: 1.5rem;
       margin-bottom: 1rem;
     }
   }
@@ -630,12 +630,19 @@ body {
   background: url("../images/banner.jpg") no-repeat top/cover;
   height: 100vh;
   position: relative;
+  @include for-mobile-only {
+    height: 55vh;
+  }
 }
 .banner-info-home {
   left: 3rem;
   position: absolute;
   top: 50%;
   @include transform(translateY(-50%));
+  @include for-mobile-only {
+    left: 0;
+    padding: 0 1rem;
+  }
   & > h1 {
     color: $tertiaryColor;
     margin-bottom: 1.5rem;
