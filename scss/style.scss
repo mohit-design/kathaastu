@@ -21,6 +21,10 @@
   font-family: $gothamBold;
   src: url("../fonts/Gotham-Bold.ttf");
 }
+@font-face {
+  font-family: $LobsterRegular;
+  src: url("../fonts/Lobster-Regular.ttf");
+}
 
 /*------- Font Family Ends -------*/
 
@@ -1019,7 +1023,7 @@ body {
     border-bottom: 0;
     color: $lightGray;
     cursor: pointer;
-    font-family: $gothamBook;
+    font-family: $LobsterRegular;
     font-size: $h3;
     margin: 0;
     position: relative;
@@ -1039,7 +1043,7 @@ body {
     @include for-mobile-only {
       font-size: $h4;
       margin: 0 auto;
-      width: 100%;
+      width: 75%;
     }
     &:last-of-type {
       border-bottom: 1px solid $lightGray;
@@ -1094,7 +1098,7 @@ body {
     border: 1px solid $lightGray;
     color: $lightGray;
     display: inline-block;
-    font-family: $gothamBook;
+    font-family: $LobsterRegular;
     font-size: $h3;
     margin-bottom: 2rem;
     padding: 0.5rem 1rem;
@@ -1108,7 +1112,7 @@ body {
       font-size: $h4;
       margin-bottom: 1rem;
       padding: 0.5rem;
-      width: 100%;
+      width: 75%;
     }
   }
 }
@@ -1125,13 +1129,14 @@ body {
   }
   @include for-mobile-only {
     margin: 0 auto 2rem;
-    width: 100%;
+    text-align: center;
+    width: 75%;
   }
   & > .selectBtn {
     border: 1px solid $lightGray;
     color: $lightGray;
     cursor: pointer;
-    font-family: $gothamBook;
+    font-family: $LobsterRegular;
     padding: 0.594rem 0.75rem;
     position: relative;
     width: 100%;
@@ -1554,10 +1559,19 @@ textarea.form-control-kathaastu {
 
 .bg-places-pp {
   @extend .bg-banner-sp;
+  @include for-mobile-only {
+    padding-bottom: 0;
+  }
 }
 .places-info-pp {
   & > p {
     margin-bottom: 0;
+    @include for-sm-tab-only {
+      margin-bottom: 1rem;
+    }
+    @include for-mobile-only {
+      margin-bottom: 1rem;
+    }
   }
 }
 .form-control-kathaastu {
@@ -1575,13 +1589,70 @@ textarea.form-control-kathaastu {
     & > img {
       @include border-radius(14px);
       margin-bottom: 1.5rem;
+      @include for-mobile-only {
+        margin-bottom: 1rem;
+      }
     }
     &:hover {
       @include filter(brightness(40%));
     }
   }
 }
+.slick-slider-read-stories-pp {
+  @extend .slick-slider-latest-trending-stories-home;
+}
+.slick-slider-explore-stories-pp {
+  @extend .slick-slider-read-stories-pp;
+}
 
   /*------- Places Section Ends -------*/
 
+  /*------- Read Stories Section Starts -------*/
+
+.bg-read-stories-pp {
+  @include for-mobile-only {
+    padding-bottom: 0;
+  }
+}
+
+  /*------- Read Stories Section Ends -------*/
+
+  /*------- Explore Stories Section Starts -------*/
+
+.bg-explore-stories-pp {
+  @include for-mobile-only {
+    padding-bottom: 0;
+  }
+}
+
+  /*------- Explore Stories Section Ends -------*/
+
+  /*------- Extra Places Section Starts -------*/
+
+.bg-extra-places-pp {
+  @include for-mobile-only {
+    padding-bottom: 0;
+  }
+}
+
+  /*------- Extra Places Section Ends -------*/
+
 /*------- Places Page Ends -------*/
+
+/*------- Character Page Starts -------*/
+
+  /*------- Banner Section Starts -------*/
+
+.bg-banner-cp {
+  @extend .bg-banner-sp;
+}
+.character-banner-cp {
+  @extend .story-banner-sp;
+}
+.character-banner-info-cp {
+  margin-top: 1.5rem;
+}
+
+  /*------- Banner Section Ends -------*/
+
+/*------- Character Page Ends -------*/
