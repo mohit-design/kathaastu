@@ -20,8 +20,8 @@
 }
 
 @font-face {
-  font-family: "Lobster-Regular";
-  src: url("../fonts/Lobster-Regular.ttf");
+  font-family: "RobotoCondensed-Light";
+  src: url("../fonts/RobotoCondensed-Light.ttf");
 }
 
 /*------- Font Family Ends -------*/
@@ -438,7 +438,7 @@ body {
   display: none;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 991px) {
   .fixed-sidebar {
     background-color: #000000;
     display: -webkit-box;
@@ -540,7 +540,7 @@ body {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 575px) {
   .fixed-sidebar {
     background-color: #000000;
     display: -webkit-box;
@@ -633,7 +633,13 @@ body {
   margin-right: 1.5rem;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 1199px) {
+  .menu-listing > li {
+    margin-right: 1.25rem;
+  }
+}
+
+@media (max-width: 991px) {
   .menu-listing > li {
     margin-bottom: 1rem;
     margin-right: 0;
@@ -647,16 +653,10 @@ body {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 575px) {
   .menu-listing > li {
     margin-bottom: 1rem;
     margin-right: 0;
-  }
-}
-
-@media (max-width: 1199px) {
-  .menu-listing > li {
-    margin-right: 1.25rem;
   }
 }
 
@@ -668,6 +668,12 @@ body {
   color: #f7f7f7;
   font-family: "Gotham-Book";
   font-size: 16px;
+}
+
+@media (max-width: 575px) {
+  .menu-listing > li > a {
+    font-family: "RobotoCondensed-Light";
+  }
 }
 
 .menu-listing > li:hover > a {
@@ -1190,7 +1196,7 @@ body {
   border-bottom: 0;
   color: #b7b7b7;
   cursor: pointer;
-  font-family: "Lobster-Regular";
+  font-family: "RobotoCondensed-Light";
   font-size: 18px;
   margin: 0;
   position: relative;
@@ -1293,7 +1299,7 @@ body {
   border: 1px solid #b7b7b7;
   color: #b7b7b7;
   display: inline-block;
-  font-family: "Lobster-Regular";
+  font-family: "RobotoCondensed-Light";
   font-size: 18px;
   margin-bottom: 2rem;
   padding: 0.5rem 1rem;
@@ -1351,7 +1357,7 @@ body {
   border: 1px solid #b7b7b7;
   color: #b7b7b7;
   cursor: pointer;
-  font-family: "Lobster-Regular";
+  font-family: "RobotoCondensed-Light";
   padding: 0.594rem 0.75rem;
   position: relative;
   width: 100%;
