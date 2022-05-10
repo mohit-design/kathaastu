@@ -899,6 +899,7 @@ body {
 }
 
 .extra-info-home > p {
+  line-height: 1.7rem;
   margin-bottom: 1rem;
 }
 
@@ -1124,18 +1125,18 @@ body {
 /*------- Home Page Ends -------*/
 /*------- Stories Page Starts -------*/
 /*------- Banner Section Starts -------*/
-.bg-banner-sp, .bg-blog-bp, .bg-advertise-with-us-ap, .bg-submissions-sp, .bg-terms-and-conditions-tcp, .bg-faq-fp, .bg-contact-us-cp {
+.bg-banner-sp, .bg-blog-bp, .bg-advertise-with-us-ap, .bg-submissions-sp, .bg-terms-and-conditions-tcp, .bg-faq-fp, .bg-contact-us-cp, .bg-places-pp {
   padding-top: 7.5rem;
 }
 
-@media (max-width: 575px) {
-  .bg-banner-sp, .bg-blog-bp, .bg-advertise-with-us-ap, .bg-submissions-sp, .bg-terms-and-conditions-tcp, .bg-faq-fp, .bg-contact-us-cp {
+@media (max-width: 991px) {
+  .bg-banner-sp, .bg-blog-bp, .bg-advertise-with-us-ap, .bg-submissions-sp, .bg-terms-and-conditions-tcp, .bg-faq-fp, .bg-contact-us-cp, .bg-places-pp {
     padding-top: 1rem;
   }
 }
 
-@media (max-width: 991px) {
-  .bg-banner-sp, .bg-blog-bp, .bg-advertise-with-us-ap, .bg-submissions-sp, .bg-terms-and-conditions-tcp, .bg-faq-fp, .bg-contact-us-cp {
+@media (max-width: 575px) {
+  .bg-banner-sp, .bg-blog-bp, .bg-advertise-with-us-ap, .bg-submissions-sp, .bg-terms-and-conditions-tcp, .bg-faq-fp, .bg-contact-us-cp, .bg-places-pp {
     padding-top: 1rem;
   }
 }
@@ -1831,8 +1832,42 @@ textarea.form-control-kathaastu {
 
 /*------- FAQ Section Ends -------*/
 /*------- FAQ Page Ends -------*/
-/*------- Contcat Us Page Starts -------*/
-/*------- Contcat Us Section Starts -------*/
-/*------- Contcat Us Section Ends -------*/
-/*------- Contcat Us Page Ends -------*/
+/*------- Contact Us Page Starts -------*/
+/*------- Contact Us Section Starts -------*/
+/*------- Contact Us Section Ends -------*/
+/*------- Contact Us Page Ends -------*/
+/*------- Places Page Starts -------*/
+/*------- Places Section Starts -------*/
+.places-info-pp > p {
+  margin-bottom: 0;
+}
+
+.form-control-kathaastu + .input-group-text {
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.row-box-places-images-pp {
+  margin-top: 1.5rem;
+}
+
+.box-places-images-pp > a {
+  display: block;
+}
+
+.box-places-images-pp > a > img {
+  border-radius: 14px;
+  margin-bottom: 1.5rem;
+}
+
+.box-places-images-pp > a:hover {
+  -webkit-filter: brightness(40%);
+  -moz-filter: brightness(40%);
+  -ms-filter: brightness(40%);
+  -o-filter: brightness(40%);
+  filter: brightness(40%);
+}
+
+/*------- Places Section Ends -------*/
+/*------- Places Page Ends -------*/
 /*# sourceMappingURL=style.css.map */

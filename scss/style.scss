@@ -801,6 +801,7 @@ body {
 }
 .extra-info-home {
   & > p {
+    line-height: 1.7rem;
     margin-bottom: 1rem;
     & > span,
     & > a {
@@ -979,10 +980,10 @@ body {
 
 .bg-banner-sp {
   padding-top: 7.5rem;
-  @include for-mobile-only {    
+  @include for-md-tab-only {
     padding-top: 1rem;
   }
-  @include for-md-tab-only {
+  @include for-mobile-only {    
     padding-top: 1rem;
   }
 }
@@ -1531,9 +1532,9 @@ textarea.form-control-kathaastu {
 
 /*------- FAQ Page Ends -------*/
 
-/*------- Contcat Us Page Starts -------*/
+/*------- Contact Us Page Starts -------*/
 
-  /*------- Contcat Us Section Starts -------*/
+  /*------- Contact Us Section Starts -------*/
 
 .bg-contact-us-cp {
   @extend .bg-advertise-with-us-ap;
@@ -1543,6 +1544,44 @@ textarea.form-control-kathaastu {
   @extend .submissions-info-sp;
 }
 
-  /*------- Contcat Us Section Ends -------*/
+  /*------- Contact Us Section Ends -------*/
 
-/*------- Contcat Us Page Ends -------*/
+/*------- Contact Us Page Ends -------*/
+
+/*------- Places Page Starts -------*/
+
+  /*------- Places Section Starts -------*/
+
+.bg-places-pp {
+  @extend .bg-banner-sp;
+}
+.places-info-pp {
+  & > p {
+    margin-bottom: 0;
+  }
+}
+.form-control-kathaastu {
+  & + .input-group-text {
+    @include border-radius(0);
+    cursor: pointer;
+  }
+}
+.row-box-places-images-pp {
+  margin-top: 1.5rem;
+}
+.box-places-images-pp {
+  & > a {
+    display: block;
+    & > img {
+      @include border-radius(14px);
+      margin-bottom: 1.5rem;
+    }
+    &:hover {
+      @include filter(brightness(40%));
+    }
+  }
+}
+
+  /*------- Places Section Ends -------*/
+
+/*------- Places Page Ends -------*/
