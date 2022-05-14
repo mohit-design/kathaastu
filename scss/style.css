@@ -180,6 +180,16 @@ body {
 }
 
 /*------- Reset CSS Ends -------*/
+/*------- Scroll Progressbar Section Starts -------*/
+.display-progress {
+  background-color: #ffc400;
+  height: 0.25rem;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+/*------- Scroll Progressbar Section Ends -------*/
 /*------- Home Page Starts -------*/
 /*------- Mobile Header Section Starts -------*/
 .bg-header-mobile {
