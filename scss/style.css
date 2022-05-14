@@ -1428,7 +1428,7 @@ body {
 
 @media (max-width: 575px) {
   .story-heading-sp {
-    text-align: left;
+    padding: 0 1rem;
   }
 }
 
@@ -1448,8 +1448,28 @@ body {
   }
 }
 
+@media (max-width: 575px) {
+  .story-info-sp > p {
+    padding: 0 1rem;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 575px) {
+  .story-social-heading-sp > p {
+    padding: 0 1rem;
+  }
+}
+
 .accordion-story-ahead-sp > h4 {
   width: 100%;
+}
+
+@media (max-width: 575px) {
+  .accordion-story-ahead-sp > h4 {
+    margin: 0 1rem;
+    width: calc(100% - 2rem);
+  }
 }
 
 .story-social-listing-sp {
@@ -1461,6 +1481,7 @@ body {
 @media (max-width: 575px) {
   .story-social-listing-sp {
     margin-bottom: 1rem;
+    padding: 0 1rem;
   }
 }
 
@@ -1881,6 +1902,18 @@ textarea.form-control-kathaastu {
   margin-top: 1.5rem;
 }
 
+@media (max-width: 575px) {
+  .row-box-places-images-pp {
+    margin: 1.5rem -0.5rem 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .row-box-places-images-pp > .col-6 {
+    padding: 0 0.5rem;
+  }
+}
+
 .box-places-images-pp > a {
   display: block;
 }
@@ -1928,14 +1961,59 @@ textarea.form-control-kathaastu {
   }
 }
 
+@media (max-width: 767px) {
+  .row-box-extra-places-images-pp {
+    margin: 0 -0.5rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .row-box-extra-places-images-pp {
+    margin: 0 -0.25rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .row-box-extra-places-images-pp > .col-4 {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .row-box-extra-places-images-pp > .col-4 {
+    padding: 0 0.25rem;
+  }
+}
+
 /*------- Extra Places Section Ends -------*/
 /*------- Places Page Ends -------*/
-/*------- Character Page Starts -------*/
+/*------- Places Single Page Starts -------*/
 /*------- Banner Section Starts -------*/
 .character-banner-info-cp {
   margin-top: 1.5rem;
+  text-align: center;
+}
+
+@media (max-width: 575px) {
+  .character-banner-info-cp {
+    text-align: justify;
+  }
 }
 
 /*------- Banner Section Ends -------*/
-/*------- Character Page Ends -------*/
+/*------- Story Set Section Starts -------*/
+@media (max-width: 575px) {
+  .row-stories-set-city {
+    margin: 0 -0.5rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .row-stories-set-city > .col-6 {
+    padding: 0 0.5rem;
+  }
+}
+
+/*------- Story Set Section Ends -------*/
+/*------- Places Single Page Ends -------*/
 /*# sourceMappingURL=style.css.map */
