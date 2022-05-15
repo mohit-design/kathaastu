@@ -1024,7 +1024,7 @@ body {
   width: 1.5rem;
 }
 
-.footer-social-listing, .story-social-listing-sp, .author-social-listing-sp {
+.footer-social-listing, .story-social-listing-sp, .blog-social-listing-bp, .author-social-listing-sp {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1034,7 +1034,7 @@ body {
 }
 
 @media (max-width: 767px) {
-  .footer-social-listing, .story-social-listing-sp, .author-social-listing-sp {
+  .footer-social-listing, .story-social-listing-sp, .blog-social-listing-bp, .author-social-listing-sp {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1043,7 +1043,7 @@ body {
 }
 
 @media (max-width: 575px) {
-  .footer-social-listing, .story-social-listing-sp, .author-social-listing-sp {
+  .footer-social-listing, .story-social-listing-sp, .blog-social-listing-bp, .author-social-listing-sp {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -1051,15 +1051,15 @@ body {
   }
 }
 
-.footer-social-listing > li, .story-social-listing-sp > li, .author-social-listing-sp > li {
+.footer-social-listing > li, .story-social-listing-sp > li, .blog-social-listing-bp > li, .author-social-listing-sp > li {
   margin-right: 1rem;
 }
 
-.footer-social-listing > li:last-child, .story-social-listing-sp > li:last-child, .author-social-listing-sp > li:last-child {
+.footer-social-listing > li:last-child, .story-social-listing-sp > li:last-child, .blog-social-listing-bp > li:last-child, .author-social-listing-sp > li:last-child {
   margin-right: 0;
 }
 
-.footer-social-listing > li > a, .story-social-listing-sp > li > a, .author-social-listing-sp > li > a {
+.footer-social-listing > li > a, .story-social-listing-sp > li > a, .blog-social-listing-bp > li > a, .author-social-listing-sp > li > a {
   background-color: #262626;
   border-radius: 50%;
   color: #b7b7b7;
@@ -1070,7 +1070,7 @@ body {
   width: 2.5rem;
 }
 
-.footer-social-listing > li > a:hover, .story-social-listing-sp > li > a:hover, .author-social-listing-sp > li > a:hover {
+.footer-social-listing > li > a:hover, .story-social-listing-sp > li > a:hover, .blog-social-listing-bp > li > a:hover, .author-social-listing-sp > li > a:hover {
   background-color: #ffc400;
   color: #000000;
 }
@@ -1146,18 +1146,18 @@ body {
 /*------- Home Page Ends -------*/
 /*------- Stories Page Starts -------*/
 /*------- Banner Section Starts -------*/
-.bg-banner-sp, .bg-blog-bp, .bg-advertise-with-us-ap, .bg-submissions-sp, .bg-terms-and-conditions-tcp, .bg-faq-fp, .bg-contact-us-cp, .bg-places-pp, .bg-banner-cp {
+.bg-banner-sp, .bg-blog-bp, .bg-advertise-with-us-ap, .bg-submissions-sp, .bg-terms-and-conditions-tcp, .bg-faq-fp, .bg-contact-us-cp, .bg-places-pp, .bg-banner-psp {
   padding-top: 7.5rem;
 }
 
 @media (max-width: 991px) {
-  .bg-banner-sp, .bg-blog-bp, .bg-advertise-with-us-ap, .bg-submissions-sp, .bg-terms-and-conditions-tcp, .bg-faq-fp, .bg-contact-us-cp, .bg-places-pp, .bg-banner-cp {
+  .bg-banner-sp, .bg-blog-bp, .bg-advertise-with-us-ap, .bg-submissions-sp, .bg-terms-and-conditions-tcp, .bg-faq-fp, .bg-contact-us-cp, .bg-places-pp, .bg-banner-psp {
     padding-top: 1rem;
   }
 }
 
 @media (max-width: 575px) {
-  .bg-banner-sp, .bg-blog-bp, .bg-advertise-with-us-ap, .bg-submissions-sp, .bg-terms-and-conditions-tcp, .bg-faq-fp, .bg-contact-us-cp, .bg-places-pp, .bg-banner-cp {
+  .bg-banner-sp, .bg-blog-bp, .bg-advertise-with-us-ap, .bg-submissions-sp, .bg-terms-and-conditions-tcp, .bg-faq-fp, .bg-contact-us-cp, .bg-places-pp, .bg-banner-psp {
     padding-top: 1rem;
   }
 }
@@ -1293,7 +1293,7 @@ body {
 
 .accordion-1 > div > p > a {
   color: #000000;
-  font-family: "Gotham-Book";
+  font-family: "RobotoCondensed-Light";
   font-size: 16px;
 }
 
@@ -1400,8 +1400,8 @@ body {
 }
 
 .select > .selectDropdown {
-  background-color: #b7b7b7;
-  font-family: "Gotham-Book";
+  background-color: #ffffff;
+  font-family: "RobotoCondensed-Light";
   overflow: hidden;
   position: absolute;
   top: 100%;
@@ -1418,7 +1418,7 @@ body {
 
 .select > .selectDropdown > .option {
   cursor: pointer;
-  padding: 0.5rem 0.75rem;
+  padding: 0.25rem 0.75rem;
 }
 
 .select > .selectDropdown > .option:hover {
@@ -1466,7 +1466,7 @@ body {
 }
 
 @media (max-width: 575px) {
-  .story-social-heading-sp > p {
+  .story-social-heading-sp > p, .blog-social-heading-bp > p {
     padding: 0 1rem;
   }
 }
@@ -1482,14 +1482,14 @@ body {
   }
 }
 
-.story-social-listing-sp {
+.story-social-listing-sp, .blog-social-listing-bp {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
 
 @media (max-width: 575px) {
-  .story-social-listing-sp {
+  .story-social-listing-sp, .blog-social-listing-bp {
     margin-bottom: 1rem;
     padding: 0 1rem;
   }
@@ -1616,12 +1616,24 @@ body {
 
 @media (max-width: 575px) {
   .blog-banner-bp > img {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 }
 
 .blog-section-heading {
   text-align: center;
+}
+
+@media (max-width: 575px) {
+  .blog-section-heading > h2 {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .blog-social-heading-bp > p {
+    padding: 0;
+  }
 }
 
 .blog-social-listing-bp {
@@ -1638,6 +1650,7 @@ body {
   .blog-social-listing-bp {
     margin-bottom: 0.5rem;
     margin-top: 1rem;
+    padding: 0;
   }
 }
 
@@ -1702,6 +1715,7 @@ body {
 .form-control-kathaastu {
   border: 0;
   border-radius: 0;
+  font-family: "Gotham-Book";
 }
 
 textarea.form-control-kathaastu {
@@ -1999,6 +2013,12 @@ textarea.form-control-kathaastu {
 /*------- Places Page Ends -------*/
 /*------- Places Single Page Starts -------*/
 /*------- Banner Section Starts -------*/
+@media (max-width: 575px) {
+  .bg-banner-psp {
+    padding-bottom: 0;
+  }
+}
+
 .character-banner-info-cp {
   margin-top: 1.5rem;
   text-align: center;
@@ -2006,7 +2026,14 @@ textarea.form-control-kathaastu {
 
 @media (max-width: 575px) {
   .character-banner-info-cp {
+    margin-bottom: 0;
     text-align: justify;
+  }
+}
+
+@media (max-width: 575px) {
+  .character-banner-info-cp > p {
+    margin-bottom: 0;
   }
 }
 
