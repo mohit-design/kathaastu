@@ -5,7 +5,7 @@ $(function() {
     dots: false,
     infinite: true,
     speed: 1400,
-    slidesToShow: 4,
+    slidesToShow: 8,
     slidesToScroll: 1,
     responsive: [
       {

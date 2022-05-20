@@ -9,17 +9,23 @@ $(function() {
       },700);
     }
   });
-  $(".scroll-to-top").click(function(event) {
-    event.preventDefault();
-    $('html,body').animate({scrollTop: 0},4000);
+  // Latest and Trending Stories Section, Popular Stories Slick Slider JS
+  $(".slick-slider-banner-home").slick({
+    arrows: true,
+    dots: false,
+    infinite: true,
+    speed: 1400,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true
   });
   // Latest and Trending Stories Section, Popular Stories Slick Slider JS
   $(".slick-slider-latest-trending-stories-home, .slick-slider-popular-stories-home").slick({
     arrows: true,
     dots: false,
-    infinite: true,
+    infinite: false,
     speed: 1400,
-    slidesToShow: 6,
+    slidesToShow: 8,
     slidesToScroll: 1,
     responsive: [
       {
@@ -51,7 +57,7 @@ $(function() {
     dots: false,
     infinite: true,
     speed: 1400,
-    slidesToShow: 4,
+    slidesToShow: 6,
     slidesToScroll: 1,
     responsive: [
       {
@@ -83,7 +89,7 @@ $(function() {
     dots: false,
     infinite: true,
     speed: 1400,
-    slidesToShow: 5,
+    slidesToShow: 6,
     slidesToScroll: 1,
     responsive: [
       {
@@ -108,14 +114,5 @@ $(function() {
         }
       }
     ]
-  });
-  // Scroll To Top JS
-  var duration = 1400;
-  $(window).on('scroll', function() {
-    if($(window).scrollTop() + $(window).height() == $(document).height()) {
-      $(".scroll-to-top").addClass("active");
-    } else {
-      $(".scroll-to-top").removeClass("active");
-    }
   });
 });
