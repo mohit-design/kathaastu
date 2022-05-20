@@ -759,7 +759,11 @@ body {
 
   /*------- Information Section Starts -------*/
 
-
+.bg-info-home {
+  @include for-mobile-only {
+    padding-top: 0;
+  }
+}
 
   /*------- Information Section Ends -------*/
 

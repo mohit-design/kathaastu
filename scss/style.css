@@ -829,6 +829,12 @@ body {
 
 /*------- Banner Section Ends -------*/
 /*------- Information Section Starts -------*/
+@media (max-width: 575px) {
+  .bg-info-home {
+    padding-top: 0;
+  }
+}
+
 /*------- Information Section Ends -------*/
 /*------- Latest and Trending Stories Section Starts -------*/
 @media (max-width: 575px) {
