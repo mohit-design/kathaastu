@@ -729,7 +729,7 @@ body {
 /*------- Banner Section Starts -------*/
 .bg-banner-home {
   background: url("../images/banner.jpg") no-repeat top/cover;
-  height: 100vh;
+  height: 75vh;
   position: relative;
 }
 
@@ -780,7 +780,7 @@ body {
 }
 
 .slick-slider-latest-trending-stories-home .slick-slide, .slick-slider-popular-stories-home .slick-slide, .slick-slider-recommended-stories-home .slick-slide, .slick-slider-new-stories-home .slick-slide, .slick-slider-read-stories-pp .slick-slide, .slick-slider-explore-stories-pp .slick-slide {
-  margin: 0 0.5rem;
+  margin: 0 0.25rem;
 }
 
 @media (max-width: 575px) {
@@ -1716,6 +1716,51 @@ body {
   border: 0;
   border-radius: 0;
   font-family: "Gotham-Book";
+}
+
+.form-control-dark-kathaastu {
+  background-color: #262626;
+  color: #f7f7f7;
+}
+
+.form-control-dark-kathaastu::-webkit-input-placeholder {
+  color: #f7f7f7;
+  letter-spacing: 0.05rem;
+}
+
+.form-control-dark-kathaastu:-ms-input-placeholder {
+  color: #f7f7f7;
+  letter-spacing: 0.05rem;
+}
+
+.form-control-dark-kathaastu::-ms-input-placeholder {
+  color: #f7f7f7;
+  letter-spacing: 0.05rem;
+}
+
+.form-control-dark-kathaastu::placeholder {
+  color: #f7f7f7;
+  letter-spacing: 0.05rem;
+}
+
+.form-control-dark-kathaastu:-ms-input-placeholder {
+  color: #f7f7f7;
+  letter-spacing: 0.05rem;
+}
+
+.form-control-dark-kathaastu::-ms-input-placeholder {
+  color: #f7f7f7;
+  letter-spacing: 0.05rem;
+}
+
+.form-control-dark-kathaastu + .input-group-text {
+  background-color: #b7b7b7;
+  border-color: #b7b7b7;
+}
+
+.form-control-dark-kathaastu:focus {
+  background-color: #262626;
+  color: #f7f7f7;
 }
 
 textarea.form-control-kathaastu {

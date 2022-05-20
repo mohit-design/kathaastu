@@ -641,7 +641,7 @@ body {
 
 .bg-banner-home {
   background: url("../images/banner.jpg") no-repeat top/cover;
-  height: 100vh;
+  height: 75vh;
   position: relative;
   @include for-mobile-only {
     height: 55vh;
@@ -683,13 +683,13 @@ body {
 .section-stories-heading-home {
   & > h2 {
     @include for-mobile-only {    
-      width: calc(100% - 10rem)
+      width: calc(100% - 10rem);
     }
   }
 }
 .slick-slider-latest-trending-stories-home {
   & .slick-slide {
-    margin: 0 0.5rem;
+    margin: 0 0.25rem;
     @include for-mobile-only {
       margin: 0 0.25rem;
     }
@@ -1428,6 +1428,30 @@ body {
   border: 0;
   @include border-radius(0);
   font-family: $gothamBook;
+}
+.form-control-dark-kathaastu {
+  background-color: $darkGray;
+  color: $tertiaryColor;
+  &::placeholder {
+    color: $tertiaryColor;
+    letter-spacing: 0.05rem;
+  }
+  &:-ms-input-placeholder {
+    color: $tertiaryColor;
+    letter-spacing: 0.05rem;
+  }
+  &::-ms-input-placeholder {
+    color: $tertiaryColor;
+    letter-spacing: 0.05rem;
+  }
+  & + .input-group-text {
+    background-color: $lightGray;
+    border-color: $lightGray;
+  }
+  &:focus {
+    background-color: $darkGray;
+    color: $tertiaryColor;
+  }
 }
 textarea.form-control-kathaastu {
   height: 150px;
