@@ -30,23 +30,32 @@
 
 /*------- Common CSS Starts -------*/
 
-.container,
 .container-fluid {
+  padding-left: 3rem;
+  padding-right: 3rem;
   padding-top: 5rem;
   @include for-lg-tab-only {
     padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     padding-top: 2rem;
   }
   @include for-md-tab-only {
     padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     padding-top: 2rem;
   }
   @include for-sm-tab-only {
     padding-bottom: 1.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
     padding-top: 1.5rem;
   }
   @include for-mobile-only {
     padding-bottom: 1.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
     padding-top: 1.5rem;
   }
 }
@@ -544,13 +553,13 @@ body {
   /*------- Desktop Header Section Starts -------*/
 
 .bg-header-desktop {
-  background-color: transparent;
+  //background-color: transparent;
   padding-bottom: 1rem;
   padding-top: 1rem;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 1;
+  // position: absolute;
+  // top: 0;
+  // width: 100%;
+  // z-index: 1;
   @include for-mobile-only {    
     display: none;
   }
@@ -565,7 +574,7 @@ body {
   & > a {
     display: inline-block;
     & > img {
-      width: 145px;
+      height: 3rem;
     }
   }
 }
@@ -639,34 +648,110 @@ body {
 
   /*------- Banner Section Starts -------*/
 
-.bg-banner-home {
-  background: url("../images/banner.jpg") no-repeat top/cover;
-  height: 75vh;
-  position: relative;
-  @include for-mobile-only {
-    height: 55vh;
-  }
+// .bg-banner-home {
+//   background: url("../images/banner.jpg") no-repeat top/cover;
+//   height: 75vh;
+//   position: relative;
+//   @include for-mobile-only {
+//     height: 55vh;
+//   }
+// }
+// .banner-info-home {
+//   left: 3rem;
+//   position: absolute;
+//   top: 50%;
+//   @include transform(translateY(-50%));
+//   @include for-mobile-only {
+//     left: 0;
+//     padding: 0 1rem;
+//   }
+//   & > h1 {
+//     color: $tertiaryColor;
+//     margin-bottom: 1.5rem;
+//     text-transform: uppercase;
+//     & > span {
+//       color: $secondaryColor;
+//       display: block;
+//     }
+//   }
+//   & > p {
+//     margin-bottom: 1.5rem;
+//   }
+// }
+
+.bg-slider-home {
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
 }
-.banner-info-home {
-  left: 3rem;
-  position: absolute;
-  top: 50%;
-  @include transform(translateY(-50%));
-  @include for-mobile-only {
-    left: 0;
-    padding: 0 1rem;
-  }
-  & > h1 {
-    color: $tertiaryColor;
-    margin-bottom: 1.5rem;
-    text-transform: uppercase;
-    & > span {
-      color: $secondaryColor;
-      display: block;
+.slick-slider-banner-home {
+  & .slick-slide {
+    margin: 0 0.25rem;
+    @include for-mobile-only {
+      margin: 0 0.25rem;
     }
   }
-  & > p {
-    margin-bottom: 1.5rem;
+  & > .slick-prev {
+    border: 2px solid $tertiaryColor;
+    @include border-radius(50%);
+    height: 3rem;
+    @include transition(0.5s ease);
+    width: 3rem;
+    z-index: 1;
+    @include for-mobile-only {    
+      height: 2.5rem;
+      right: 3rem;
+      width: 2.5rem;
+    }
+    &::before {
+      color: $tertiaryColor;
+      content: "\f053";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      opacity: 1;
+      @include transition(0.5s ease);
+      @include for-mobile-only {    
+        font-size: 1rem;
+      }
+    }
+    &:hover,
+    &:focus {
+      background-color: $tertiaryColor;
+      border: 2px solid transparent;
+      &::before {
+        color: $primaryColor;
+      }
+    }
+  }
+  & > .slick-next {
+    border: 2px solid $tertiaryColor;
+    @include border-radius(50%);
+    height: 3rem;
+    @include transition(0.5s ease);
+    width: 3rem;
+    z-index: 1;
+    @include for-mobile-only {    
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+    &::before {
+      color: $tertiaryColor;
+      content: "\f054";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      opacity: 1;
+      @include transition(0.5s ease);
+      @include for-mobile-only {    
+        font-size: 1rem;
+      }
+    }
+    &:hover,
+    &:focus {
+      background-color: $tertiaryColor;
+      border: 2px solid transparent;
+      &::before {
+        color: $primaryColor;
+      }
+    }
   }
 }
 
@@ -992,7 +1077,7 @@ body {
   /*------- Banner Section Starts -------*/
 
 .bg-banner-sp {
-  padding-top: 7.5rem;
+  padding-top: 1rem;
   @include for-md-tab-only {
     padding-top: 1rem;
   }

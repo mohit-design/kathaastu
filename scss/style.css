@@ -26,39 +26,44 @@
 
 /*------- Font Family Ends -------*/
 /*------- Common CSS Starts -------*/
-.container,
 .container-fluid {
+  padding-left: 3rem;
+  padding-right: 3rem;
   padding-top: 5rem;
 }
 
 @media (max-width: 1199px) {
-  .container,
   .container-fluid {
     padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     padding-top: 2rem;
   }
 }
 
 @media (max-width: 991px) {
-  .container,
   .container-fluid {
     padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     padding-top: 2rem;
   }
 }
 
 @media (max-width: 767px) {
-  .container,
   .container-fluid {
     padding-bottom: 1.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
     padding-top: 1.5rem;
   }
 }
 
 @media (max-width: 575px) {
-  .container,
   .container-fluid {
     padding-bottom: 1.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
     padding-top: 1.5rem;
   }
 }
@@ -604,13 +609,8 @@ body {
 /*------- Mobile Sidebar Section Ends -------*/
 /*------- Desktop Header Section Starts -------*/
 .bg-header-desktop {
-  background-color: transparent;
   padding-bottom: 1rem;
   padding-top: 1rem;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 1;
 }
 
 @media (max-width: 575px) {
@@ -636,7 +636,7 @@ body {
 }
 
 .header-logo-desktop > a > img {
-  width: 145px;
+  height: 3rem;
 }
 
 .menu-listing > li {
@@ -727,46 +727,104 @@ body {
 
 /*------- Desktop Header Section Ends -------*/
 /*------- Banner Section Starts -------*/
-.bg-banner-home {
-  background: url("../images/banner.jpg") no-repeat top/cover;
-  height: 75vh;
-  position: relative;
+.bg-slider-home {
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.slick-slider-banner-home .slick-slide {
+  margin: 0 0.25rem;
 }
 
 @media (max-width: 575px) {
-  .bg-banner-home {
-    height: 55vh;
+  .slick-slider-banner-home .slick-slide {
+    margin: 0 0.25rem;
   }
 }
 
-.banner-info-home {
-  left: 3rem;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+.slick-slider-banner-home > .slick-prev {
+  border: 2px solid #f7f7f7;
+  border-radius: 50%;
+  height: 3rem;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  width: 3rem;
+  z-index: 1;
 }
 
 @media (max-width: 575px) {
-  .banner-info-home {
-    left: 0;
-    padding: 0 1rem;
+  .slick-slider-banner-home > .slick-prev {
+    height: 2.5rem;
+    right: 3rem;
+    width: 2.5rem;
   }
 }
 
-.banner-info-home > h1 {
+.slick-slider-banner-home > .slick-prev::before {
   color: #f7f7f7;
-  margin-bottom: 1.5rem;
-  text-transform: uppercase;
+  content: "\f053";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  opacity: 1;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
-.banner-info-home > h1 > span {
-  color: #ffc400;
-  display: block;
+@media (max-width: 575px) {
+  .slick-slider-banner-home > .slick-prev::before {
+    font-size: 1rem;
+  }
 }
 
-.banner-info-home > p {
-  margin-bottom: 1.5rem;
+.slick-slider-banner-home > .slick-prev:hover, .slick-slider-banner-home > .slick-prev:focus {
+  background-color: #f7f7f7;
+  border: 2px solid transparent;
+}
+
+.slick-slider-banner-home > .slick-prev:hover::before, .slick-slider-banner-home > .slick-prev:focus::before {
+  color: #000000;
+}
+
+.slick-slider-banner-home > .slick-next {
+  border: 2px solid #f7f7f7;
+  border-radius: 50%;
+  height: 3rem;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  width: 3rem;
+  z-index: 1;
+}
+
+@media (max-width: 575px) {
+  .slick-slider-banner-home > .slick-next {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+}
+
+.slick-slider-banner-home > .slick-next::before {
+  color: #f7f7f7;
+  content: "\f054";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  opacity: 1;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+@media (max-width: 575px) {
+  .slick-slider-banner-home > .slick-next::before {
+    font-size: 1rem;
+  }
+}
+
+.slick-slider-banner-home > .slick-next:hover, .slick-slider-banner-home > .slick-next:focus {
+  background-color: #f7f7f7;
+  border: 2px solid transparent;
+}
+
+.slick-slider-banner-home > .slick-next:hover::before, .slick-slider-banner-home > .slick-next:focus::before {
+  color: #000000;
 }
 
 /*------- Banner Section Ends -------*/
@@ -1147,7 +1205,7 @@ body {
 /*------- Stories Page Starts -------*/
 /*------- Banner Section Starts -------*/
 .bg-banner-sp, .bg-blog-bp, .bg-advertise-with-us-ap, .bg-submissions-sp, .bg-terms-and-conditions-tcp, .bg-faq-fp, .bg-contact-us-cp, .bg-places-pp, .bg-banner-psp {
-  padding-top: 7.5rem;
+  padding-top: 1rem;
 }
 
 @media (max-width: 991px) {
