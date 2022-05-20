@@ -17,7 +17,16 @@ $(function() {
     speed: 1400,
     slidesToShow: 1,
     slidesToScroll: 1,
-    centerMode: true
+    centerMode: true,
+    responsive: [
+      {
+        breakpoint: 575,
+        settings: {
+          autoplay: 700,
+          arrows: false
+        }
+      }
+    ]
   });
   // Latest and Trending Stories Section, Popular Stories Slick Slider JS
   $(".slick-slider-latest-trending-stories-home, .slick-slider-popular-stories-home").slick({
