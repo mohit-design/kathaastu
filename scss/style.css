@@ -1274,7 +1274,7 @@ body {
   font-size: 18px;
   margin: 0;
   position: relative;
-  width: 65%;
+  width: 100%;
 }
 
 @media (max-width: 1199px) {
@@ -1372,7 +1372,7 @@ body {
 .audio-story-sp > a {
   border: 1px solid #b7b7b7;
   color: #b7b7b7;
-  display: inline-block;
+  display: block;
   font-family: "RobotoCondensed-Light";
   font-size: 18px;
   margin-bottom: 2rem;
@@ -1404,7 +1404,7 @@ body {
   margin-bottom: 2rem;
   margin-left: auto;
   position: relative;
-  width: 250px;
+  width: 100%;
 }
 
 @media (max-width: 991px) {

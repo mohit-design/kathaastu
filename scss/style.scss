@@ -1125,7 +1125,7 @@ body {
     font-size: $h3;
     margin: 0;
     position: relative;
-    width: 65%;
+    width: 100%;
     @include for-lg-tab-only {
       width: 100%;
     }
@@ -1195,7 +1195,7 @@ body {
   & > a {
     border: 1px solid $lightGray;
     color: $lightGray;
-    display: inline-block;
+    display: block;
     font-family: $RobotoCondensedLight;
     font-size: $h3;
     margin-bottom: 2rem;
@@ -1218,7 +1218,7 @@ body {
   margin-bottom: 2rem;
   margin-left: auto;
   position: relative;
-  width: 250px;
+  width: 100%;
   @include for-md-tab-only {
     width: 100%;
   }
