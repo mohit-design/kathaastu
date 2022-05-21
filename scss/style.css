@@ -917,6 +917,7 @@ body {
   .slick-slider-latest-trending-stories-home > .slick-prev, .slick-slider-popular-stories-home > .slick-prev, .slick-slider-recommended-stories-home > .slick-prev, .slick-slider-new-stories-home > .slick-prev, .slick-slider-read-stories-pp > .slick-prev, .slick-slider-explore-stories-pp > .slick-prev, .slick-slider-explore-stories-cp > .slick-prev, .slick-slider-read-stories-cp > .slick-prev {
     height: 2.5rem;
     right: 3rem;
+    top: -2rem;
     width: 2.5rem;
   }
 }
@@ -962,6 +963,7 @@ body {
 @media (max-width: 575px) {
   .slick-slider-latest-trending-stories-home > .slick-next, .slick-slider-popular-stories-home > .slick-next, .slick-slider-recommended-stories-home > .slick-next, .slick-slider-new-stories-home > .slick-next, .slick-slider-read-stories-pp > .slick-next, .slick-slider-explore-stories-pp > .slick-next, .slick-slider-explore-stories-cp > .slick-next, .slick-slider-read-stories-cp > .slick-next {
     height: 2.5rem;
+    top: -2rem;
     width: 2.5rem;
   }
 }

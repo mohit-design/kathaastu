@@ -791,6 +791,7 @@ body {
     @include for-mobile-only {    
       height: 2.5rem;
       right: 3rem;
+      top: -2rem;
       width: 2.5rem;
     }
     &::before {
@@ -825,6 +826,7 @@ body {
     z-index: 1;
     @include for-mobile-only {    
       height: 2.5rem;
+      top: -2rem;
       width: 2.5rem;
     }
     &::before {
