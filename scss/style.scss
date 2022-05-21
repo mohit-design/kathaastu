@@ -26,6 +26,11 @@
   src: url("../fonts/RobotoCondensed-Light.ttf");
 }
 
+@font-face {
+  font-family: $JosefinSlabLight;
+  src: url("../fonts/JosefinSlab-Light.ttf");
+}
+
 /*------- Font Family Ends -------*/
 
 /*------- Common CSS Starts -------*/
@@ -36,8 +41,8 @@
   padding-top: 5rem;
   @include for-lg-tab-only {
     padding-bottom: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     padding-top: 2rem;
   }
   @include for-md-tab-only {
@@ -67,7 +72,7 @@
   }
   & > h2 {
     color: $tertiaryColor;
-    font-family: $gothamBook;
+    font-family: $RobotoCondensedLight;
     font-size: $h2;
     margin-bottom: 2rem;
     @include for-lg-tab-only {
@@ -97,7 +102,7 @@ li {
 }
 p {
   color: $tertiaryColor;
-  font-family: $gothamBook;
+  font-family: $JosefinSlabLight;
   font-size: $p;
   @include for-lg-tab-only {
     font-size: $h3;
@@ -601,7 +606,7 @@ body {
     }
     & > a {
       color: $tertiaryColor;
-      font-family: $gothamBook;
+      font-family: $RobotoCondensedLight;
       font-size: $h4;
       @include for-mobile-only {
         font-family: $RobotoCondensedLight;
@@ -648,37 +653,6 @@ body {
 
   /*------- Banner Section Starts -------*/
 
-// .bg-banner-home {
-//   background: url("../images/banner.jpg") no-repeat top/cover;
-//   height: 75vh;
-//   position: relative;
-//   @include for-mobile-only {
-//     height: 55vh;
-//   }
-// }
-// .banner-info-home {
-//   left: 3rem;
-//   position: absolute;
-//   top: 50%;
-//   @include transform(translateY(-50%));
-//   @include for-mobile-only {
-//     left: 0;
-//     padding: 0 1rem;
-//   }
-//   & > h1 {
-//     color: $tertiaryColor;
-//     margin-bottom: 1.5rem;
-//     text-transform: uppercase;
-//     & > span {
-//       color: $secondaryColor;
-//       display: block;
-//     }
-//   }
-//   & > p {
-//     margin-bottom: 1.5rem;
-//   }
-// }
-
 .bg-slider-home {
   padding-bottom: 1.5rem;
   padding-top: 1.5rem;
@@ -693,10 +667,19 @@ body {
   & > .slick-prev {
     border: 2px solid $tertiaryColor;
     @include border-radius(50%);
-    height: 3rem;
+    height: 2.5rem;
     @include transition(0.5s ease);
-    width: 3rem;
+    width: 2.5rem;
     z-index: 1;
+    @include for-lg-tab-only {
+      left: -1rem;
+    }
+    @include for-md-tab-only {
+      left: 0;
+    }
+    @include for-sm-tab-only {
+      left: 0;
+    }
     @include for-mobile-only {    
       height: 2.5rem;
       right: 3rem;
@@ -706,6 +689,7 @@ body {
       color: $tertiaryColor;
       content: "\f053";
       font-family: "Font Awesome 6 Free";
+      font-size: 1rem;
       font-weight: 900;
       opacity: 1;
       @include transition(0.5s ease);
@@ -725,10 +709,19 @@ body {
   & > .slick-next {
     border: 2px solid $tertiaryColor;
     @include border-radius(50%);
-    height: 3rem;
+    height: 2.5rem;
     @include transition(0.5s ease);
-    width: 3rem;
+    width: 2.5rem;
     z-index: 1;
+    @include for-lg-tab-only {
+      right: -1rem;
+    }
+    @include for-md-tab-only {
+      right: 0;
+    }
+    @include for-sm-tab-only {
+      right: 0;
+    }
     @include for-mobile-only {    
       height: 2.5rem;
       width: 2.5rem;
@@ -737,6 +730,7 @@ body {
       color: $tertiaryColor;
       content: "\f054";
       font-family: "Font Awesome 6 Free";
+      font-size: 1rem;
       font-weight: 900;
       opacity: 1;
       @include transition(0.5s ease);
@@ -760,6 +754,7 @@ body {
   /*------- Information Section Starts -------*/
 
 .bg-info-home {
+  padding-top: 0;
   @include for-mobile-only {
     padding-top: 0;
   }
@@ -786,12 +781,12 @@ body {
   & > .slick-prev {
     border: 2px solid $tertiaryColor;
     @include border-radius(50%);
-    height: 3rem;
+    height: 2.5rem;
     left:auto;
-    right: 4rem;
+    right: 3rem;
     top: -3rem;
     @include transition(0.5s ease);
-    width: 3rem;
+    width: 2.5rem;
     z-index: 1;
     @include for-mobile-only {    
       height: 2.5rem;
@@ -802,6 +797,7 @@ body {
       color: $tertiaryColor;
       content: "\f053";
       font-family: "Font Awesome 6 Free";
+      font-size: 1rem;
       font-weight: 900;
       opacity: 1;
       @include transition(0.5s ease);
@@ -821,11 +817,11 @@ body {
   & > .slick-next {
     border: 2px solid $tertiaryColor;
     @include border-radius(50%);
-    height: 3rem;
+    height: 2.5rem;
     right: 0;
     top: -3rem;
     @include transition(0.5s ease);
-    width: 3rem;
+    width: 2.5rem;
     z-index: 1;
     @include for-mobile-only {    
       height: 2.5rem;
@@ -835,6 +831,7 @@ body {
       color: $tertiaryColor;
       content: "\f054";
       font-family: "Font Awesome 6 Free";
+      font-size: 1rem;
       font-weight: 900;
       opacity: 1;
       @include transition(0.5s ease);
@@ -1103,6 +1100,7 @@ body {
 
 .bg-story-info-sp {
   padding-bottom: 5rem;
+  padding-top: 2rem;
   @include for-md-tab-only {
     padding-bottom: 1.5rem;
   }
@@ -1125,7 +1123,7 @@ body {
     font-size: $h3;
     margin: 0;
     position: relative;
-    width: 100%;
+    width: 65%;
     @include for-lg-tab-only {
       width: 100%;
     }
@@ -1195,7 +1193,7 @@ body {
   & > a {
     border: 1px solid $lightGray;
     color: $lightGray;
-    display: block;
+    display: inline-block;
     font-family: $RobotoCondensedLight;
     font-size: $h3;
     margin-bottom: 2rem;
@@ -1218,7 +1216,7 @@ body {
   margin-bottom: 2rem;
   margin-left: auto;
   position: relative;
-  width: 100%;
+  width: 50%;
   @include for-md-tab-only {
     width: 100%;
   }
@@ -1349,6 +1347,7 @@ body {
 }
 .story-tags-heading-sp {
   & > p {
+    font-size: $h2;
     margin-bottom: 0.5rem;
   }
 }
@@ -1797,20 +1796,7 @@ textarea.form-control-kathaastu {
   }
 }
 .row-box-extra-places-images-pp {
-  @include for-sm-tab-only {
-    margin: 0 -0.5rem;
-  }
-  @include for-mobile-only {
-    margin: 0 -0.25rem;
-  }
-  & > .col-4 {
-    @include for-sm-tab-only {
-      padding: 0 0.5rem;
-    }
-    @include for-mobile-only {
-      padding: 0 0.25rem;
-    }
-  }
+  @extend .row-box-places-images-pp;
 }
 
   /*------- Extra Places Section Ends -------*/
@@ -1862,3 +1848,57 @@ textarea.form-control-kathaastu {
   /*------- Story Set Section Ends -------*/
 
 /*------- Places Single Page Ends -------*/
+
+/*------- Characters Page Starts -------*/
+
+  /*------- Characters Section Starts -------*/
+
+.bg-characters-cp {
+  @extend .bg-places-pp;
+}
+.characters-info-cp {
+  @extend .places-info-pp;
+}
+.row-box-characters-images-cp {
+  @extend .row-box-places-images-pp;
+}
+.box-characters-images-cp {
+  @extend .box-places-images-pp;
+}
+.slick-slider-read-stories-cp {
+  @extend .slick-slider-read-stories-pp;
+}
+.slick-slider-explore-stories-cp {
+  @extend .slick-slider-explore-stories-pp;
+}
+  
+  /*------- Characters Section Ends -------*/
+  
+  /*------- Read Stories Section Starts -------*/
+ 
+.bg-read-stories-cp {
+  @extend .bg-read-stories-pp;
+}
+  
+  /*------- Read Stories Section Ends -------*/
+  
+  /*------- Explore Stories Section Starts -------*/
+  
+.bg-explore-stories-cp {
+  @extend .bg-explore-stories-pp;
+}
+  
+  /*------- Explore Stories Section Ends -------*/
+  
+  /*------- Extra Characters Section Starts -------*/
+  
+.bg-extra-characters-cp {
+  @extend .bg-extra-places-pp;
+}
+.row-box-extra-characters-images-cp {
+  @extend .row-box-extra-places-images-pp;
+}
+  
+  /*------- Extra Characters Section Ends -------*/
+  
+/*------- Characters Page Ends -------*/
