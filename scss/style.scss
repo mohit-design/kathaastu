@@ -607,7 +607,7 @@ body {
     & > a {
       color: $tertiaryColor;
       font-family: $RobotoCondensedLight;
-      font-size: $h4;
+      font-size: $h3;
       @include for-mobile-only {
         font-family: $RobotoCondensedLight;
       }
@@ -948,8 +948,8 @@ body {
     }
     & > a {
       color: $tertiaryColor;
-      font-family: $gothamBook;
-      font-size: $h4;
+      font-family: $RobotoCondensedLight;
+      font-size: $h3;
       position: relative;
       &::before {
         background-color: $secondaryColor;

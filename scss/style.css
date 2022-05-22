@@ -682,7 +682,7 @@ body {
 .menu-listing > li > a {
   color: #f7f7f7;
   font-family: "RobotoCondensed-Light";
-  font-size: 16px;
+  font-size: 18px;
 }
 
 @media (max-width: 575px) {
@@ -1101,8 +1101,8 @@ body {
 
 .footer-listing > li > a {
   color: #f7f7f7;
-  font-family: "Gotham-Book";
-  font-size: 16px;
+  font-family: "RobotoCondensed-Light";
+  font-size: 18px;
   position: relative;
 }
 
