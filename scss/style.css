@@ -25,6 +25,11 @@
 }
 
 @font-face {
+  font-family: "RobotoCondensed-Regular";
+  src: url("../fonts/RobotoCondensed-Regular.ttf");
+}
+
+@font-face {
   font-family: "JosefinSlab-Light";
   src: url("../fonts/JosefinSlab-Light.ttf");
 }
@@ -999,7 +1004,7 @@ body {
   z-index: 1;
 }
 
-.kathaastu-stories-img-home > img {
+.kathaastu-stories-img-home img {
   border-radius: 14px;
   cursor: pointer;
   -webkit-transition: 0.5s ease;
@@ -1007,7 +1012,7 @@ body {
   width: 100%;
 }
 
-.kathaastu-stories-img-home > img:hover {
+.kathaastu-stories-img-home img:hover {
   -webkit-filter: brightness(40%);
   -moz-filter: brightness(40%);
   -ms-filter: brightness(40%);
@@ -1036,7 +1041,7 @@ body {
 
 .extra-info-home > p {
   line-height: 1.7rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.25rem;
 }
 
 @media (max-width: 575px) {
@@ -1826,7 +1831,7 @@ body {
 
 .form-label-kathaastu {
   color: #f7f7f7;
-  font-family: "Gotham-Book";
+  font-family: "RobotoCondensed-Light";
   font-size: 18px;
 }
 
@@ -1910,7 +1915,7 @@ textarea.form-control-kathaastu {
 /*------- Submissions Section Starts -------*/
 .submissions-info-sp > h3, .terms-conditions-info-tcp > h3, .contact-info-cp > h3 {
   color: #ffffff;
-  font-family: "Gotham-Book";
+  font-family: "RobotoCondensed-Light";
   font-size: 24px;
   margin-bottom: 1rem;
   padding-left: 3rem;
@@ -2021,8 +2026,8 @@ textarea.form-control-kathaastu {
 .faq-accordion-fp .accordion-item .accordion-button {
   background-color: #b7b7b7;
   color: #262626;
-  font-family: "Gotham-Medium";
-  font-size: 18px;
+  font-family: "RobotoCondensed-Regular";
+  font-size: 20px;
   line-height: 27px;
 }
 
@@ -2071,6 +2076,7 @@ textarea.form-control-kathaastu {
 }
 
 .places-info-pp > p, .characters-info-cp > p {
+  font-size: 20px;
   margin-bottom: 0;
 }
 
@@ -2109,17 +2115,17 @@ textarea.form-control-kathaastu {
 
 .box-places-images-pp > a, .box-characters-images-cp > a {
   display: block;
-}
-
-.box-places-images-pp > a > img, .box-characters-images-cp > a > img {
-  border-radius: 14px;
   margin-bottom: 1.5rem;
 }
 
 @media (max-width: 575px) {
-  .box-places-images-pp > a > img, .box-characters-images-cp > a > img {
+  .box-places-images-pp > a, .box-characters-images-cp > a {
     margin-bottom: 1rem;
   }
+}
+
+.box-places-images-pp > a > img, .box-characters-images-cp > a > img {
+  border-radius: 14px;
 }
 
 .box-places-images-pp > a:hover, .box-characters-images-cp > a:hover {
@@ -2240,13 +2246,7 @@ textarea.form-control-kathaastu {
 
 .character-banner-info-csp > p {
   margin-bottom: 0;
-  text-align: left;
-}
-
-@media (max-width: 575px) {
-  .character-banner-info-csp > p {
-    text-align: justify;
-  }
+  text-align: justify;
 }
 
 /*------- Banner Section Ends -------*/

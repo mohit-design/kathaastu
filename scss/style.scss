@@ -25,7 +25,10 @@
   font-family: $RobotoCondensedLight;
   src: url("../fonts/RobotoCondensed-Light.ttf");
 }
-
+@font-face {
+  font-family: $RobotoCondensedRegular;
+  src: url("../fonts/RobotoCondensed-Regular.ttf");
+}
 @font-face {
   font-family: $JosefinSlabLight;
   src: url("../fonts/JosefinSlab-Light.ttf");
@@ -854,7 +857,7 @@ body {
 .kathaastu-stories-img-home {
   position: relative;
   z-index: 1;
-  & > img {
+  & img {
     @include border-radius(14px);
     cursor: pointer;
     @include transition(0.5s ease);
@@ -903,7 +906,7 @@ body {
 .extra-info-home {
   & > p {
     line-height: 1.7rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.25rem;
     @include for-mobile-only {
       text-align: justify;
     }
@@ -1512,7 +1515,7 @@ body {
 }
 .form-label-kathaastu {
   color: $tertiaryColor;
-  font-family: $gothamBook;
+  font-family: $RobotoCondensedLight;
   font-size: $h3;
   @include for-mobile-only {
     font-size: $h4;
@@ -1575,7 +1578,7 @@ textarea.form-control-kathaastu {
   @extend .advertise-info-ap;
   & > h3 {
     color: $white;
-    font-family: $gothamBook;
+    font-family: $RobotoCondensedLight;
     font-size: $h2;
     margin-bottom: 1rem;
     padding-left: 3rem;
@@ -1664,8 +1667,8 @@ textarea.form-control-kathaastu {
     & .accordion-button {
       background-color: $lightGray;
       color: $darkGray;
-      font-family: $gothamMedium;
-      font-size: $h3;
+      font-family: $RobotoCondensedRegular;
+      font-size: $h2 - 4px;
       line-height: 27px;
       &:not(.collapsed) {
         background-color: $secondaryColor;
@@ -1724,6 +1727,7 @@ textarea.form-control-kathaastu {
 }
 .places-info-pp {
   & > p {
+    font-size: $h2 - 4px;
     margin-bottom: 0;
     @include for-sm-tab-only {
       margin-bottom: 1rem;
@@ -1753,12 +1757,12 @@ textarea.form-control-kathaastu {
 .box-places-images-pp {
   & > a {
     display: block;
+    margin-bottom: 1.5rem;
+    @include for-mobile-only {
+      margin-bottom: 1rem;
+    }
     & > img {
       @include border-radius(14px);
-      margin-bottom: 1.5rem;
-      @include for-mobile-only {
-        margin-bottom: 1rem;
-      }
     }
     &:hover {
       @include filter(brightness(40%));
@@ -1940,10 +1944,7 @@ textarea.form-control-kathaastu {
   margin-top: 0;
   & > p {
     margin-bottom: 0;
-    text-align: left;
-    @include for-mobile-only {
-      text-align: justify;
-    }
+    text-align: justify;
   }
 }
 
