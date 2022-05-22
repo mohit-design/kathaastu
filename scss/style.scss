@@ -346,7 +346,7 @@ body {
       & > a {
         color: $tertiaryColor;
         font-family: $RobotoCondensedLight;
-        font-size: $h6;
+        font-size: $h5;
       }
     }
   }
@@ -1093,7 +1093,6 @@ body {
 }
 .story-banner-sp {
   & img {
-    @include border-radius(14px);
     width: 100%;
   }
 }
@@ -1917,8 +1916,24 @@ textarea.form-control-kathaastu {
 .bg-banner-csp {
   @extend .bg-banner-psp;
 }
-.character-banner-psp {
+.d-block-mobile {
+  @include for-mobile-only {
+    display: block;
+  }
+}
+.character-banner-csp {
   @extend .places-banner-psp;
+  & > img {
+    @include for-md-tab-only {
+      margin-bottom: 1rem;
+    }
+    @include for-sm-tab-only {
+      margin-bottom: 1rem;
+    }
+    @include for-mobile-only {
+      margin-bottom: 1rem;
+    }
+  }
 }
 .character-banner-info-csp {
   @extend .places-banner-info-pp;
@@ -1926,6 +1941,9 @@ textarea.form-control-kathaastu {
   & > p {
     margin-bottom: 0;
     text-align: left;
+    @include for-mobile-only {
+      text-align: justify;
+    }
   }
 }
 

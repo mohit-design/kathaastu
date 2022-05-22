@@ -396,7 +396,7 @@ body {
   .places-characters-listing > li > a {
     color: #f7f7f7;
     font-family: "RobotoCondensed-Light";
-    font-size: 12px;
+    font-size: 14px;
   }
   .burger-menu {
     cursor: pointer;
@@ -1283,8 +1283,7 @@ body {
   }
 }
 
-.story-banner-sp img, .places-banner-psp img, .character-banner-psp img {
-  border-radius: 14px;
+.story-banner-sp img, .places-banner-psp img, .character-banner-csp img {
   width: 100%;
 }
 
@@ -2211,6 +2210,30 @@ textarea.form-control-kathaastu {
 /*------- Characters Page Ends -------*/
 /*------- Characters Single Page Starts -------*/
 /*------- Banner Section Starts -------*/
+@media (max-width: 575px) {
+  .d-block-mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 991px) {
+  .character-banner-csp > img {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .character-banner-csp > img {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .character-banner-csp > img {
+    margin-bottom: 1rem;
+  }
+}
+
 .character-banner-info-csp {
   margin-top: 0;
 }
@@ -2218,6 +2241,12 @@ textarea.form-control-kathaastu {
 .character-banner-info-csp > p {
   margin-bottom: 0;
   text-align: left;
+}
+
+@media (max-width: 575px) {
+  .character-banner-info-csp > p {
+    text-align: justify;
+  }
 }
 
 /*------- Banner Section Ends -------*/
