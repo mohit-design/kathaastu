@@ -226,7 +226,7 @@ body {
   }
   .places-characters-listing > li > a {
     color: #f7f7f7;
-    font-family: "Gotham-Book";
+    font-family: "RobotoCondensed-Light";
     font-size: 16px;
   }
   .burger-menu {
@@ -318,7 +318,7 @@ body {
   }
   .places-characters-listing > li > a {
     color: #f7f7f7;
-    font-family: "Gotham-Book";
+    font-family: "RobotoCondensed-Light";
     font-size: 16px;
   }
   .burger-menu {
@@ -395,7 +395,7 @@ body {
   }
   .places-characters-listing > li > a {
     color: #f7f7f7;
-    font-family: "Gotham-Book";
+    font-family: "RobotoCondensed-Light";
     font-size: 12px;
   }
   .burger-menu {
@@ -1039,6 +1039,12 @@ body {
   margin-bottom: 1rem;
 }
 
+@media (max-width: 575px) {
+  .extra-info-home > p {
+    text-align: justify;
+  }
+}
+
 .extra-info-home > p > span,
 .extra-info-home > p > a {
   color: #ffc400;
@@ -1261,31 +1267,25 @@ body {
 /*------- Home Page Ends -------*/
 /*------- Stories Page Starts -------*/
 /*------- Banner Section Starts -------*/
-.bg-banner-sp, .bg-blog-bp, .bg-advertise-with-us-ap, .bg-submissions-sp, .bg-terms-and-conditions-tcp, .bg-faq-fp, .bg-contact-us-cp, .bg-places-pp, .bg-characters-cp, .bg-banner-psp {
+.bg-banner-sp, .bg-blog-bp, .bg-advertise-with-us-ap, .bg-submissions-sp, .bg-terms-and-conditions-tcp, .bg-faq-fp, .bg-contact-us-cp, .bg-places-pp, .bg-characters-cp, .bg-banner-psp, .bg-banner-csp {
   padding-top: 1rem;
 }
 
 @media (max-width: 991px) {
-  .bg-banner-sp, .bg-blog-bp, .bg-advertise-with-us-ap, .bg-submissions-sp, .bg-terms-and-conditions-tcp, .bg-faq-fp, .bg-contact-us-cp, .bg-places-pp, .bg-characters-cp, .bg-banner-psp {
+  .bg-banner-sp, .bg-blog-bp, .bg-advertise-with-us-ap, .bg-submissions-sp, .bg-terms-and-conditions-tcp, .bg-faq-fp, .bg-contact-us-cp, .bg-places-pp, .bg-characters-cp, .bg-banner-psp, .bg-banner-csp {
     padding-top: 1rem;
   }
 }
 
 @media (max-width: 575px) {
-  .bg-banner-sp, .bg-blog-bp, .bg-advertise-with-us-ap, .bg-submissions-sp, .bg-terms-and-conditions-tcp, .bg-faq-fp, .bg-contact-us-cp, .bg-places-pp, .bg-characters-cp, .bg-banner-psp {
+  .bg-banner-sp, .bg-blog-bp, .bg-advertise-with-us-ap, .bg-submissions-sp, .bg-terms-and-conditions-tcp, .bg-faq-fp, .bg-contact-us-cp, .bg-places-pp, .bg-characters-cp, .bg-banner-psp, .bg-banner-csp {
     padding-top: 1rem;
   }
 }
 
-.story-banner-sp > img, .character-banner-cp > img {
-  height: 380px;
-  margin: 0 auto;
-}
-
-@media (max-width: 575px) {
-  .story-banner-sp > img, .character-banner-cp > img {
-    height: auto;
-  }
+.story-banner-sp img, .places-banner-psp img, .character-banner-psp img {
+  border-radius: 14px;
+  width: 100%;
 }
 
 /*------- Story Information Section Starts -------*/
@@ -1398,9 +1398,17 @@ body {
 }
 
 .accordion-1 > div {
-  background-color: #f7f7f7;
+  background-color: #b7b7b7;
   border: 1px solid #000000;
   padding: 0.5rem;
+  width: 65%;
+}
+
+@media (max-width: 575px) {
+  .accordion-1 > div {
+    margin: 0 auto;
+    width: 75%;
+  }
 }
 
 .accordion-1 > div > p {
@@ -1414,7 +1422,7 @@ body {
 }
 
 .accordion-1 > div > p > a:hover {
-  color: #262626;
+  color: #000000;
 }
 
 .audio-story-sp {
@@ -1832,7 +1840,7 @@ body {
 .form-control-kathaastu {
   border: 0;
   border-radius: 0;
-  font-family: "Gotham-Book";
+  font-family: "RobotoCondensed-Light";
 }
 
 .form-control-dark-kathaastu {
@@ -2152,25 +2160,25 @@ textarea.form-control-kathaastu {
 /*------- Places Single Page Starts -------*/
 /*------- Banner Section Starts -------*/
 @media (max-width: 575px) {
-  .bg-banner-psp {
+  .bg-banner-psp, .bg-banner-csp {
     padding-bottom: 0;
   }
 }
 
-.character-banner-info-cp {
+.places-banner-info-pp, .character-banner-info-csp {
   margin-top: 1.5rem;
   text-align: center;
 }
 
 @media (max-width: 575px) {
-  .character-banner-info-cp {
+  .places-banner-info-pp, .character-banner-info-csp {
     margin-bottom: 0;
     text-align: justify;
   }
 }
 
 @media (max-width: 575px) {
-  .character-banner-info-cp > p {
+  .places-banner-info-pp > p, .character-banner-info-csp > p {
     margin-bottom: 0;
   }
 }
@@ -2201,4 +2209,31 @@ textarea.form-control-kathaastu {
 /*------- Extra Characters Section Starts -------*/
 /*------- Extra Characters Section Ends -------*/
 /*------- Characters Page Ends -------*/
+/*------- Characters Single Page Starts -------*/
+/*------- Banner Section Starts -------*/
+.character-banner-info-csp {
+  margin-top: 0;
+}
+
+.character-banner-info-csp > p {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+/*------- Banner Section Ends -------*/
+/*------- Story Set Section Starts -------*/
+@media (max-width: 575px) {
+  .row-stories-set-city {
+    margin: 0 -0.5rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .row-stories-set-city > .col-6 {
+    padding: 0 0.5rem;
+  }
+}
+
+/*------- Story Set Section Ends -------*/
+/*------- Characters Single Page Ends -------*/
 /*# sourceMappingURL=style.css.map */
