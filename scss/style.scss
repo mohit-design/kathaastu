@@ -168,6 +168,36 @@ body {
   /*------- Mobile Header Section Starts -------*/
 
 .bg-header-mobile { display: none; }
+@include for-mobile-only {
+  .input-group-header-mobile {
+    margin-bottom: 1rem;
+  }
+  .header-social-listing-mob {
+    margin-bottom: 1rem;
+    & > li {
+      margin-right: 0.5rem;
+      &:last-child {
+        margin-right: 0;
+      }
+      & > a {
+        border: 1px solid $tertiaryColor;
+        @include border-radius(50%);
+        color: $tertiaryColor;
+        display: block;
+        font-size: 1rem;
+        height: 2.2rem;
+        line-height: 2.2rem;
+        text-align: center;
+        width: 2.2rem;
+        &:hover {
+          background-color: $tertiaryColor;
+          border: 1px solid transparent;
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+}
 @include for-md-tab-only {
   .bg-header-mobile {
     display: block;
@@ -564,10 +594,6 @@ body {
   //background-color: transparent;
   padding-bottom: 1rem;
   padding-top: 1rem;
-  // position: absolute;
-  // top: 0;
-  // width: 100%;
-  // z-index: 1;
   @include for-mobile-only {    
     display: none;
   }
