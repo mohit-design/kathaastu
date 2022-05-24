@@ -213,10 +213,10 @@ body {
 
 @media (max-width: 575px) {
   .input-group-header-mobile {
-    margin-bottom: 1rem;
+    margin-top: 1rem;
   }
   .header-social-listing-mob {
-    margin-bottom: 1rem;
+    margin-top: 1rem;
   }
   .header-social-listing-mob > li {
     margin-right: 0.5rem;

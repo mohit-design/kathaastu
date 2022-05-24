@@ -170,10 +170,10 @@ body {
 .bg-header-mobile { display: none; }
 @include for-mobile-only {
   .input-group-header-mobile {
-    margin-bottom: 1rem;
+    margin-top: 1rem;
   }
   .header-social-listing-mob {
-    margin-bottom: 1rem;
+    margin-top: 1rem;
     & > li {
       margin-right: 0.5rem;
       &:last-child {
