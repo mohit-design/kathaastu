@@ -793,6 +793,11 @@ body {
 
   /*------- Latest and Trending Stories Section Starts -------*/
 
+.bg-latest-trending-stories-sup {
+  @include for-mobile-only {
+    padding-top: 0;
+  }
+}
 .section-stories-heading-home {
   & > h2 {
     @include for-mobile-only {    
@@ -898,6 +903,9 @@ body {
 
   /*------- Popular Stories Section Starts -------*/
 
+.bg-popular-stories-sup {
+  @extend .bg-latest-trending-stories-sup;
+}
 .slick-slider-popular-stories-home {
   @extend .slick-slider-latest-trending-stories-home;
 }
@@ -906,6 +914,10 @@ body {
 
   /*------- Recommended Stories Section Starts -------*/
 
+.bg-recommended-stories-sup {
+  @extend .bg-latest-trending-stories-sup;
+  padding-bottom: 1rem;
+}
 .slick-slider-recommended-stories-home {
   @extend .slick-slider-latest-trending-stories-home;
 }
@@ -914,6 +926,10 @@ body {
 
   /*------- New Stories on Kathaastu Section Starts -------*/
 
+.bg-new-stories-sup {
+  @extend .bg-latest-trending-stories-sup;
+  padding-bottom: 0;
+}
 .slick-slider-new-stories-home {
   @extend .slick-slider-latest-trending-stories-home;
 }
@@ -1169,7 +1185,8 @@ body {
     @include for-mobile-only {
       font-size: $h4;
       margin: 0 auto;
-      width: 90%;
+      padding: 0.2444rem 1rem;
+      width: 75%;
     }
     &:last-of-type {
       border-bottom: 1px solid $lightGray;
@@ -1241,9 +1258,9 @@ body {
     }
     @include for-mobile-only {
       font-size: $h4;
-      margin-bottom: 1rem;
-      padding: 0.5rem;
-      width: 90%;
+      margin: 0 auto 1rem;
+      padding: 0.594rem 1rem;
+      width: 75%;
     }
   }
 }
@@ -1261,7 +1278,7 @@ body {
   @include for-mobile-only {
     margin: 0 auto 2rem;
     text-align: center;
-    width: 90%;
+    width: 75%;
   }
   & > .selectBtn {
     border: 1px solid $lightGray;

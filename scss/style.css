@@ -921,6 +921,12 @@ body {
 /*------- Information Section Ends -------*/
 /*------- Latest and Trending Stories Section Starts -------*/
 @media (max-width: 575px) {
+  .bg-latest-trending-stories-sup, .bg-popular-stories-sup, .bg-recommended-stories-sup, .bg-new-stories-sup {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 575px) {
   .section-stories-heading-home > h2 {
     width: calc(100% - 10rem);
   }
@@ -1055,8 +1061,16 @@ body {
 /*------- Popular Stories Section Starts -------*/
 /*------- Popular Stories Section Ends -------*/
 /*------- Recommended Stories Section Starts -------*/
+.bg-recommended-stories-sup {
+  padding-bottom: 1rem;
+}
+
 /*------- Recommended Stories Section Ends -------*/
 /*------- New Stories on Kathaastu Section Starts -------*/
+.bg-new-stories-sup {
+  padding-bottom: 0;
+}
+
 /*------- New Stories on Kathaastu Section Ends -------*/
 /*------- Extra Information Section Starts -------*/
 .bg-extra-info-home {
@@ -1389,7 +1403,8 @@ body {
   .accordion-1 > h4 {
     font-size: 16px;
     margin: 0 auto;
-    width: 90%;
+    padding: 0.2444rem 1rem;
+    width: 75%;
   }
 }
 
@@ -1489,9 +1504,9 @@ body {
 @media (max-width: 575px) {
   .audio-story-sp > a {
     font-size: 16px;
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    width: 90%;
+    margin: 0 auto 1rem;
+    padding: 0.594rem 1rem;
+    width: 75%;
   }
 }
 
@@ -1518,7 +1533,7 @@ body {
   .select {
     margin: 0 auto 2rem;
     text-align: center;
-    width: 90%;
+    width: 75%;
   }
 }
 
