@@ -1636,8 +1636,8 @@ body {
 
 @media (max-width: 575px) {
   .accordion-story-ahead-sp > h4 {
-    margin: 0 1rem;
-    width: calc(100% - 2rem);
+    margin-top: 0.5rem;
+    width: 75%;
   }
 }
 
@@ -2119,6 +2119,7 @@ textarea.form-control-kathaastu {
 
 @media (max-width: 575px) {
   .places-info-pp > p, .characters-info-cp > p {
+    font-size: 16px;
     margin-bottom: 1rem;
   }
 }
@@ -2201,22 +2202,15 @@ textarea.form-control-kathaastu {
   }
 }
 
-.places-banner-info-pp, .character-banner-info-csp {
-  margin-top: 1.5rem;
-  text-align: center;
-}
-
 @media (max-width: 575px) {
-  .places-banner-info-pp, .character-banner-info-csp {
-    margin-bottom: 0;
-    text-align: justify;
+  .places-banner-psp > img, .character-banner-csp > img {
+    margin-bottom: 1rem;
   }
 }
 
-@media (max-width: 575px) {
-  .places-banner-info-pp > p, .character-banner-info-csp > p {
-    margin-bottom: 0;
-  }
+.places-banner-info-psp > p, .character-banner-info-csp > p {
+  margin-bottom: 0;
+  text-align: justify;
 }
 
 /*------- Banner Section Ends -------*/
@@ -2269,15 +2263,6 @@ textarea.form-control-kathaastu {
   .character-banner-csp > img {
     margin-bottom: 1rem;
   }
-}
-
-.character-banner-info-csp {
-  margin-top: 0;
-}
-
-.character-banner-info-csp > p {
-  margin-bottom: 0;
-  text-align: justify;
 }
 
 /*------- Banner Section Ends -------*/

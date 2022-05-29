@@ -1352,8 +1352,8 @@ body {
   & > h4 {
     width: 100%;
     @include for-mobile-only {
-      margin: 0 1rem;
-      width: calc(100% - 2rem);
+      margin-top: 0.5rem;
+      width: 75%;
     }
   }
 }
@@ -1759,6 +1759,7 @@ textarea.form-control-kathaastu {
       margin-bottom: 1rem;
     }
     @include for-mobile-only {
+      font-size: $h4;
       margin-bottom: 1rem;
     }
   }
@@ -1851,18 +1852,16 @@ textarea.form-control-kathaastu {
 }
 .places-banner-psp {
   @extend .story-banner-sp;
+  & > img {
+    @include for-mobile-only {
+      margin-bottom: 1rem;
+    }
+  }
 }
-.places-banner-info-pp {
-  margin-top: 1.5rem;
-  text-align: center;
-  @include for-mobile-only {
+.places-banner-info-psp {
+  & > p {
     margin-bottom: 0;
     text-align: justify;
-  }
-  & > p {
-    @include for-mobile-only {
-      margin-bottom: 0;
-    }
   }
 }
 
@@ -1966,12 +1965,7 @@ textarea.form-control-kathaastu {
   }
 }
 .character-banner-info-csp {
-  @extend .places-banner-info-pp;
-  margin-top: 0;
-  & > p {
-    margin-bottom: 0;
-    text-align: justify;
-  }
+  @extend .places-banner-info-psp;
 }
 
   /*------- Banner Section Ends -------*/
