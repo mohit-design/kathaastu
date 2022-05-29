@@ -1648,7 +1648,7 @@ body {
 @media (max-width: 575px) {
   .accordion-story-ahead-sp > h4 {
     margin-top: 0.5rem;
-    width: 90%;
+    width: 75%;
   }
 }
 
