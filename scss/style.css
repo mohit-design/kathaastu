@@ -1061,10 +1061,6 @@ body {
 /*------- Popular Stories Section Starts -------*/
 /*------- Popular Stories Section Ends -------*/
 /*------- Recommended Stories Section Starts -------*/
-.bg-recommended-stories-sup {
-  padding-bottom: 1rem;
-}
-
 /*------- Recommended Stories Section Ends -------*/
 /*------- New Stories on Kathaastu Section Starts -------*/
 .bg-new-stories-sup {
@@ -1457,7 +1453,7 @@ body {
 @media (max-width: 575px) {
   .accordion-1 > div {
     margin: 0 auto;
-    width: 100%;
+    width: 75%;
   }
 }
 

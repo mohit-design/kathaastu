@@ -916,7 +916,6 @@ body {
 
 .bg-recommended-stories-sup {
   @extend .bg-latest-trending-stories-sup;
-  padding-bottom: 1rem;
 }
 .slick-slider-recommended-stories-home {
   @extend .slick-slider-latest-trending-stories-home;
@@ -1225,7 +1224,7 @@ body {
     width: 100%;
     @include for-mobile-only {
       margin: 0 auto;
-      width: 100%;
+      width: 75%;
     }
     & > p {
       margin-bottom: 0;
