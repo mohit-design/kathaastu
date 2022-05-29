@@ -39,7 +39,7 @@
 .container-fluid {
   padding-left: 3rem;
   padding-right: 3rem;
-  padding-top: 5rem;
+  padding-top: 3rem;
 }
 
 @media (max-width: 1199px) {
@@ -1361,7 +1361,7 @@ body {
   font-size: 18px;
   margin: 0;
   position: relative;
-  width: 65%;
+  width: 100%;
 }
 
 @media (max-width: 1199px) {
@@ -1389,7 +1389,7 @@ body {
   .accordion-1 > h4 {
     font-size: 16px;
     margin: 0 auto;
-    width: 75%;
+    width: 90%;
   }
 }
 
@@ -1436,13 +1436,13 @@ body {
   background-color: #b7b7b7;
   border: 1px solid #000000;
   padding: 0.5rem;
-  width: 65%;
+  width: 100%;
 }
 
 @media (max-width: 575px) {
   .accordion-1 > div {
     margin: 0 auto;
-    width: 75%;
+    width: 100%;
   }
 }
 
@@ -1467,7 +1467,7 @@ body {
 .audio-story-sp > a {
   border: 1px solid #b7b7b7;
   color: #b7b7b7;
-  display: inline-block;
+  display: block;
   font-family: "RobotoCondensed-Light";
   font-size: 18px;
   margin-bottom: 2rem;
@@ -1491,7 +1491,7 @@ body {
     font-size: 16px;
     margin-bottom: 1rem;
     padding: 0.5rem;
-    width: 75%;
+    width: 90%;
   }
 }
 
@@ -1499,7 +1499,7 @@ body {
   margin-bottom: 2rem;
   margin-left: auto;
   position: relative;
-  width: 50%;
+  width: 100%;
 }
 
 @media (max-width: 991px) {
@@ -1518,7 +1518,7 @@ body {
   .select {
     margin: 0 auto 2rem;
     text-align: center;
-    width: 75%;
+    width: 90%;
   }
 }
 
@@ -1637,7 +1637,7 @@ body {
 @media (max-width: 575px) {
   .accordion-story-ahead-sp > h4 {
     margin-top: 0.5rem;
-    width: 75%;
+    width: 90%;
   }
 }
 
@@ -1674,13 +1674,14 @@ body {
 }
 
 .story-tags-heading-sp > p {
+  font-family: "RobotoCondensed-Light";
   font-size: 24px;
   margin-bottom: 0.5rem;
 }
 
 .story-tags-listing-sp > li {
   display: inline-block;
-  margin: 0 1rem 0.5rem 0;
+  margin: 0 0.5rem 0.85rem 0;
 }
 
 .story-tags-listing-sp > li:last-child {
@@ -1688,9 +1689,12 @@ body {
 }
 
 .story-tags-listing-sp > li > a {
+  border: 1px solid #b7b7b7;
   color: #b7b7b7;
+  display: inline-block;
   font-family: "Gotham-Book";
-  font-size: 18px;
+  font-size: 16px;
+  padding: 0.5rem 1rem;
 }
 
 @media (max-width: 575px) {
@@ -1770,12 +1774,12 @@ body {
   }
 }
 
-.blog-banner-bp > img {
+.blog-banner-bp img {
   margin-bottom: 2rem;
 }
 
 @media (max-width: 575px) {
-  .blog-banner-bp > img {
+  .blog-banner-bp img {
     margin-bottom: 1.5rem;
   }
 }
