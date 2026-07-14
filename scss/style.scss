@@ -1,0 +1,2008 @@
+@import "font-family.scss";
+@import "font-size.scss";
+@import "colors";
+@import "mixins";
+
+/*------- Font Family Starts -------*/
+
+@font-face {
+  font-family: $gothamLight;
+  src: url("../fonts/Gotham-Light.ttf");
+}
+@font-face {
+  font-family: $gothamBook;
+  src: url("../fonts/Gotham-Book.ttf");
+}
+@font-face {
+  font-family: $gothamMedium;
+  src: url("../fonts/Gotham-Medium.ttf");
+}
+@font-face {
+  font-family: $gothamBold;
+  src: url("../fonts/Gotham-Bold.ttf");
+}
+@font-face {
+  font-family: $RobotoCondensedLight;
+  src: url("../fonts/RobotoCondensed-Light.ttf");
+}
+@font-face {
+  font-family: $RobotoCondensedRegular;
+  src: url("../fonts/RobotoCondensed-Regular.ttf");
+}
+@font-face {
+  font-family: $JosefinSlabLight;
+  src: url("../fonts/JosefinSlab-Light.ttf");
+}
+
+/*------- Font Family Ends -------*/
+
+/*------- Common CSS Starts -------*/
+
+.container-fluid {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 3rem;
+  @include for-lg-tab-only {
+    padding-bottom: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 2rem;
+  }
+  @include for-md-tab-only {
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+  }
+  @include for-sm-tab-only {
+    padding-bottom: 1.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 1.5rem;
+  }
+  @include for-mobile-only {
+    padding-bottom: 1.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 1.5rem;
+  }
+}
+.section-heading {
+  &.yellow {
+    & > h2 {
+      color: $secondaryColor;
+    }
+  }
+  & > h2 {
+    color: $tertiaryColor;
+    font-family: $RobotoCondensedLight;
+    font-size: $h2;
+    margin-bottom: 2rem;
+    @include for-lg-tab-only {
+      margin-bottom: 1rem;
+    }
+    @include for-md-tab-only {
+      margin-bottom: 1rem;
+    }
+    @include for-sm-tab-only {    
+      font-size: $h3;
+      line-height: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    @include for-mobile-only {    
+      font-size: $h3;
+      line-height: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+p {
+  color: $tertiaryColor;
+  font-family: $JosefinSlabLight;
+  font-size: $p;
+  @include for-lg-tab-only {
+    font-size: $h3;
+  }
+  @include for-md-tab-only {
+    font-size: $h3;
+  }
+  @include for-sm-tab-only {    
+    font-size: $h4;
+  }
+  @include for-mobile-only {    
+    font-size: $h4;
+  }
+}
+a {
+  text-decoration: none;
+  @include transition(0.5s ease);
+}
+.read-more {
+  & > a {
+    background-color: transparent;
+    border: 1px solid $tertiaryColor;
+    @include border-radius(24px);
+    color: $tertiaryColor;
+    display: inline-block;
+    padding: 10px 25px;
+    text-align: center;
+    text-transform: uppercase;
+    &:hover {
+      background-color: $tertiaryColor;
+      color: $primaryColor;
+    }
+  }
+}
+
+/*------- Common CSS Ends -------*/
+
+/*------- Reset CSS Starts -------*/
+
+html { letter-spacing: 0.75px; }
+body {
+  background-color: $primaryColor;
+  @include for-mobile-only {
+    &.active {
+      overflow: hidden;
+    }
+  }
+}
+
+/*------- Reset CSS Ends -------*/
+
+/*------- Scroll Progressbar Section Starts -------*/
+
+.display-progress { background-color: $secondaryColor; height: 0.25rem; position: fixed; top: 0; z-index: 2; }
+
+/*------- Scroll Progressbar Section Ends -------*/
+
+/*------- Home Page Starts -------*/
+
+  /*------- Mobile Header Section Starts -------*/
+
+.bg-header-mobile { display: none; }
+@include for-mobile-only {
+  .input-group-header-mobile {
+    margin-top: 1rem;
+  }
+  .header-social-listing-mob {
+    margin-top: 1rem;
+    & > li {
+      margin-right: 0.5rem;
+      &:last-child {
+        margin-right: 0;
+      }
+      & > a {
+        border: 1px solid $tertiaryColor;
+        @include border-radius(50%);
+        color: $tertiaryColor;
+        display: block;
+        font-size: 1rem;
+        height: 2.2rem;
+        line-height: 2.2rem;
+        text-align: center;
+        width: 2.2rem;
+        &:hover {
+          background-color: $tertiaryColor;
+          border: 1px solid transparent;
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+}
+@include for-md-tab-only {
+  .bg-header-mobile {
+    display: block;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+  .header-logo-mobile {
+    & > a {
+      display: inline-block;
+      & > img {
+        width: 145px;
+      }
+    }
+  }
+  .places-characters-listing {
+    & > li {
+      margin-right: 1.5rem;
+      &:last-child {
+        margin-right: 0;
+      }
+      & > a {
+        color: $tertiaryColor;
+        font-family: $RobotoCondensedLight;
+        font-size: $h4;
+      }
+    }
+  }
+  .burger-menu {
+    cursor: pointer;
+    height: 3rem;
+    margin-left: auto;
+    position: relative;
+    width: 3rem;
+    & > span {
+      background-color: $tertiaryColor;
+      height: 0.1rem;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      @include transform(translate(-50%,-50%));
+      @include transition(0.5s ease);
+      width: 1.5rem;
+      &::before {
+        background-color: $tertiaryColor;
+        content: "";
+        height: 0.1rem;
+        position: absolute;
+        top: 0.75rem;
+        @include transition(0.5s ease);
+        width: 1rem;
+      }
+      &::after {
+        background-color: $tertiaryColor;
+        content: "";
+        height: 0.1rem;
+        position: absolute;
+        top: -0.75rem;
+        @include transition(0.5s ease);
+        width: 1rem;
+      }
+    }
+    &.active {
+      & > span {
+        background-color: transparent;
+        &::before {
+          top: 0;
+          @include transform(rotate(-45deg));
+          @include for-mobile-only {
+            width: 2rem;
+          }
+        }
+        &::after {
+          top: 0;
+          @include transform(rotate(45deg));
+          @include for-mobile-only {
+            width: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+@include for-sm-tab-only {
+  .bg-header-mobile {
+    display: block;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+  .header-logo-mobile {
+    & > a {
+      display: inline-block;
+      & > img {
+        width: 145px;
+      }
+    }
+  }
+  .places-characters-listing {
+    & > li {
+      margin-right: 1.5rem;
+      &:last-child {
+        margin-right: 0;
+      }
+      & > a {
+        color: $tertiaryColor;
+        font-family: $RobotoCondensedLight;
+        font-size: $h4;
+      }
+    }
+  }
+  .burger-menu {
+    cursor: pointer;
+    height: 3rem;
+    margin-left: auto;
+    position: relative;
+    width: 3rem;
+    & > span {
+      background-color: $tertiaryColor;
+      height: 0.1rem;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      @include transform(translate(-50%,-50%));
+      @include transition(0.5s ease);
+      width: 1.5rem;
+      &::before {
+        background-color: $tertiaryColor;
+        content: "";
+        height: 0.1rem;
+        position: absolute;
+        top: 0.75rem;
+        @include transition(0.5s ease);
+        width: 2rem;
+      }
+      &::after {
+        background-color: $tertiaryColor;
+        content: "";
+        height: 0.1rem;
+        position: absolute;
+        top: -0.75rem;
+        @include transition(0.5s ease);
+        width: 1rem;
+      }
+    }
+    &.active {
+      & > span {
+        background-color: transparent;
+        &::before {
+          top: 0;
+          @include transform(rotate(-45deg));
+        }
+        &::after {
+          top: 0;
+          @include transform(rotate(45deg));
+        }
+      }
+    }
+  }
+}
+@include for-mobile-only {
+  .bg-header-mobile {
+    display: block;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+  .header-logo-mobile {
+    & > a {
+      display: inline-block;
+      & > img {
+        width: 145px;
+      }
+    }
+  }
+  .places-characters-listing {
+    & > li {
+      margin-right: 0.5rem;
+      &:last-child {
+        margin-right: 0;
+      }
+      & > a {
+        color: $tertiaryColor;
+        font-family: $RobotoCondensedLight;
+        font-size: $h5;
+      }
+    }
+  }
+  .burger-menu {
+    cursor: pointer;
+    height: 3rem;
+    margin-left: auto;
+    position: relative;
+    width: 3rem;
+    & > span {
+      background-color: $tertiaryColor;
+      height: 0.1rem;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      @include transform(translate(-50%,-50%));
+      @include transition(0.5s ease);
+      width: 1.5rem;
+      &::before {
+        background-color: $tertiaryColor;
+        content: "";
+        height: 0.1rem;
+        position: absolute;
+        top: -0.75rem;
+        @include transition(0.5s ease);
+        width: 2rem;
+      }
+      &::after {
+        background-color: $tertiaryColor;
+        content: "";
+        height: 0.1rem;
+        position: absolute;
+        top: 0.75rem;
+        @include transition(0.5s ease);
+        width: 1rem;
+      }
+    }
+    &.active {
+      & > span {
+        background-color: transparent;
+        &::before {
+          top: 0;
+          @include transform(rotate(-45deg));
+        }
+        &::after {
+          top: 0;
+          @include transform(rotate(45deg));
+        }
+      }
+    }
+  }
+}
+
+	/*------- Mobile Header Section Ends -------*/
+
+  /*------- Mobile Sidebar Section Starts -------*/
+
+.fixed-sidebar { display: none; }
+@include for-md-tab-only {
+  .fixed-sidebar {
+    background-color: $primaryColor;
+    display: flex;
+    height: 100%;
+    left: 0;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    @include transform(translateX(-100%));
+    @include transition(0.5s ease);
+    width: auto;
+    z-index: 10;
+    &.active {
+      @include transform(translateX(0));
+    }
+  }
+  .sidebar-logo {
+    & > a {
+      display: inline-block;
+      & > img {
+        width: 145px;
+      }
+    }
+  }
+  .sidebar-social-listing {
+    & > li {
+      margin-right: 1rem;
+      &:last-child {
+        margin-right: 0;
+      }
+      & > a {
+        border: 1px solid $tertiaryColor;
+        @include border-radius(50%);
+        color: $tertiaryColor;
+        display: block;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        text-align: center;
+        width: 2.5rem;
+        &:hover {
+          background-color: $tertiaryColor;
+          border: 1px solid transparent;
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+}
+@include for-sm-tab-only {
+  .fixed-sidebar {
+    background-color: $primaryColor;
+    display: flex;
+    height: 100%;
+    left: 0;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    @include transform(translateX(-100%));
+    @include transition(0.5s ease);
+    width: auto;
+    z-index: 10;
+    &.active {
+      @include transform(translateX(0));
+    }
+  }
+  .sidebar-logo {
+    & > a {
+      display: inline-block;
+      & > img {
+        width: 145px;
+      }
+    }
+  }
+  .sidebar-social-listing {
+    & > li {
+      margin-right: 1rem;
+      &:last-child {
+        margin-right: 0;
+      }
+      & > a {
+        border: 1px solid $tertiaryColor;
+        @include border-radius(50%);
+        color: $tertiaryColor;
+        display: block;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        text-align: center;
+        width: 2.5rem;
+        &:hover {
+          background-color: $tertiaryColor;
+          border: 1px solid transparent;
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+}
+@include for-mobile-only {
+  .fixed-sidebar {
+    background-color: $primaryColor;
+    display: flex;
+    height: 100%;
+    left: 0;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    @include transform(translateX(-100%));
+    @include transition(0.5s ease);
+    width: auto;
+    z-index: 10;
+    &.active {
+      @include transform(translateX(0));
+    }
+  }
+  .sidebar-logo {
+    & > a {
+      display: inline-block;
+      & > img {
+        width: 145px;
+      }
+    }
+  }
+  .sidebar-social-listing {
+    & > li {
+      margin-right: 1rem;
+      &:last-child {
+        margin-right: 0;
+      }
+      & > a {
+        border: 1px solid $tertiaryColor;
+        @include border-radius(50%);
+        color: $tertiaryColor;
+        display: block;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        text-align: center;
+        width: 2.5rem;
+        &:hover {
+          background-color: $tertiaryColor;
+          border: 1px solid transparent;
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+}
+
+  /*------- Mobile Sidebar Section Ends -------*/
+
+  /*------- Desktop Header Section Starts -------*/
+
+.bg-header-desktop {
+  //background-color: transparent;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  @include for-mobile-only {    
+    display: none;
+  }
+  @include for-sm-tab-only {    
+    display: none;
+  }
+  @include for-md-tab-only {    
+    display: none;
+  }
+}
+.header-logo-desktop {
+  & > a {
+    display: inline-block;
+    & > img {
+      height: 3rem;
+    }
+  }
+}
+.menu-listing {
+  & > li {
+    margin-right: 1.5rem;
+    @include for-lg-tab-only {
+      margin-right: 1.25rem;
+    }
+    @include for-md-tab-only {
+      margin-bottom: 1rem;
+      margin-right: 0;
+    }
+    @include for-sm-tab-only {
+      margin-bottom: 1rem;
+      margin-right: 0;
+    }
+    @include for-mobile-only {
+      margin-bottom: 1rem;
+      margin-right: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    & > a {
+      color: $tertiaryColor;
+      font-family: $RobotoCondensedLight;
+      font-size: $h3;
+      @include for-mobile-only {
+        font-family: $RobotoCondensedLight;
+      }
+    }
+    &:hover {
+      & > a {
+        color: $secondaryColor;
+      }
+    }
+    &.active > a {
+      color: $secondaryColor;
+    }
+  }
+}
+.header-social-listing {
+  & > li {
+    margin-right: 1rem;
+    @include for-lg-tab-only {
+      margin-right: 1rem;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    & > a {
+      border: 1px solid $tertiaryColor;
+      @include border-radius(50%);
+      color: $tertiaryColor;
+      display: block;
+      height: 2.5rem;
+      line-height: 2.5rem;
+      text-align: center;
+      width: 2.5rem;
+      &:hover {
+        background-color: $tertiaryColor;
+        border: 1px solid transparent;
+        color: $primaryColor;
+      }
+    }
+  }
+}
+
+  /*------- Desktop Header Section Ends -------*/
+
+  /*------- Banner Section Starts -------*/
+
+.bg-slider-home {
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+.slick-slider-banner-home {
+  & .slick-slide {
+    margin: 0 0.25rem;
+    @include for-mobile-only {
+      margin: 0 0.25rem;
+    }
+  }
+  & > .slick-prev {
+    border: 2px solid $tertiaryColor;
+    @include border-radius(50%);
+    height: 2.5rem;
+    @include transition(0.5s ease);
+    width: 2.5rem;
+    z-index: 1;
+    @include for-lg-tab-only {
+      left: -1rem;
+    }
+    @include for-md-tab-only {
+      left: 0;
+    }
+    @include for-sm-tab-only {
+      left: 0;
+    }
+    @include for-mobile-only {    
+      height: 2.5rem;
+      right: 3rem;
+      width: 2.5rem;
+    }
+    &::before {
+      color: $tertiaryColor;
+      content: "\f053";
+      font-family: "Font Awesome 6 Free";
+      font-size: 1rem;
+      font-weight: 900;
+      opacity: 1;
+      @include transition(0.5s ease);
+      @include for-mobile-only {    
+        font-size: 1rem;
+      }
+    }
+    &:hover,
+    &:focus {
+      background-color: $tertiaryColor;
+      border: 2px solid transparent;
+      &::before {
+        color: $primaryColor;
+      }
+    }
+  }
+  & > .slick-next {
+    border: 2px solid $tertiaryColor;
+    @include border-radius(50%);
+    height: 2.5rem;
+    @include transition(0.5s ease);
+    width: 2.5rem;
+    z-index: 1;
+    @include for-lg-tab-only {
+      right: -1rem;
+    }
+    @include for-md-tab-only {
+      right: 0;
+    }
+    @include for-sm-tab-only {
+      right: 0;
+    }
+    @include for-mobile-only {    
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+    &::before {
+      color: $tertiaryColor;
+      content: "\f054";
+      font-family: "Font Awesome 6 Free";
+      font-size: 1rem;
+      font-weight: 900;
+      opacity: 1;
+      @include transition(0.5s ease);
+      @include for-mobile-only {    
+        font-size: 1rem;
+      }
+    }
+    &:hover,
+    &:focus {
+      background-color: $tertiaryColor;
+      border: 2px solid transparent;
+      &::before {
+        color: $primaryColor;
+      }
+    }
+  }
+}
+
+  /*------- Banner Section Ends -------*/
+
+  /*------- Information Section Starts -------*/
+
+.bg-info-home {
+  padding-top: 0;
+  @include for-mobile-only {
+    padding-top: 0;
+  }
+}
+
+  /*------- Information Section Ends -------*/
+
+  /*------- Latest and Trending Stories Section Starts -------*/
+
+.bg-latest-trending-stories-sup {
+  @include for-mobile-only {
+    padding-top: 0;
+  }
+}
+.section-stories-heading-home {
+  & > h2 {
+    @include for-mobile-only {    
+      width: calc(100% - 10rem);
+    }
+  }
+}
+.slick-slider-latest-trending-stories-home {
+  & .slick-slide {
+    margin: 0 0.25rem;
+    @include for-mobile-only {
+      margin: 0 0.25rem;
+    }
+  }
+  & > .slick-prev {
+    border: 2px solid $tertiaryColor;
+    @include border-radius(50%);
+    height: 2.5rem;
+    left:auto;
+    right: 3rem;
+    top: -3rem;
+    @include transition(0.5s ease);
+    width: 2.5rem;
+    z-index: 1;
+    @include for-mobile-only {    
+      height: 2.5rem;
+      right: 3rem;
+      top: -2rem;
+      width: 2.5rem;
+    }
+    &::before {
+      color: $tertiaryColor;
+      content: "\f053";
+      font-family: "Font Awesome 6 Free";
+      font-size: 1rem;
+      font-weight: 900;
+      opacity: 1;
+      @include transition(0.5s ease);
+      @include for-mobile-only {    
+        font-size: 1rem;
+      }
+    }
+    &:hover,
+    &:focus {
+      background-color: $tertiaryColor;
+      border: 2px solid transparent;
+      &::before {
+        color: $primaryColor;
+      }
+    }
+  }
+  & > .slick-next {
+    border: 2px solid $tertiaryColor;
+    @include border-radius(50%);
+    height: 2.5rem;
+    right: 0;
+    top: -3rem;
+    @include transition(0.5s ease);
+    width: 2.5rem;
+    z-index: 1;
+    @include for-mobile-only {    
+      height: 2.5rem;
+      top: -2rem;
+      width: 2.5rem;
+    }
+    &::before {
+      color: $tertiaryColor;
+      content: "\f054";
+      font-family: "Font Awesome 6 Free";
+      font-size: 1rem;
+      font-weight: 900;
+      opacity: 1;
+      @include transition(0.5s ease);
+      @include for-mobile-only {    
+        font-size: 1rem;
+      }
+    }
+    &:hover,
+    &:focus {
+      background-color: $tertiaryColor;
+      border: 2px solid transparent;
+      &::before {
+        color: $primaryColor;
+      }
+    }
+  }
+}
+.kathaastu-stories-img-home {
+  position: relative;
+  z-index: 1;
+  & img {
+    @include border-radius(14px);
+    cursor: pointer;
+    @include transition(0.5s ease);
+    width: 100%;
+    &:hover {
+      @include filter(brightness(40%));
+    }
+  }
+}
+
+  /*------- Latest and Trending Stories Section Ends -------*/
+
+  /*------- Popular Stories Section Starts -------*/
+
+.bg-popular-stories-sup {
+  @extend .bg-latest-trending-stories-sup;
+}
+.slick-slider-popular-stories-home {
+  @extend .slick-slider-latest-trending-stories-home;
+}
+
+  /*------- Popular Stories Section Ends -------*/
+
+  /*------- Recommended Stories Section Starts -------*/
+
+.bg-recommended-stories-sup {
+  @extend .bg-latest-trending-stories-sup;
+}
+.slick-slider-recommended-stories-home {
+  @extend .slick-slider-latest-trending-stories-home;
+}
+
+  /*------- Recommended Stories Section Ends -------*/
+
+  /*------- New Stories on Kathaastu Section Starts -------*/
+
+.bg-new-stories-sup {
+  @extend .bg-latest-trending-stories-sup;
+  padding-bottom: 0;
+}
+.slick-slider-new-stories-home {
+  @extend .slick-slider-latest-trending-stories-home;
+}
+
+  /*------- New Stories on Kathaastu Section Ends -------*/
+
+  /*------- Extra Information Section Starts -------*/
+
+.bg-extra-info-home {
+  border-bottom: 1px solid $darkGray;
+  padding-bottom: 5rem;
+  @include for-mobile-only {
+    padding-bottom: 1.5rem;
+  }
+}
+.extra-info-home {
+  & > p {
+    line-height: 1.7rem;
+    margin-bottom: 0.25rem;
+    @include for-mobile-only {
+      text-align: justify;
+    }
+    & > span,
+    & > a {
+      color: $secondaryColor;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+  /*------- Extra Information Section Ends -------*/
+
+  /*------- Footer Section Starts -------*/
+
+.bg-footer {
+  padding-bottom: 5rem;
+  @include for-lg-tab-only {
+    padding-bottom: 2rem;
+  }
+  @include for-md-tab-only {
+    padding-bottom: 2rem;
+  }
+  @include for-sm-tab-only {
+    padding-bottom: 2rem;
+  }
+  @include for-mobile-only {
+    padding-bottom: 1.5rem;
+  }
+}
+.footer-listing {
+  & > li {
+    display: block;
+    margin-bottom: 1rem;
+    &:last-child {
+      margin-bottom: 0;
+      @include for-mobile-only {    
+        margin-bottom: 1rem;
+      }
+    }
+    & > a {
+      color: $tertiaryColor;
+      font-family: $RobotoCondensedLight;
+      font-size: $h3;
+      position: relative;
+      &::before {
+        background-color: $secondaryColor;
+        content: "";
+        display: block;
+        height: 1px;
+        left: 0;
+        position: absolute;
+        top: 50%;
+        @include transition(0.5s ease);
+        width: 0;
+      }
+      &:hover {
+        color: $secondaryColor;
+        letter-spacing: 0.1rem;
+        padding-left: 2rem;
+        @include for-lg-tab-only {
+          letter-spacing: 0.025rem;
+        }
+        &::before {
+          width: 1.5rem;
+        }
+      }
+    }
+    &.active {
+      & > a {
+        color: $secondaryColor;
+        letter-spacing: 0.1rem;
+        padding-left: 2rem;
+        &::before {
+          width: 1.5rem;
+        }
+      }
+    }
+  }
+}
+.footer-social-listing {
+  @include display(flex);
+  justify-content: flex-end;
+  @include for-sm-tab-only {
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  @include for-mobile-only {
+    justify-content: flex-start;
+    margin-top: 0;
+  }
+  & > li {
+    margin-right: 1rem;
+    &:last-child {
+      margin-right: 0;
+    }
+    & > a {
+      background-color: $darkGray;
+      @include border-radius(50%);
+      color: $lightGray;
+      display: block;
+      height: 2.5rem;
+      line-height: 2.5rem;
+      text-align: center;
+      width: 2.5rem;
+      &:hover {
+        background-color: $secondaryColor;
+        color: $primaryColor;
+      }
+    }
+  }
+}
+.copyright-info {
+  & > p {
+    border-top: 1px solid $darkGray;
+    font-size: $h4;
+    margin: 3rem 0 0;
+    padding: 3rem 0 0;
+    @include for-lg-tab-only {
+      margin: 2rem 0 0;
+      padding: 2rem 0 0;
+    }
+    @include for-md-tab-only {
+      margin: 2rem 0 0;
+      padding: 2rem 0 0;
+    }
+    @include for-sm-tab-only {
+      margin: 1.5rem 0 0;
+      padding: 1.5rem 0 0;
+    }
+    @include for-mobile-only {
+      margin: 1.5rem 0 0;
+      padding: 1.5rem 0 0;
+    }
+    & > span {
+      color: $secondaryColor;
+    }
+  }
+}
+
+  /*------- Footer Section Ends -------*/
+
+  /*------- Scroll To Top Section Starts -------*/
+
+.scroll-to-top {
+  background-color: $secondaryColor;
+  @include border-radius(50%);
+  bottom: 2rem;
+  height: 3rem;
+  opacity: 0;
+  position: fixed;
+  right: 2rem;
+  visibility: hidden;
+  width: 3rem;
+  z-index: 10;
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  & > i {
+    color: $tertiaryColor;
+    display: block;
+    font-size: $h4;
+    line-height: 3rem;
+    text-align: center;
+  }
+}
+
+  /*------- Scroll To Top Section Ends -------*/
+
+/*------- Home Page Ends -------*/
+
+/*------- Stories Page Starts -------*/
+
+  /*------- Banner Section Starts -------*/
+
+.bg-banner-sp {
+  padding-top: 1rem;
+  @include for-md-tab-only {
+    padding-top: 1rem;
+  }
+  @include for-mobile-only {    
+    padding-top: 1rem;
+  }
+}
+.story-banner-sp {
+  & img {
+    width: 100%;
+  }
+}
+
+  /*------- Story Information Section Starts -------*/
+
+.bg-story-info-sp {
+  padding-bottom: 5rem;
+  padding-top: 2rem;
+  @include for-md-tab-only {
+    padding-bottom: 1.5rem;
+  }
+  @include for-mobile-only {
+    padding-bottom: 1.5rem;
+    padding-top: 0;
+  }
+}
+.accordion-1 {
+  margin-bottom: 2rem;
+  @include for-mobile-only {
+    margin-bottom: 1rem;
+  }
+  & > h4 {
+    border: 1px solid $lightGray;
+    border-bottom: 0;
+    color: $lightGray;
+    cursor: pointer;
+    font-family: $RobotoCondensedLight;
+    font-size: $h3;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    @include for-lg-tab-only {
+      width: 100%;
+    }
+    @include for-md-tab-only {
+      font-size: $h4;
+      width: 100%;
+    }
+    @include for-sm-tab-only {
+      font-size: $h4;
+      margin: 0 auto;
+      width: 100%;
+    }
+    @include for-mobile-only {
+      font-size: $h4;
+      margin: 0 auto;
+      padding: 0.2444rem 1rem;
+      width: 75%;
+    }
+    &:last-of-type {
+      border-bottom: 1px solid $lightGray;
+    }
+    &::after {
+      content: "\f067";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      @include transform(translateY(-50%));
+      @include transition(0.5s ease);
+    }
+    &.active {
+      border: 1px solid $darkGray;
+      background-color: $darkGray;
+      color: $tertiaryColor;
+      &::after {
+        content: "\f068";
+      }
+    }
+    & > span {
+      display: block;
+      padding: 0.669rem 1rem;
+      @include for-mobile-only {
+        padding: 0.5rem;
+        text-align: center;
+      }
+    }
+  }
+  & > div {
+    background-color: $lightGray;
+    border: 1px solid $primaryColor;
+    padding: 0.5rem;
+    width: 100%;
+    @include for-mobile-only {
+      margin: 0 auto;
+      width: 75%;
+    }
+    & > p {
+      margin-bottom: 0;
+      & > a {
+        color: $primaryColor;
+        font-family: $RobotoCondensedLight;
+        font-size: $h4;
+        &:hover {
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+}
+.audio-story-sp {
+  text-align: center;
+  & > a {
+    border: 1px solid $lightGray;
+    color: $lightGray;
+    display: block;
+    font-family: $RobotoCondensedLight;
+    font-size: $h3;
+    margin-bottom: 2rem;
+    padding: 0.5rem 1rem;
+    @include for-md-tab-only {
+      font-size: $h4;
+    }
+    @include for-sm-tab-only {
+      width: 100%;
+    }
+    @include for-mobile-only {
+      font-size: $h4;
+      margin: 0 auto 1rem;
+      padding: 0.594rem 1rem;
+      width: 75%;
+    }
+  }
+}
+.select {
+  margin-bottom: 2rem;
+  margin-left: auto;
+  position: relative;
+  width: 100%;
+  @include for-md-tab-only {
+    width: 100%;
+  }
+  @include for-sm-tab-only {
+    width: 100%;
+  }
+  @include for-mobile-only {
+    margin: 0 auto 2rem;
+    text-align: center;
+    width: 75%;
+  }
+  & > .selectBtn {
+    border: 1px solid $lightGray;
+    color: $lightGray;
+    cursor: pointer;
+    font-family: $RobotoCondensedLight;
+    padding: 0.594rem 0.75rem;
+    position: relative;
+    width: 100%;
+    @include for-md-tab-only {
+      font-size: $h4;
+    }
+    &::after {
+      border-right: 1px solid $lightGray;
+      border-bottom: 1px solid $lightGray;
+      content: "";
+      height: 0.75rem;
+      position: absolute;
+      right: 15px;
+      top: 45%;
+      @include transform(translateY(-50%) rotate(45deg));
+      @include transition(0.5s ease);
+      width: 0.75rem;
+    }
+    &.toggle {
+      &::after {
+        @include transform(translateY(-50%) rotate(-135deg));
+      }
+    }
+  }
+  & > .selectDropdown {
+    background-color: $white;
+    font-family: $RobotoCondensedLight;
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    @include transform(scale(1,0));
+    @include transition(0.5s ease);
+    @include transform-origin(top center);
+    visibility: hidden;
+    width: 100%;
+    z-index: 1;
+    & > .option {
+      cursor: pointer;
+      padding: 0.25rem 0.75rem;
+      &:hover {
+        background-color: $darkGray;
+        color: $tertiaryColor;
+      }
+    }
+    &.toggle {
+      @include transform(scale(1,1));
+      visibility: visible;
+    }
+  }
+}
+.story-heading-sp {
+  text-align: center;
+  @include for-mobile-only {
+    padding: 0 1rem;
+  }
+}
+.story-info-sp {
+  & > p {
+    &:last-of-type {
+      margin-bottom: 4rem;
+      @include for-sm-tab-only {
+        margin-bottom: 2rem;
+      }
+      @include for-mobile-only {
+        margin-bottom: 1rem;
+      }
+    }
+    @include for-mobile-only {
+      padding: 0 1rem;
+      text-align: justify;
+    }
+  }
+}
+.story-social-heading-sp {
+  & > p {
+    @include for-mobile-only {
+      padding: 0 1rem;
+    }
+  }
+}
+.accordion-story-ahead-sp {
+  & > h4 {
+    width: 100%;
+    @include for-mobile-only {
+      margin-top: 0.5rem;
+      width: 75%;
+    }
+  }
+}
+.story-social-listing-sp {
+  @extend .footer-social-listing;
+  justify-content: flex-start;
+  @include for-mobile-only {
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+  }
+}
+.story-tags-info-sp {
+  & > p {
+    margin-bottom: 0;
+    & > a {
+      color: $secondaryColor;
+      padding-right: 1rem;
+    }
+  }
+}
+.in-this-story-heading-sp {
+  margin-top: 2rem;
+  @include for-mobile-only {
+    margin-top: 0;
+  }
+}
+.story-tags-heading-sp {
+  & > p {
+    font-family: $RobotoCondensedLight;
+    font-size: $h2;
+    margin-bottom: 0.5rem;
+  }
+}
+.story-tags-listing-sp {
+  & > li {
+    display: inline-block;
+    margin: 0 0.5rem 0.85rem 0;
+    &:last-child {
+      margin-right: 0;
+    }
+    & > a {
+      border: 1px solid $lightGray;
+      color: $lightGray;
+      display: inline-block;
+      font-family: $gothamBook;
+      font-size: $h4;
+      padding: 0.5rem 1rem;
+      @include for-mobile-only {
+        font-size: $h4;
+      }
+      &:hover {
+        color: $secondaryColor;
+      }
+    }
+  }
+}
+
+  /*------- Story Information Section Ends -------*/
+
+  /*------- Author Information Section Starts -------*/
+
+.bg-author-info-sp {
+  border-bottom: 1px solid $darkGray;
+  border-top: 1px solid $darkGray;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  @include for-mobile-only {
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+  }
+}
+.author-profile-sp {
+  margin-right: 1.5rem;
+  & > img {
+    @include border-radius(50%);
+    height: 70px;
+    width: 70px;
+  }
+}
+.author-info-sp {
+  & > h3 {
+    color: $lightGray;
+    font-family: $gothamBook;
+    font-size: $h3;
+    margin-bottom: 1rem;
+  }
+}
+.author-social-listing-sp {
+  @extend .footer-social-listing;
+  justify-content: flex-start;
+}
+
+  /*------- Author Information Section Ends -------*/
+
+/*------- Stories Page Ends -------*/
+
+/*------- Blog Page Starts -------*/
+
+  /*------- Blog Section Starts -------*/
+
+.bg-blog-bp {
+  @extend .bg-banner-sp;
+  @include for-lg-tab-only {
+    padding-bottom: 0;
+  }
+  @include for-md-tab-only {
+    padding-bottom: 0;
+  }
+  @include for-sm-tab-only {
+    padding-bottom: 0;
+  }
+  @include for-mobile-only {
+    padding-bottom: 1rem;
+  }
+}
+.blog-banner-bp {
+  & img {
+    margin-bottom: 2rem;
+    @include for-mobile-only {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+.blog-section-heading {
+  text-align: center;
+  & > h2 {
+    @include for-mobile-only {
+      margin-bottom: 1rem;
+    }
+  }
+}
+.blog-social-heading-bp {
+  @extend .story-social-heading-sp;
+  & > p {
+    @include for-mobile-only {
+      padding: 0;
+    }
+  }
+}
+.blog-social-listing-bp {
+  @extend .story-social-listing-sp;
+  margin-bottom: 3rem;
+  @include for-sm-tab-only {
+    margin-top: 0;
+  }
+  @include for-mobile-only {
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    padding: 0;
+  }
+}
+
+  /*------- Blog Section Ends -------*/
+
+/*------- Blog Page Ends -------*/
+
+/*------- Advertise With Us Page Starts -------*/
+
+  /*------- Advertise With Us Section Starts -------*/
+
+.bg-advertise-with-us-ap {
+  @extend .bg-banner-sp;
+  @include for-mobile-only {
+    padding-bottom: 0;
+  }
+}
+.advertise-info-ap {
+  & > p {
+    margin-bottom: 2.5rem;
+    @include for-lg-tab-only {
+      margin-bottom: 1.5rem;
+    }
+    @include for-md-tab-only {
+      margin-bottom: 1.5rem;
+    }
+    @include for-sm-tab-only {
+      margin-bottom: 1rem;
+    }
+    @include for-mobile-only {
+      margin-bottom: 1rem;
+    }
+    & > a {
+      color: $secondaryColor;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.form-label-kathaastu {
+  color: $tertiaryColor;
+  font-family: $RobotoCondensedLight;
+  font-size: $h3;
+  @include for-mobile-only {
+    font-size: $h4;
+  }
+}
+.form-control-kathaastu {
+  border: 0;
+  @include border-radius(0);
+  font-family: $RobotoCondensedLight;
+}
+.form-control-dark-kathaastu {
+  background-color: $darkGray;
+  color: $tertiaryColor;
+  &::placeholder {
+    color: $tertiaryColor;
+    letter-spacing: 0.05rem;
+  }
+  &:-ms-input-placeholder {
+    color: $tertiaryColor;
+    letter-spacing: 0.05rem;
+  }
+  &::-ms-input-placeholder {
+    color: $tertiaryColor;
+    letter-spacing: 0.05rem;
+  }
+  & + .input-group-text {
+    background-color: $lightGray;
+    border-color: $lightGray;
+  }
+  &:focus {
+    background-color: $darkGray;
+    color: $tertiaryColor;
+  }
+}
+textarea.form-control-kathaastu {
+  height: 150px;
+}
+.btn-cancel,
+.btn-submit {
+  font-family: $gothamMedium;
+  letter-spacing: 0.05rem;
+  margin-right: 1rem;
+  padding: 0.563rem 0.75rem;
+  text-transform: uppercase;
+}
+.btn-submit {
+  margin-right: 0;
+}
+
+  /*------- Advertise With Us Section Ends -------*/
+
+/*------- Advertise With Us Page Ends -------*/
+
+/*------- Submissions Page Starts -------*/
+
+  /*------- Submissions Section Starts -------*/
+
+.bg-submissions-sp { @extend .bg-advertise-with-us-ap; }
+.submissions-info-sp {
+  @extend .advertise-info-ap;
+  & > h3 {
+    color: $white;
+    font-family: $RobotoCondensedLight;
+    font-size: $h2;
+    margin-bottom: 1rem;
+    padding-left: 3rem;
+    position: relative;
+    &::before {
+      background-color: $white;
+      content: "";
+      display: block;
+      height: 0.05rem;
+      left: 0;
+      position: absolute;
+      top: 50%;
+      width: 2rem;
+    }
+    @include for-lg-tab-only {
+      font-size: $h3;
+    }
+    @include for-md-tab-only {
+      font-size: $h3;
+    }
+    @include for-sm-tab-only {
+      font-size: $h3;
+    }
+    @include for-mobile-only {
+      font-size: $h3;
+    }
+  }
+}
+
+  /*------- Submissions Section Ends -------*/
+
+/*------- Submissions Page Ends -------*/
+
+/*------- Terms and Conditions Page Starts -------*/
+
+  /*------- Terms and Conditions Section Starts -------*/
+
+.bg-terms-and-conditions-tcp {
+  @extend .bg-advertise-with-us-ap;
+}
+.terms-conditions-info-tcp {
+    @extend .submissions-info-sp;
+    & > h3 {
+      @include for-mobile-only {
+        line-height: 1.5;
+      }
+    }
+    @include for-lg-tab-only {
+      margin-top: 1.5rem;
+    }
+    @include for-md-tab-only {
+      margin-top: 1.5rem;
+    }
+    @include for-sm-tab-only {
+      margin-top: 0;
+    }
+    @include for-mobile-only {
+      margin-top: 0;
+    }
+}
+
+  /*------- Terms and Conditions Section Ends -------*/
+
+/*------- Terms and Conditions Page Ends -------*/
+
+/*------- FAQ Page Starts -------*/
+
+  /*------- FAQ Section Starts -------*/
+
+.bg-faq-fp { @extend .bg-advertise-with-us-ap; }
+.faq-accordion-fp {
+  @include for-lg-tab-only {
+    margin-top: 1rem;
+  }
+  @include for-md-tab-only {
+    margin-top: 0;
+  }
+  @include for-sm-tab-only {
+    margin-top: 0;
+  }
+  @include for-mobile-only {
+    margin-top: 0;
+  }
+  & .accordion-item {
+    border: 1px solid $primaryColor;
+    & .accordion-button {
+      background-color: $lightGray;
+      color: $darkGray;
+      font-family: $RobotoCondensedRegular;
+      font-size: $h2 - 4px;
+      line-height: 27px;
+      &:not(.collapsed) {
+        background-color: $secondaryColor;
+        &::after {
+          background-image: url("../images/arrow.png");
+        }
+      }
+      &:focus {
+        @include box-shadow(none);
+      }
+    }
+    & .accordion-body {
+      color: $darkGray;
+      font-family: $gothamBook;
+      font-size: $h4;
+      & > a {
+        color: $darkGray;
+        text-transform: uppercase;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+  /*------- FAQ Section Ends -------*/
+
+/*------- FAQ Page Ends -------*/
+
+/*------- Contact Us Page Starts -------*/
+
+  /*------- Contact Us Section Starts -------*/
+
+.bg-contact-us-cp {
+  @extend .bg-advertise-with-us-ap;
+}
+.contact-info-cp {
+  @extend .advertise-info-ap;
+  @extend .submissions-info-sp;
+}
+
+  /*------- Contact Us Section Ends -------*/
+
+/*------- Contact Us Page Ends -------*/
+
+/*------- Places Page Starts -------*/
+
+  /*------- Places Section Starts -------*/
+
+.bg-places-pp {
+  @extend .bg-banner-sp;
+  @include for-mobile-only {
+    padding-bottom: 0;
+  }
+}
+.places-info-pp {
+  & > p {
+    font-size: $h2 - 4px;
+    margin-bottom: 0;
+    @include for-sm-tab-only {
+      margin-bottom: 1rem;
+    }
+    @include for-mobile-only {
+      font-size: $h4;
+      margin-bottom: 1rem;
+    }
+  }
+}
+.form-control-kathaastu {
+  & + .input-group-text {
+    @include border-radius(0);
+    cursor: pointer;
+  }
+}
+.row-box-places-images-pp {
+  margin-top: 1.5rem;
+  @include for-mobile-only {
+    margin: 1.5rem -0.5rem 0;
+  }
+  & > .col-6 {
+    @include for-mobile-only {
+      padding: 0 0.5rem;
+    }
+  }
+}
+.box-places-images-pp {
+  & > a {
+    display: block;
+    margin-bottom: 1.5rem;
+    @include for-mobile-only {
+      margin-bottom: 1rem;
+    }
+    & > img {
+      @include border-radius(14px);
+    }
+    &:hover {
+      @include filter(brightness(40%));
+    }
+  }
+}
+.slick-slider-read-stories-pp {
+  @extend .slick-slider-latest-trending-stories-home;
+}
+.slick-slider-explore-stories-pp {
+  @extend .slick-slider-read-stories-pp;
+}
+
+  /*------- Places Section Ends -------*/
+
+  /*------- Read Stories Section Starts -------*/
+
+.bg-read-stories-pp {
+  @include for-mobile-only {
+    padding-bottom: 0;
+  }
+}
+
+  /*------- Read Stories Section Ends -------*/
+
+  /*------- Explore Stories Section Starts -------*/
+
+.bg-explore-stories-pp {
+  @include for-mobile-only {
+    padding-bottom: 0;
+  }
+}
+
+  /*------- Explore Stories Section Ends -------*/
+
+  /*------- Extra Places Section Starts -------*/
+
+.bg-extra-places-pp {
+  @include for-mobile-only {
+    padding-bottom: 0;
+  }
+}
+.row-box-extra-places-images-pp {
+  @extend .row-box-places-images-pp;
+}
+
+  /*------- Extra Places Section Ends -------*/
+
+/*------- Places Page Ends -------*/
+
+/*------- Places Single Page Starts -------*/
+
+  /*------- Banner Section Starts -------*/
+
+.bg-banner-psp {
+  @extend .bg-banner-sp;
+  @include for-mobile-only {
+    padding-bottom: 0;
+  }
+}
+.places-banner-psp {
+  @extend .story-banner-sp;
+  & > img {
+    @include for-mobile-only {
+      margin-bottom: 1rem;
+    }
+  }
+}
+.places-banner-info-psp {
+  & > p {
+    margin-bottom: 0;
+    text-align: justify;
+  }
+}
+
+  /*------- Banner Section Ends -------*/
+
+  /*------- Story Set Section Starts -------*/
+
+.row-stories-set-city {
+  @include for-mobile-only {
+    margin: 0 -0.5rem;
+  }
+  & > .col-6 {
+    @include for-mobile-only {
+      padding: 0 0.5rem;
+    }
+  }
+}
+
+  /*------- Story Set Section Ends -------*/
+
+/*------- Places Single Page Ends -------*/
+
+/*------- Characters Page Starts -------*/
+
+  /*------- Characters Section Starts -------*/
+
+.bg-characters-cp {
+  @extend .bg-places-pp;
+}
+.characters-info-cp {
+  @extend .places-info-pp;
+}
+.row-box-characters-images-cp {
+  @extend .row-box-places-images-pp;
+}
+.box-characters-images-cp {
+  @extend .box-places-images-pp;
+}
+.slick-slider-read-stories-cp {
+  @extend .slick-slider-read-stories-pp;
+}
+.slick-slider-explore-stories-cp {
+  @extend .slick-slider-explore-stories-pp;
+}
+  
+  /*------- Characters Section Ends -------*/
+  
+  /*------- Read Stories Section Starts -------*/
+ 
+.bg-read-stories-cp {
+  @extend .bg-read-stories-pp;
+}
+  
+  /*------- Read Stories Section Ends -------*/
+  
+  /*------- Explore Stories Section Starts -------*/
+  
+.bg-explore-stories-cp {
+  @extend .bg-explore-stories-pp;
+}
+  
+  /*------- Explore Stories Section Ends -------*/
+  
+  /*------- Extra Characters Section Starts -------*/
+  
+.bg-extra-characters-cp {
+  @extend .bg-extra-places-pp;
+}
+.row-box-extra-characters-images-cp {
+  @extend .row-box-extra-places-images-pp;
+}
+  
+  /*------- Extra Characters Section Ends -------*/
+  
+/*------- Characters Page Ends -------*/
+
+/*------- Characters Single Page Starts -------*/
+
+  /*------- Banner Section Starts -------*/
+
+.bg-banner-csp {
+  @extend .bg-banner-psp;
+}
+.d-block-mobile {
+  @include for-mobile-only {
+    display: block;
+  }
+}
+.character-banner-csp {
+  @extend .places-banner-psp;
+  & > img {
+    @include for-md-tab-only {
+      margin-bottom: 1rem;
+    }
+    @include for-sm-tab-only {
+      margin-bottom: 1rem;
+    }
+    @include for-mobile-only {
+      margin-bottom: 1rem;
+    }
+  }
+}
+.character-banner-info-csp {
+  @extend .places-banner-info-psp;
+}
+
+  /*------- Banner Section Ends -------*/
+
+  /*------- Story Set Section Starts -------*/
+
+.row-stories-set-city {
+  @include for-mobile-only {
+    margin: 0 -0.5rem;
+  }
+  & > .col-6 {
+    @include for-mobile-only {
+      padding: 0 0.5rem;
+    }
+  }
+}
+
+  /*------- Story Set Section Ends -------*/
+
+/*------- Characters Single Page Ends -------*/
