@@ -24,6 +24,10 @@
   src: url("../fonts/RobotoCondensed-Regular.ttf");
 }
 @font-face {
+  font-family: "RobotoCondensed-Medium";
+  src: url("../fonts/RobotoCondensed-Medium.ttf");
+}
+@font-face {
   font-family: "JosefinSlab-Light";
   src: url("../fonts/JosefinSlab-Light.ttf");
 }
