@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="author" content="" />
+  <title>Places :: Kathaastu :: Universe of Stories</title>
+  <!-- Favicon Icon -->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <!-- Font Awesome-6 Icon -->
+  <link rel="stylesheet" href="css/all.min.css" type="text/css" />
+  <!-- Bootstrap-5 Minified CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+  <!-- Slick Slider Minified CSS -->
+	<link rel="stylesheet" href="css/slick.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/slick-theme.min.css" type="text/css" />
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="scss/style.css" type="text/css" />
+  <link rel="stylesheet" href="css/product.css" type="text/css">
+</head>
+<body>
+  <!-- Scroll Progressbar Section Starts -->
+  <div class="display-progress"></div>
+  <!-- Scroll Progressbar Section Ends -->
+  <!-- Mobile Header Section Starts -->
+  <div class="container-fluid bg-header-mobile" id="index">
+    <div class="row d-flex align-items-center">
+      <div class="col-4">
+        <div class="header-logo-mobile">
+          <a href="story-universe.html">
+            <img src="images/logo.png" class="img-fluid" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="col-5 px-0">
+        <ul class="places-characters-listing d-flex justify-content-center">
+          <li class="active"><a href="places.html">Places</a></li>
+          <li><a href="characters.html">Characters</a></li>
+        </ul>
+      </div>
+      <div class="col-3">
+        <div class="burger-menu">
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Mobile Header Section Ends -->
+  <!-- Mobile Sidebar Section Starts -->
+	<header class="fixed-sidebar flex-column justify-content-between">
+		<div class="sidebar-logo">
+      <a href="story-universe.html">
+        <img src="images/logo.png" class="img-fluid" alt="" />
+      </a>
+		</div>
+		<div class="sidebar-menu">
+			<ul class="menu-listing">
+        <li><a href="story-universe.html">Story Universe</a></li>
+        <li class="active"><a href="places.html">Places</a></li>
+        <li><a href="characters.html">Characters</a></li>
+        <li><a href="blog.html">Nitin's Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="sidebar-social">
+      <ul class="sidebar-social-listing d-flex flex-row">
+        <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+      </ul>
+    </div>
+	</header>
+	<!-- Mobile Sidebar Section Ends -->
+  <!-- Desktop Header Section Starts -->
+  <div class="container-fluid bg-header-desktop" id="index">
+    <div class="row d-flex align-items-center">
+      <div class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2">
+        <div class="header-logo-desktop">
+          <a href="story-universe.html">
+            <img src="images/logo.png" class="img-fluid" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-6 col-lg-8 col-xl-8 col-xxl-8">
+        <ul class="menu-listing d-flex align-items-center justify-content-center">
+          <li><a href="story-universe.html">Story Universe</a></li>
+          <li class="active"><a href="places.html">Places</a></li>
+          <li><a href="characters.html">Characters</a></li>
+          <li><a href="blog.html">Nitin's Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2">
+        <ul class="header-social-listing d-flex align-items-center justify-content-end">
+          <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Desktop Header Section Ends -->
+  <!-- Slider Section Starts -->
+  <div class="container-fluid bg-product-details-pdp">
+    <div class="container py-5">
+    <div class="row">
+
+        <div class="col-12 col-sm-6 col-lg-6 col-xl-6 col-xxl-6">
+
+            <!-- Main Image -->
+            <div class="book-preview mb-3">
+                <img
+                    id="mainImage"
+                    src="images/slider-1.jfif"
+                    class="img-fluid"
+                    alt="Book">
+            </div>
+
+            <!-- Thumbnails -->
+            <div class="thumbnail-wrapper">
+
+                <img src="images/slider-1.jfif"
+                     class="thumbnail active"
+                     alt=""
+                     onclick="changeImage(this)">
+
+                <img src="images/slider-2.jfif"
+                     class="thumbnail"
+                     alt=""
+                     onclick="changeImage(this)">
+
+                <img src="images/slider-3.jfif"
+                     class="thumbnail"
+                     alt=""
+                     onclick="changeImage(this)">
+
+                <img src="images/slider-4.jfif"
+                     class="thumbnail"
+                     alt=""
+                     onclick="changeImage(this)">
+
+                <img src="images/slider-5.jfif"
+                     class="thumbnail"
+                     alt=""
+                     onclick="changeImage(this)">
+
+                <img src="images/slider-6.jfif"
+                     class="thumbnail"
+                     alt=""
+                     onclick="changeImage(this)">
+
+                <img src="images/slider-7.jfif"
+                     class="thumbnail"
+                     alt=""
+                     onclick="changeImage(this)">
+
+                <img src="images/slider-8.jfif"
+                     class="thumbnail"
+                     alt=""
+                     onclick="changeImage(this)">
+
+            </div>
+
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6 co-lg-6 col-xl-6 col-xxl-6">
+          <div class="book-details">
+
+              <div class="section-heading">
+                <h2>We Are There for Each Other – A National Best Seller
+        (Original Copy & Also Get Free Bookmark and A Personal
+        Letter from the author)</h2>
+              </div>
+
+    <div class="book-price d-flex align-items-center gap-2 mb-3">
+
+        <span class="old-price">
+            ₹ 499.00
+        </span>
+
+        <span class="current-price">
+            ₹ 299.00
+        </span>
+
+        <span class="discount-badge">
+            -40% OFF
+        </span>
+
+    </div>
+
+    <div class="book-rating d-flex align-items-center">
+
+        <div class="rating-stars">
+
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+
+        </div>
+
+        <span class="rating-text">
+            4.9/5 Ratings
+        </span>
+
+    </div>
+
+    <section class="reader-love">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+
+        <h2 class="section-title">
+            Reader Love
+        </h2>
+
+        <div class="overall-rating">
+            <i class="fas fa-star"></i>
+            4.9/5 Average Rating
+        </div>
+
+    </div>
+
+    <div class="review-wrapper">
+
+        <!-- Card -->
+        <article class="review-card">
+
+            <div class="review-header">
+
+                <img src="images/user-1.jpg" class="review-user" alt="">
+
+                <div class="flex-grow-1">
+
+                    <h5>Sharvani Iyer</h5>
+
+                    <div class="review-badges">
+
+                        <span class="badge-lover">
+                            Book Lover
+                        </span>
+
+                        <span class="badge-verified">
+                            Verified Purchase
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <small>1h ago</small>
+
+            </div>
+
+            <div class="review-stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "This book felt like a warm hug! The emotions were so raw and
+                real—I laughed, cried, and found myself completely immersed."
+            </p>
+
+            <div class="review-footer">
+
+                <span class="helpful">
+                    👍 127 Helpful
+                </span>
+
+                <span>
+                    💬 23
+                </span>
+
+            </div>
+
+        </article>
+
+        <!-- Duplicate -->
+        <article class="review-card">
+
+            <div class="review-header">
+
+                <img src="images/user-2.jpg" class="review-user" alt="">
+
+                <div class="flex-grow-1">
+
+                    <h5>Darshan</h5>
+
+                    <div class="review-badges">
+
+                        <span class="badge-lover">
+                            Top Reader
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <small>2h ago</small>
+
+            </div>
+
+            <div class="review-stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "A book that's full of emotions, friendship and life lessons."
+            </p>
+
+            <div class="review-footer">
+
+                <span class="helpful">
+                    👍 156 Helpful
+                </span>
+
+                <span>
+                    💬 12
+                </span>
+
+            </div>
+
+        </article>
+
+        <!-- More cards -->
+
+    </div>
+
+</section>
+
+</div>
+        </div>
+
+    </div>
+</div>
+  </div>
+  <!-- Slider Section Ends -->
+
+  <!-- Shared Moments Section Starts -->
+  <div class="container-fluid reviews-section">
+    <div class="row">
+      <div class="col-12">
+        <section class="section-heading section-heading-shared-moments yellow text-center">
+          <span>The Reader Collective</span>
+          <h2>Shared Moments</h2>
+        </section>
+      </div>
+    </div>
+    <div class="reviews-track">
+
+        <!-- Card -->
+        <div class="review-item">
+            <img src="images/review-1.jfif" alt="">
+        </div>
+
+        <div class="review-item">
+            <img src="images/review-1.jfif" alt="">
+        </div>
+
+        <div class="review-item">
+            <img src="images/review-1.jfif" alt="">
+        </div>
+
+        <div class="review-item">
+            <img src="images/review-1.jfif" alt="">
+        </div>
+
+        <div class="review-item">
+            <img src="images/review-1.jfif" alt="">
+        </div>
+
+        <div class="review-item">
+            <img src="images/review-1.jfif" alt="">
+        </div>
+
+        <div class="review-item">
+            <img src="images/review-1.jfif" alt="">
+        </div>
+
+        <div class="review-item">
+            <img src="images/review-1.jfif" alt="">
+        </div>
+
+        <div class="review-item">
+            <img src="images/review-1.jfif" alt="">
+        </div>
+
+        <div class="review-item">
+            <img src="images/review-1.jfif" alt="">
+        </div>
+
+        <div class="review-item">
+            <img src="images/review-1.jfif" alt="">
+        </div>
+
+        <div class="review-item">
+            <img src="images/review-1.jfif" alt="">
+        </div>
+
+    </div>
+  </div>
+  <!-- Shared Moments Section Ends -->
+
+  <!-- About Us Section Starts -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="author-image">
+            <img src="https://sagarchudesara.com/cdn/shop/files/sagar_chudesara_we_are_there_for_each_other.webp?v=1767432769&width=1200" class="img-fluid" alt="Author">
+            <div class="author-label">
+                THE AUTHOR
+            </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="author-content">
+            <div class="section-heading section-heading-author yellow">
+              <span>Sagar</span>
+              <h2>SAGAR CHUDESARA</h2>
+            </div>
+            <p class="text-white">
+                Hi, I'm Sagar. I write stories about friendship, healing, and the
+                emotions we often keep to ourselves.
+                <strong>We Are There For Each Other</strong>
+                is my way of reminding you you're never alone,
+                and that some stories stay with us long after the last page.
+            </p>
+            <div class="tags">
+                <span>Traveler</span>
+                <span>Romance Writer</span>
+                <span>Dreamer</span>
+            </div>
+            <div class="btn-yellow">
+              <a href="#" class="btn">Read Full Bio</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- About Us Section Ends -->
+
+  <!-- Footer Section Starts -->
+  <div class="container-fluid bg-footer">
+    <div class="row d-flex align-items-end">
+      <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+        <ul class="footer-listing">
+          <li><a href="story-universe.html">Story Universe</a></li>
+          <li class="active"><a href="places.html">Places</a></li>
+          <li><a href="characters.html">Characters</a></li>
+          <li><a href="blog.html">Nitin's Blog</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-md-5 col-lg-4 col-xl-4 col-xxl-4">
+        <ul class="footer-listing">
+          <li><a href="advertise.html">Advertise with us</a></li>
+          <li><a href="submissions.html">Write For Us</a></li>
+          <li><a href="faq.html">FAQ's</a></li>
+          <li><a href="terms-and-conditions.html">Terms and Conditions</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-12 col-md-3 col-lg-5 col-xl-5 col-xxl-5">
+        <ul class="footer-social-listing">
+          <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="copyright-info text-center">
+          <p>© 2022 <span>Kathaastu.</span> All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Section Ends -->
+  <!-- Scroll To Top Section Starts -->
+  <a href="#index" class="scroll-to-top"><i class="fas fa-chevron-up"></i></a>
+  <!-- Scroll To Top Section Ends -->
+  <!-- jQuery-3.6.0 Minified JS -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Slick Slider Minified JS -->
+	<script src="js/slick.min.js"></script>
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
+  <!-- Product JS -->
+  <script src="js/product.js"></script>
+</body>
+</html>
