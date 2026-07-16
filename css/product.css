@@ -520,6 +520,10 @@
     .feature-content p {
         font-size: 15px;
     }
+    .quantity-pdp-bottom-navbar { height: 30px; }
+    .quantity-pdp-bottom-navbar .quantity-inc-dec,
+    .quantity-pdp-bottom-navbar > input { font-size: 0.75rem; }
+    .quantity-pdp-bottom-navbar > span { padding: 0 10px; }
 
 }
 
