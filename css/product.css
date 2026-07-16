@@ -415,6 +415,31 @@
 
 /*------- Fixed Bottom Navbar Section Ends -------*/
 
+.faq-accordion-fp .accordion-item .accordion-button {
+    background-color: #1c1c1c;
+    color: #b7b7b7;
+}
+.faq-accordion-fp .accordion-item .accordion-button:not(.collapsed) {
+    background-color: #ffc400;
+    color: #1c1c1c;
+}
+.terms-and-conditions-listing > li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.25rem;
+    position: relative;
+}
+.terms-and-conditions-listing > li::before {
+    background-color: #000000;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 0.5rem;
+    left: 0;
+    position: absolute;
+    top: 0.5rem;
+    width: 0.5rem;
+}
+
 @media only screen and (max-width: 575px) {
 
     .section-heading-book-preview > h2 {
