@@ -361,13 +361,13 @@
   padding: 0.75rem 0.875rem;
   text-transform: uppercase;
 }
-.quantity-pdp { -webkit-align-items: center; align-items: center; border: 2px solid #cccccc; -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; height: 50px; }
+.quantity-pdp { -webkit-align-items: center; align-items: center; border: 2px solid #ffc400; -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; height: 50px; }
 .quantity-pdp > span { padding: 0 20px; }
 .quantity-pdp > input { color: #000000; font: 1.5rem/normal "RobotoCondensed-Regular"; padding: 0.45rem .75rem; text-align: center; width: 40px; }
-.quantity-pdp > input[readonly] { background-color: #cccccc; border: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; }
+.quantity-pdp > input[readonly] { background-color: #ffc400; border: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; }
 .quantity-pdp > input[readonly]:focus { box-shadow: none; color: #FFFFFF; }
 .quantity-pdp > span:last-child { margin-right: 0; }
-.quantity-inc-dec { color: #cccccc; cursor: pointer; display: inline-block; font: 1.25rem/normal "RobotoCondensed-Regular"; }
+.quantity-inc-dec { color: #ffffff; cursor: pointer; display: inline-block; font: 1.25rem/normal "RobotoCondensed-Regular"; }
 
 /*------- Author Section Ends -------*/
 
