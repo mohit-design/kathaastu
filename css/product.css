@@ -1,35 +1,18 @@
 /*------- Book Preview Section Starts -------*/
 
-.book-preview {
-    min-height:520px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    /* background:#fff; */
+.slider-for .slick-slide img {
+    margin: 0 auto;
 }
-.book-preview img{
-    max-height:500px;
-    object-fit:contain;
+.slider-nav .slick-slide {
+    padding: 0.5rem;
 }
-.thumbnail:hover{
-    border-color:#999;
+.slider-nav .slick-slide.slick-current > div {
+    outline: 2px solid #777777;
+    padding: 0.25rem;
 }
-.thumbnail-wrapper {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 0.75rem;
-}
-.thumbnail {
-    width: 100%;
-    aspect-ratio: 3 / 4;
+.slider-nav .slick-slide img {
+    margin: 0 auto;
     object-fit: cover;
-    cursor: pointer;
-    border: 2px solid transparent;
-    border-radius: 4px;
-    transition: .2s;
-}
-.thumbnail.active {
-    border-color: #000;
 }
 .section-heading-regular > h2 {
    font-family: "RobotoCondensed-Regular"; 
@@ -366,6 +349,10 @@
     }
     .old-price {
         display: block;
+    }
+    .reader-love,
+    .about-book-section {
+        padding-bottom: 0;
     }
     .reviews-section {
         padding: 0;
