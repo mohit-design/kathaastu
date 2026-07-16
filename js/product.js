@@ -13,3 +13,18 @@ $('.slider-nav').slick({
   centerMode: true,
   focusOnSelect: true
 });
+
+const aboutAuthor = document.querySelector("#aboutAuthor");
+const stickyBar = document.querySelector("#stickyBuyBar");
+
+window.addEventListener("scroll", function () {
+
+    const triggerPoint = aboutAuthor.offsetTop;
+
+    if (window.scrollY >= triggerPoint) {
+        stickyBar.classList.add("show");
+    } else {
+        stickyBar.classList.remove("show");
+    }
+
+});
