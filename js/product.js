@@ -1,10 +1,14 @@
-function changeImage(el) {
-
-    document.getElementById("mainImage").src = el.src;
-
-    document.querySelectorAll(".thumbnail").forEach(function(item){
-        item.classList.remove("active");
-    });
-
-    el.classList.add("active");
-}
+$('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true
+});
