@@ -96,7 +96,8 @@
     }
 
     .feature-icon {
-        width: 2.5rem;
+        font-size: 1.5rem;
+        width: 1.75rem;
     }
 
     .feature-content h3 {
@@ -326,24 +327,10 @@
 
 /*------- Author Section Starts -------*/
 
-.author-image {
-  position:relative;
-}
 .author-image img {
   display: block;
   margin: 0 auto;
   width: 70%;
-}
-.author-image > .author-label {
-  background-color: #ffc400;
-  bottom: -1.5rem;
-  color: #000000;
-  font-family: "Gotham-Bold";
-  font-size: 1rem;
-  padding: 1rem 2rem;
-  position: absolute;
-  right: 4rem;
-  text-transform: uppercase;
 }
 .section-heading-line > span {
   color: #ffffff;
@@ -407,6 +394,11 @@
 
 .fixed-bottom-navbar {
     background-color: #161616;
+    position: sticky;
+    bottom: -100%;
+}
+.fixed-bottom-navbar.show {
+    bottom: 0;
 }
 .fixed-bottom-image-info > img {
     width: 70px;
@@ -483,4 +475,8 @@
         padding: 0.25rem 0.5rem;
     }
 
+}
+
+.bg-footer {
+    padding-bottom: 2rem;
 }
