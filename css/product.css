@@ -396,10 +396,20 @@
 .faq-accordion-fp .accordion-item .accordion-button {
     background-color: #1c1c1c;
     color: #b7b7b7;
+    position: relative;
 }
 .faq-accordion-fp .accordion-item .accordion-button:not(.collapsed) {
     background-color: #ffc400;
     color: #1c1c1c;
+}
+.accordion-button.collapsed:after {
+    background-image: none;
+    content: "\f107";
+    font-family: Font Awesome\ 5 Free;
+    font-weight: 700;
+}
+.accordion-button:not(.collapsed):after {
+    background-image: none;
 }
 .terms-and-conditions-listing > li {
     margin-bottom: 0.5rem;
