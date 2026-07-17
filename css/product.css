@@ -401,6 +401,9 @@
 
 /*------- Fixed Bottom Navbar Section Ends -------*/
 
+.accordion-item {
+    background-color: #0f0f0f;
+}
 .faq-accordion-fp .accordion-item .accordion-button {
     background-color: #1c1c1c;
     color: #b7b7b7;
@@ -420,12 +423,13 @@
     background-image: none;
 }
 .terms-and-conditions-listing > li {
+    color: #ffffff;
     margin-bottom: 0.5rem;
     padding-left: 1.25rem;
     position: relative;
 }
 .terms-and-conditions-listing > li::before {
-    background-color: #000000;
+    background-color: #ffffff;
     border-radius: 50%;
     content: "";
     display: block;
