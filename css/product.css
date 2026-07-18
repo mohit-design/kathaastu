@@ -165,6 +165,7 @@
     display: flex;
     gap: 1rem;
     align-items: center;
+    justify-content: space-between;
 }
 .review-user {
     width:52px;
@@ -177,11 +178,6 @@
     font-family: "RobotoCondensed-Regular";
     font-size: 1.25rem;
     margin-bottom: 0.25rem;
-}
-.review-badges {
-    display:flex;
-    gap: 0.5rem;
-    flex-wrap:wrap;
 }
 .badge-lover {
     background:#111;
@@ -438,6 +434,70 @@
     position: absolute;
     top: 0.5rem;
     width: 0.5rem;
+}
+.review-modal .modal-header {
+    background-color: #ffc400;
+    border-bottom: 0;
+}
+.review-modal .modal-header .modal-title {
+    color: #000000;
+}
+.review-modal button.btn-close {
+    opacity: 1;
+}
+.review-modal .modal-body,
+.review-modal .modal-footer {
+    background-color: #0f0f0f;
+}
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+.rating > input {
+    display: none
+}
+.rating > label {
+    position: relative;
+    width: 1em;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #FFD600;
+    cursor: pointer;
+    line-height: 1;
+}
+.rating > label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0
+}
+.rating > label:hover:before,
+.rating > label:hover~label:before {
+    opacity: 1 !important
+}
+.rating > input:checked ~ label:before {
+    opacity: 1
+}
+.rating:hover > input:checked ~ label:before {
+    opacity: 0.4
+}
+.review-modal .modal-footer {
+    border-top: 1px solid #434343;
+}
+.modal-review-info > div {
+    margin-bottom: 1rem;
+}
+.modal-review-info > div > div:first-child {
+    color: #ffffff;
+    font: 1rem/1.5 "RobotoCondensed-Medium";
+    letter-spacing: 0;
+    width: 60px;
+}
+.modal-review-info > div > div:last-child {
+    color: #ffffff;
+    font: 1rem/normal "RobotoCondensed-Regular";
+    text-align: justify;
+    width: calc(100% - 60px);
 }
 
 @media only screen and (max-width: 575px) {
